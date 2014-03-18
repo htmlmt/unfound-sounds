@@ -1,0 +1,340 @@
+p a:link {
+	color: #A0A0A0;
+}
+
+p a:visited {
+	color: #A0A0A0;
+}
+
+p a:hover {
+	color: #813510;
+}
+
+img.main_nav {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+div.read {
+	width: 700px;
+}
+
+h1 {
+	font-family: "bebas-neue";
+	font-size: 50px;
+	color: #A0A0A0;
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+
+h2 a:visited {
+	font-family: "bebas-neue";
+	font-size: 50px;
+	background-color: #3C3C3C;
+	color: #F0F0F0;
+	width: 90px;
+	text-align: center;
+}
+
+h3 {
+	font-family: "bebas-neue";
+	font-size: 40px;
+	color: #813510;
+}
+
+h3 {
+	font-family: "bebas-neue";
+	font-size: 40px;
+	color: #813510;
+}
+
+h3 a:link {
+	font-family: "bebas-neue";
+	font-size: 40px;
+	color: #813510;
+}
+
+h4 {
+	font-family: "adobe-caslon-pro";
+	font-size: 20px;
+	color: #813510;
+	text-align: center;
+}
+
+h4 a:link {
+	font-family: "adobe-caslon-pro";
+	font-size: 20px;
+	color: #813510;
+	text-align: center;
+}
+
+h4 a:hover {
+	opacity: 0.5;
+}
+
+h4 a:visited {
+	font-family: "adobe-caslon-pro";
+	font-size: 20px;
+	color: #813510;
+	text-align: center;
+}
+
+#desc {
+	font-family: "bebas-neue";
+	font-size: 30px;
+	color: #A0A0A0;
+}
+
+form {
+	font-family: "proxima-nova";
+}
+
+#credit {
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	font-family: "proxima-nova";
+	position: relative;
+	bottom: 13px;
+}
+
+#credit a:link {
+	color: #F0F0F0;
+}
+
+#credit a:visited {
+	color: #F0F0F0;
+}
+
+#credit a:hover {
+	opacity: 0.9;
+}
+
+#date {
+	color: #A0A0A0;
+	text-align: left;
+	font-size: 20px;
+	font-family: "proxima-nova";
+}
+
+#date_red {
+	color: #813510;
+	text-align: left;
+	font-size: 20px;
+	font-family: "proxima-nova";
+}
+
+#album {
+	width: 475px;
+	float: left;
+	display: inline-block;
+}
+
+#home_album {
+	display: inline-block;
+}
+
+#home_album:hover div.banner {
+	background-color: #813510;
+}
+
+#home_album:hover img {
+	opacity: 0.9;
+}
+
+#place {
+	float: right;
+	display: inline-block;
+	width: 475px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;	
+}
+
+a:hover {
+	text-decoration: none;	
+}
+
+a:active {
+	text-decoration: none;	
+}
+
+img.homepage {
+	width: 345px;
+}
+
+img.ocs {
+	display: inline-block;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+img.ocs:hover {
+	opacity: 0.9;
+}
+
+#nav {
+	font-family: "adobe-caslon-pro";
+	font-size: 40px;
+	color: #F0F0F0;
+	display: inline-block;
+	font-weight: 100;
+	margin-left: 10px;
+}
+
+#nav a:link {
+	color: #3C3C3C;
+}
+
+#nav a:visited {
+	color: #3C3C3C;
+}
+
+#nav a:hover {
+	color: #813510;
+}
+
+header {
+	height: 105px;
+}
+
+#blog_title {
+	font-family: "bebas-neue";
+	font-size: 100px;
+	font-weight: 100;
+	display: inline-block;
+	padding-right: 10px;
+}
+
+#blog_title a:link {
+	color: #813510;
+}
+
+#blog_title a:visited {
+	color: #813510;
+}
+
+#blog_title_gray {
+	font-family: "bebas-neue";
+	font-size: 130px;
+	font-weight: 100;
+	display: inline-block;
+}
+
+#blog_title_gray a:link {
+	color: #A0A0A0;
+}
+
+#blog_title_gray a:visited {
+	color: #A0A0A0;
+}
+
+#blog_title_gray a:hover {
+	opacity: 0.9;
+}
+
+footer {
+	clear: both;
+	background-color: #3C3C3C;
+	color: #F0F0F0;
+	font-family: "proxima-nova";
+	margin-top: 20px;
+}
+
+footer a:link {
+	color: #F0F0F0;
+}
+
+#found {
+	clear: both;
+}
+
+footer a:visited {
+	color: #F0F0F0;
+}
+
+p {
+	font-family: "proxima-nova";
+}
+
+#title {
+	font-family: "bebas-neue";
+	font-size: 40px;
+	color: #3C3C3C;
+}
+
+#admin_title {
+	font-family: "bebas-neue";
+	font-size: 20px;
+	color: #3C3C3C;
+}
+
+#banner {
+	font-family: "bebas-neue";
+	font-size: 25px;
+	padding: 5px;
+	text-align: center;
+	background-color: #3C3C3C;
+	color: #F0F0F0;
+	font-weight: 100;
+}
+
+#city_banner {
+	font-family: "bebas-neue";
+	font-size: 30px;
+	text-align: center;
+	background-color: #813510;
+	width: 500px;
+	margin: 15px auto 15px;
+	color: #F0F0F0;
+	font-weight: 100;
+	clear: both;
+}
+
+#city_banner:hover {
+	opacity: 0.9;
+}
+
+#found_banner {
+	font-family: "bebas-neue";
+	font-size: 30px;
+	text-align: center;
+	background-color: #813510;
+	width: 345px;
+	margin: 15px auto 15px;
+	color: #F0F0F0;
+	font-weight: 100;
+	clear: both;
+}
+
+#found_banner:hover {
+	opacity: 0.9;
+}
+
+#content {
+	width: 1050px;
+	position: relative;
+	margin: auto;
+}
+
+div.more {
+	width: 1050px;
+	position: relative;
+	margin: auto;
+	display: inline-block;
+}
+
+h3 {
+	font-weight: 100;
+}

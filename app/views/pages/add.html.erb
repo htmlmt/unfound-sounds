@@ -1,0 +1,16 @@
+<div id="admin_title"><h2>Add an album</h2></div>
+	<form method="post" action="/album">
+		<p><label for="album_title">Album title: </label><input type="text" name="album_title"></p>
+		<p><label for="album_cover">Album cover link: </label><input type="url" name="album_cover"></p>
+		<p><label for="album_review">Album review: </label><textarea rows="15" cols="70" name="album_review"></textarea></p>
+		<p><label for="album_rdio">Rdio embed code: </label><input type="text" name="rdio" placeholder="Set width and height to 500." size="70"></p>
+<div id="admin_title"><h2>Describe its location</h2></div>
+		<p><label for="place_title">Place title: </label><input type="text" name="place_title"></p>
+		<p><label for="place_description">Place description: </label><textarea rows="15" cols="70" name="place_description"></textarea></p>
+		<p><label for="pinpoint_description">Pinpoint description: </label><textarea rows="15" cols="70" name="pinpoint_description"></textarea></p>
+		<p><label for="city">City: </label><input type="text" name="city"></p>
+		<p><label for="hidden_place">Hidden place (tell no one): </label><input type="text" name="hidden_place"></p>
+		<p><label for="map">Google Maps embed code without pinpoint: </label><input type="text" placeholder="Set width and height to 500." name="map" size="100"></p>
+		<p><label for="pinpoint_map">Google Maps embed code with pinpoint: </label><input type="text" placeholder="Set width and height to 500." name="pinpoint_map" size="100"></p>
+		<p><input type="submit" value="Submit"></p>
+	</form>

@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  album_title: MyString
+  album_cover: MyString
+  album_review: MyText
+  place_title: MyString
+  place_description: MyText
+  pinpoint_description: MyText
+  rdio: MyString
+  city: MyString
+  hidden_place: MyString
+  map: MyString
+  pinpoint_map: MyString
+  created_at: 2014-03-18 16:25:37
+  found: false
+  url: MyString
+
+two:
+  album_title: MyString
+  album_cover: MyString
+  album_review: MyText
+  place_title: MyString
+  place_description: MyText
+  pinpoint_description: MyText
+  rdio: MyString
+  city: MyString
+  hidden_place: MyString
+  map: MyString
+  pinpoint_map: MyString
+  created_at: 2014-03-18 16:25:37
+  found: false
+  url: MyString

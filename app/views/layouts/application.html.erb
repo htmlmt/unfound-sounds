@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <script type="text/javascript" src="//use.typekit.net/aqv1ptn.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <%= stylesheet_link_tag    "style", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <link rel="icon" type="image/png" href="https://s3.amazonaws.com/UnfoundSounds/images/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="https://s3.amazonaws.com/UnfoundSounds/images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://s3.amazonaws.com/UnfoundSounds/images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://s3.amazonaws.com/UnfoundSounds/images/favicon-32x32.png" sizes="32x32">
+</head>
+<div id="content">
+<header>
+	<div id="main_nav"><a href="/"><img class="main_nav" src="https://s3.amazonaws.com/UnfoundSounds/images/unfound-sounds-logo.png" width="80"><div id="blog_title">Unfound Sounds</a></div>
+	<a href="/donate"><em><div id="nav">donate</a> &amp; <a href="/discover">discover</div></em></a></div>
+</header>
+<body>
+<%= yield %>
+</body>
+<footer>
+<a href="http://omahacodeschool.com" target="_blank"><img class="ocs" src="https://s3.amazonaws.com/UnfoundSounds/images/OCSlogo" width="40"></a><div id="credit">made by <a href="http://twitter.com/michaelsedits" target="_blank">Michael Todd</a> for <a href="http://omahacodeschool.com" target="_blank">Omaha Code School</a> &copy; 2014</div>
+</footer>
+</div>
+</html>

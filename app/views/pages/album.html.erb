@@ -1,0 +1,33 @@
+<% date = @album.created_at %>
+<article>
+<% if @album.found %>
+<div id="date"><p><%= @album.album_title %> was hidden on <%= format_date(date) %>,<br> <%= @album.hidden_place %> by Michael Todd.</div>
+	<p><div id="date_red"><strong>This album has been found.</strong></div></p>
+<% else %>
+<div id="date"><p><%= @album.album_title %> was hidden on <%= format_date(date) %>,<br> <%= @album.place_title %> by Michael Todd.</div>
+	<p><div id="date_red"><strong>Find it first, and it's yours.</strong></div></p>
+<% end %>
+<div id="album">
+	<div id="rdio"><%= @album.rdio %></div>
+		<h4><em>A review of <%= @album.album_title %>:</em></h4>
+			<p><div id="album_review"><%= @album.album_review %></div></p>
+</div>
+<div id="place">
+<% if @album.found %>
+<%= @album.pinpoint_map %>
+<h4><em>This album was hidden <%= @album.hidden_place %> in <%= @album.city.capitalize.gsub("-"," ") %>:</em></h4>
+	<p><%= @album.pinpoint_description %></p>
+</div>
+<% else %>
+<%= @album.map %>
+<h4><em>A hint about where to look:</em></h4>
+	<p><%= @album.place_description %></p>
+</div>
+<% end %>
+</article>
+<div class="more">
+<% if @album_city != [] %>
+<a href="/city/<%= @album.city %>"><div id="city_banner"><%= @album.city.gsub("-", " ") %>'s Unfound Sounds</div></a></div>
+<% else %>
+<a href="/found/<%= @album.city.downcase %>"><div id="city_banner"><%= @album.city.gsub('-', ' ') %>'s Found Sounds</a></div>
+<% end %>

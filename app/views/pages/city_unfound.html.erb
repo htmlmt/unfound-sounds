@@ -1,0 +1,7 @@
+<% @albums.each do |album| %>
+	<div id="home_album"><a href="/album/<%= album.url %>"><div id="banner"><%= album.place_title %></div>
+	<img class="homepage" src="<%= album.album_cover %>"></a></div>
+<% end %>
+<% unless @unfound == [] %>
+<a href="/found"><div id="found_banner">SEE FOUND SOUNDS</div></a>
+<% end %>
