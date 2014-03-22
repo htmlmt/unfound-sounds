@@ -1953,3 +1953,1156 @@ Served asset /jquery_ujs.js - 304 Not Modified (2ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-18 17:20:56 -0500
 Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-18 20:02:42 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 't') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 186.2ms (Views: 124.6ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-18 20:02:43 -0500
+Served asset /style.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-18 20:02:43 -0500
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-18 20:02:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-18 20:02:43 -0500
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/add" for 127.0.0.1 at 2014-03-18 20:03:07 -0500
+Processing by PagesController#add as HTML
+  Rendered pages/add.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63.1ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-18 20:03:07 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-18 20:03:07 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-18 20:03:07 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-18 20:03:07 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-18 20:03:11 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 't') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5.1ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-18 20:03:11 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-18 20:03:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-18 20:03:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-18 20:03:11 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:01:02 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 't') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 71.9ms (Views: 24.1ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:01:03 -0500
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:01:03 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:01:03 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:01:03 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/add" for 127.0.0.1 at 2014-03-19 09:01:06 -0500
+Processing by PagesController#add as HTML
+  Rendered pages/add.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3.3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:01:06 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:01:06 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:01:06 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:01:06 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/album" for 127.0.0.1 at 2014-03-19 09:02:37 -0500
+Processing by PagesController#save_album as HTML
+  Parameters: {"album_title"=>"\"All Delighted People\" by Sufjan Stevens", "album_cover"=>"https://s3.amazonaws.com/UnfoundSounds/images/SufjanStevensAllDelightedPeople.jpg", "album_review"=>"Something.", "rdio"=>"<iframe width='500' height='500' src='http://rd.io/x/QUWZfCJ1BXs/' frameborder='0'></iframe>", "place_title"=>"somewhere in Lincoln", "place_description"=>"Somewhere.", "pinpoint_description"=>"Somewhere.", "city"=>"Lincoln", "hidden_place"=>"Grateful Bread", "map"=>"<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6038.375717799141!2d-96.69332928234215!3d40.823837174433926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1394820541578\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>", "pinpoint_map"=>"<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.9735891656187!2d-95.93418350000002!3d41.26591094999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87938fb6f5189601%3A0xfe7b0d81e1ad8f81!2sFilm+Streams!5e0!3m2!1sen!2sus!4v1394828366490\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (15.0ms)[0m  INSERT INTO "posts" ("album_cover", "album_review", "album_title", "city", "created_at", "found", "hidden_place", "map", "pinpoint_description", "pinpoint_map", "place_description", "place_title", "rdio", "updated_at", "url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"  [["album_cover", "https://s3.amazonaws.com/UnfoundSounds/images/SufjanStevensAllDelightedPeople.jpg"], ["album_review", "Something."], ["album_title", "\"All Delighted People\" by Sufjan Stevens"], ["city", "Lincoln"], ["created_at", Wed, 19 Mar 2014 14:02:37 UTC +00:00], ["found", false], ["hidden_place", "Grateful Bread"], ["map", "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6038.375717799141!2d-96.69332928234215!3d40.823837174433926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1394820541578\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>"], ["pinpoint_description", "Somewhere."], ["pinpoint_map", "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.9735891656187!2d-95.93418350000002!3d41.26591094999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87938fb6f5189601%3A0xfe7b0d81e1ad8f81!2sFilm+Streams!5e0!3m2!1sen!2sus!4v1394828366490\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>"], ["place_description", "Somewhere."], ["place_title", "somewhere in Lincoln"], ["rdio", "<iframe width='500' height='500' src='http://rd.io/x/QUWZfCJ1BXs/' frameborder='0'></iframe>"], ["updated_at", Wed, 19 Mar 2014 14:02:37 UTC +00:00], ["url", "all-delighted-people-by-sufjan-stevens"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "posts" ("album_cover", "album_review", "album_title", "city", "created_at", "found", "hidden_place", "map", "pinpoint_description", "pinpoint_map", "place_description", "place_title", "rdio", "updated_at", "url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 32.9ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "posts" ("album_cover", "album_review", "album_title", "city", "created_at", "found", "hidden_place", "map", "pinpoint_description", "pinpoint_map", "place_description", "place_title", "rdio", "updated_at", "url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"):
+  app/controllers/pages_controller.rb:87:in `save_album'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.8ms)
+
+
+Started POST "/album" for 127.0.0.1 at 2014-03-19 09:03:37 -0500
+Processing by PagesController#save_album as HTML
+  Parameters: {"album_title"=>"\"All Delighted People\" by Sufjan Stevens", "album_cover"=>"https://s3.amazonaws.com/UnfoundSounds/images/SufjanStevensAllDelightedPeople.jpg", "album_review"=>"Something.", "rdio"=>"<iframe width='500' height='500' src='http://rd.io/x/QUWZfCJ1BXs/' frameborder='0'></iframe>", "place_title"=>"somewhere in Lincoln", "place_description"=>"Somewhere.", "pinpoint_description"=>"Somewhere.", "city"=>"Lincoln", "hidden_place"=>"Grateful Bread", "map"=>"<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6038.375717799141!2d-96.69332928234215!3d40.823837174433926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1394820541578\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>", "pinpoint_map"=>""}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("album_cover", "album_review", "album_title", "city", "created_at", "found", "hidden_place", "map", "pinpoint_description", "pinpoint_map", "place_description", "place_title", "rdio", "updated_at", "url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["album_cover", "https://s3.amazonaws.com/UnfoundSounds/images/SufjanStevensAllDelightedPeople.jpg"], ["album_review", "Something."], ["album_title", "\"All Delighted People\" by Sufjan Stevens"], ["city", "Lincoln"], ["created_at", Wed, 19 Mar 2014 14:03:37 UTC +00:00], ["found", false], ["hidden_place", "Grateful Bread"], ["map", "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6038.375717799141!2d-96.69332928234215!3d40.823837174433926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1394820541578\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>"], ["pinpoint_description", "Somewhere."], ["pinpoint_map", ""], ["place_description", "Somewhere."], ["place_title", "somewhere in Lincoln"], ["rdio", "<iframe width='500' height='500' src='http://rd.io/x/QUWZfCJ1BXs/' frameborder='0'></iframe>"], ["updated_at", Wed, 19 Mar 2014 14:03:37 UTC +00:00], ["url", "all-delighted-people-by-sufjan-stevens"]]
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "posts" ("album_cover", "album_review", "album_title", "city", "created_at", "found", "hidden_place", "map", "pinpoint_description", "pinpoint_map", "place_description", "place_title", "rdio", "updated_at", "url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 3.1ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: INSERT INTO "posts" ("album_cover", "album_review", "album_title", "city", "created_at", "found", "hidden_place", "map", "pinpoint_description", "pinpoint_map", "place_description", "place_title", "rdio", "updated_at", "url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"):
+  app/controllers/pages_controller.rb:87:in `save_album'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.0ms)
+
+
+Started POST "/album" for 127.0.0.1 at 2014-03-19 09:06:33 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#save_album as HTML
+  Parameters: {"album_title"=>"\"All Delighted People\" by Sufjan Stevens", "album_cover"=>"https://s3.amazonaws.com/UnfoundSounds/images/SufjanStevensAllDelightedPeople.jpg", "album_review"=>"Something.", "rdio"=>"<iframe width='500' height='500' src='http://rd.io/x/QUWZfCJ1BXs/' frameborder='0'></iframe>", "place_title"=>"somewhere in Lincoln", "place_description"=>"Somewhere.", "pinpoint_description"=>"Somewhere.", "city"=>"Lincoln", "hidden_place"=>"Grateful Bread", "map"=>"", "pinpoint_map"=>""}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "posts" ("album_cover", "album_review", "album_title", "city", "created_at", "found", "hidden_place", "map", "pinpoint_description", "pinpoint_map", "place_description", "place_title", "rdio", "updated_at", "url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"  [["album_cover", "https://s3.amazonaws.com/UnfoundSounds/images/SufjanStevensAllDelightedPeople.jpg"], ["album_review", "Something."], ["album_title", "\"All Delighted People\" by Sufjan Stevens"], ["city", "Lincoln"], ["created_at", Wed, 19 Mar 2014 14:06:34 UTC +00:00], ["found", false], ["hidden_place", "Grateful Bread"], ["map", ""], ["pinpoint_description", "Somewhere."], ["pinpoint_map", ""], ["place_description", "Somewhere."], ["place_title", "somewhere in Lincoln"], ["rdio", "<iframe width='500' height='500' src='http://rd.io/x/QUWZfCJ1BXs/' frameborder='0'></iframe>"], ["updated_at", Wed, 19 Mar 2014 14:06:34 UTC +00:00], ["url", "all-delighted-people-by-sufjan-stevens"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 62.1ms
+
+NoMethodError (undefined method `url' for nil:NilClass):
+  app/controllers/pages_controller.rb:89:in `save_album'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:11:04 -0500
+Processing by PagesController#home as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f')
+  [1m[36mPost Load (1.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9[0m
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 49.4ms (Views: 12.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:11:04 -0500
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:04 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:04 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:04 -0500
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/found" for 127.0.0.1 at 2014-03-19 09:11:15 -0500
+Processing by PagesController#found as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 't') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/found.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 99.8ms (Views: 98.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:11:15 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:16 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:11:16 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4.6ms (Views: 2.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:17 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:11:17 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:17 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:17 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:11:18 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4.3ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:11:18 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:18 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:18 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/album/all-delighted-people-by-sufjan-stevens" for 127.0.0.1 at 2014-03-19 09:11:19 -0500
+Processing by PagesController#album as HTML
+  Parameters: {"url"=>"all-delighted-people-by-sufjan-stevens"}
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1[0m
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') AND (city = 'Lincoln') AND (id != 1)
+  Rendered pages/album.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 14.1ms (Views: 4.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:19 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:19 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:11:19 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:19 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:11:27 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18.4ms (Views: 16.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:11:27 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:27 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:27 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:11:27 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/album/all-delighted-people-by-sufjan-stevens" for 127.0.0.1 at 2014-03-19 09:13:25 -0500
+Processing by PagesController#album as HTML
+  Parameters: {"url"=>"all-delighted-people-by-sufjan-stevens"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') AND (city = 'Lincoln') AND (id != 1)
+  Rendered pages/album.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5.4ms (Views: 3.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:13:25 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:25 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:25 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:13:28 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4.4ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:13:28 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:28 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:28 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-03-19 09:13:30 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3.4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:13:31 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:31 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:31 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:31 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/discover" for 127.0.0.1 at 2014-03-19 09:13:32 -0500
+Processing by PagesController#discover as HTML
+  Rendered pages/discover.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5.4ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:13:32 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:32 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:13:36 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5.7ms (Views: 3.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:13:37 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:37 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:37 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/album/all-delighted-people-by-sufjan-stevens" for 127.0.0.1 at 2014-03-19 09:13:45 -0500
+Processing by PagesController#album as HTML
+  Parameters: {"url"=>"all-delighted-people-by-sufjan-stevens"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') AND (city = 'Lincoln') AND (id != 1)
+  Rendered pages/album.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4.9ms (Views: 3.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:13:45 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:45 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:45 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:45 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:13:48 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5.0ms (Views: 3.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:13:48 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:48 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:48 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:13:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:14:44 -0500
+
+SyntaxError (/Users/mikejtodd/Sites/unfound-sounds/app/controllers/pages_controller.rb:89: syntax error, unexpected ')', expecting keyword_end
+/Users/mikejtodd/Sites/unfound-sounds/app/controllers/pages_controller.rb:146: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (3.2.17) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.17) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.17) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.17) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.17) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `_run__3466401148665617663__call__2718120903460456932__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-19 09:14:55 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24.3ms (Views: 4.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-19 09:14:55 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-19 09:14:55 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-19 09:14:55 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-19 09:14:55 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:41:39 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (36.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (31.3ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (35.9ms)
+Compiled application.css  (22ms)  (pid 13456)
+Completed 200 OK in 717.1ms (Views: 198.7ms | ActiveRecord: 441.4ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:41:41 -0500
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:41:41 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:41 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:41 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:41:43 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5.6ms (Views: 3.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:41:43 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:43 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:43 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/album/all-delighted-people-by-sufjan-stevens" for 127.0.0.1 at 2014-03-20 17:41:45 -0500
+Processing by PagesController#album as HTML
+  Parameters: {"url"=>"all-delighted-people-by-sufjan-stevens"}
+  [1m[36mPost Load (23.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1[0m
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') AND (city = 'Lincoln') AND (id != 1)
+  Rendered pages/album.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 179.2ms (Views: 33.4ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:41:45 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:45 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:45 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:45 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:41:49 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5.2ms (Views: 3.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:41:49 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:49 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:49 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:41:49 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:48:24 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4.5ms (Views: 3.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:24 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:24 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:24 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:24 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:48:25 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4.8ms (Views: 3.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:25 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:25 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:25 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/found" for 127.0.0.1 at 2014-03-20 17:48:28 -0500
+Processing by PagesController#found as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 't') ORDER BY created_at DESC LIMIT 9[0m
+  Rendered pages/found.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 82.5ms (Views: 81.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:28 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:28 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:28 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:28 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:28 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:48:29 -0500
+Processing by PagesController#home as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f')
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9[0m
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5.2ms (Views: 3.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:29 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/album/all-delighted-people-by-sufjan-stevens" for 127.0.0.1 at 2014-03-20 17:48:48 -0500
+Processing by PagesController#album as HTML
+  Parameters: {"url"=>"all-delighted-people-by-sufjan-stevens"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f') AND (city = 'Lincoln') AND (id != 1)[0m
+  Rendered pages/album.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5.4ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:49 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:48:49 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:49 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:49 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:48:49 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/album/all-delighted-people-by-sufjan-stevens" for 127.0.0.1 at 2014-03-20 17:51:18 -0500
+Processing by PagesController#album as HTML
+  Parameters: {"url"=>"all-delighted-people-by-sufjan-stevens"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f') AND (city = 'Lincoln') AND (id != 1)[0m
+  Rendered pages/album.html.erb within layouts/application (1.2ms)
+Compiled style.css  (0ms)  (pid 13456)
+Compiled application.css  (0ms)  (pid 13456)
+Completed 200 OK in 18.0ms (Views: 16.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:18 -0500
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:18 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:18 -0500
+Served asset /style.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:18 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:18 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:51:27 -0500
+Processing by PagesController#home as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f')
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9[0m
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6.5ms (Views: 4.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:27 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:27 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:27 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:27 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:27 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/donate" for 127.0.0.1 at 2014-03-20 17:51:29 -0500
+Processing by PagesController#donate as HTML
+  Rendered pages/donate.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76.9ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:29 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/discover" for 127.0.0.1 at 2014-03-20 17:51:33 -0500
+Processing by PagesController#discover as HTML
+  Rendered pages/discover.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39.1ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:33 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:33 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:33 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:33 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:33 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:51:36 -0500
+Processing by PagesController#home as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f')
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9[0m
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5.2ms (Views: 3.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:36 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:36 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:36 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:51:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:51:36 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:59:36 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 159.2ms (Views: 49.7ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:59:36 -0500
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:36 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:36 -0500
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:59:36 -0500
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:36 -0500
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-20 17:59:38 -0500
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5.2ms (Views: 3.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:59:38 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:59:38 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:38 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:38 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:38 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/album/all-delighted-people-by-sufjan-stevens" for 127.0.0.1 at 2014-03-20 17:59:42 -0500
+Processing by PagesController#album as HTML
+  Parameters: {"url"=>"all-delighted-people-by-sufjan-stevens"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1[0m
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') AND (city = 'Lincoln') AND (id != 1)
+  Rendered pages/album.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 119.1ms (Views: 7.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:59:42 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:59:42 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:42 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:42 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:42 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/album/all-delighted-people-by-sufjan-stevens/edit" for 127.0.0.1 at 2014-03-20 17:59:46 -0500
+Processing by PagesController#edit as HTML
+  Parameters: {"url"=>"all-delighted-people-by-sufjan-stevens"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1[0m
+  Rendered pages/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 93.2ms (Views: 91.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 17:59:46 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-20 17:59:46 -0500
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:46 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:46 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 17:59:46 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/album/all-delighted-people-by-sufjan-stevens/edit" for 127.0.0.1 at 2014-03-20 18:03:44 -0500
+Processing by PagesController#edit_album as HTML
+  Parameters: {"album_title"=>"\"All Delighted People\" by Sufjan Stevens", "album_cover"=>"https://s3.amazonaws.com/UnfoundSounds/images/SufjanStevensAllDelightedPeople.jpg", "album_review"=>"Something.", "rdio"=>"<iframe width=\"500\" height=\"500\" src=\"https://rd.io/i/QUWZfCJ1BXs/\" frameborder=\"0\"></iframe>", "place_title"=>"somewhere in Lincoln", "place_description"=>"Somewhere.", "pinpoint_description"=>"Somewhere.", "city"=>"Lincoln", "hidden_place"=>"Grateful Bread", "map"=>"<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2998.0959039348563!2d-96.00726761429438!3d41.285017182511695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395356619455\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>", "pinpoint_map"=>"<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.099978523942!2d-96.00610889999994!3d41.28492849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87939275626d3c83%3A0x8b6e18538c81e10a!2s402+Arts+Collective!5e0!3m2!1sen!2sus!4v1395356601274\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>", "url"=>"all-delighted-people-by-sufjan-stevens"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (75.6ms)[0m  UPDATE "posts" SET "rdio" = '<iframe width="500" height="500" src="https://rd.io/i/QUWZfCJ1BXs/" frameborder="0"></iframe>', "city" = 'lincoln', "map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2998.0959039348563!2d-96.00726761429438!3d41.285017182511695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395356619455" width="500" height="500" frameborder="0" style="border:0"></iframe>', "pinpoint_map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.099978523942!2d-96.00610889999994!3d41.28492849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87939275626d3c83%3A0x8b6e18538c81e10a!2s402+Arts+Collective!5e0!3m2!1sen!2sus!4v1395356601274" width="500" height="500" frameborder="0" style="border:0"></iframe>', "updated_at" = '2014-03-20 23:03:44.810547' WHERE "posts"."id" = 1
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: UPDATE "posts" SET "rdio" = '<iframe width="500" height="500" src="https://rd.io/i/QUWZfCJ1BXs/" frameborder="0"></iframe>', "city" = 'lincoln', "map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2998.0959039348563!2d-96.00726761429438!3d41.285017182511695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395356619455" width="500" height="500" frameborder="0" style="border:0"></iframe>', "pinpoint_map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.099978523942!2d-96.00610889999994!3d41.28492849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87939275626d3c83%3A0x8b6e18538c81e10a!2s402+Arts+Collective!5e0!3m2!1sen!2sus!4v1395356601274" width="500" height="500" frameborder="0" style="border:0"></iframe>', "updated_at" = '2014-03-20 23:03:44.810547' WHERE "posts"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 80.7ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: UPDATE "posts" SET "rdio" = '<iframe width="500" height="500" src="https://rd.io/i/QUWZfCJ1BXs/" frameborder="0"></iframe>', "city" = 'lincoln', "map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2998.0959039348563!2d-96.00726761429438!3d41.285017182511695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395356619455" width="500" height="500" frameborder="0" style="border:0"></iframe>', "pinpoint_map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.099978523942!2d-96.00610889999994!3d41.28492849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87939275626d3c83%3A0x8b6e18538c81e10a!2s402+Arts+Collective!5e0!3m2!1sen!2sus!4v1395356601274" width="500" height="500" frameborder="0" style="border:0"></iframe>', "updated_at" = '2014-03-20 23:03:44.810547' WHERE "posts"."id" = 1):
+  app/controllers/pages_controller.rb:107:in `edit_album'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (135.2ms)
+
+
+Started POST "/album/all-delighted-people-by-sufjan-stevens/edit" for 127.0.0.1 at 2014-03-20 18:04:26 -0500
+Processing by PagesController#edit_album as HTML
+  Parameters: {"album_title"=>"\"All Delighted People\" by Sufjan Stevens", "album_cover"=>"https://s3.amazonaws.com/UnfoundSounds/images/SufjanStevensAllDelightedPeople.jpg", "album_review"=>"Something.", "rdio"=>"<iframe width=\"500\" height=\"500\" src=\"https://rd.io/i/QUWZfCJ1BXs/\" frameborder=\"0\"></iframe>", "place_title"=>"somewhere in Lincoln", "place_description"=>"Somewhere.", "pinpoint_description"=>"Somewhere.", "city"=>"Lincoln", "hidden_place"=>"Grateful Bread", "map"=>"<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2998.0959039348563!2d-96.00726761429438!3d41.285017182511695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395356619455\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>", "pinpoint_map"=>"<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.099978523942!2d-96.00610889999994!3d41.28492849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87939275626d3c83%3A0x8b6e18538c81e10a!2s402+Arts+Collective!5e0!3m2!1sen!2sus!4v1395356601274\" width=\"500\" height=\"500\" frameborder=\"0\" style=\"border:0\"></iframe>", "url"=>"all-delighted-people-by-sufjan-stevens"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."url" = 'all-delighted-people-by-sufjan-stevens' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.8ms)[0m  UPDATE "posts" SET "rdio" = '<iframe width="500" height="500" src="https://rd.io/i/QUWZfCJ1BXs/" frameborder="0"></iframe>', "city" = 'lincoln', "map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2998.0959039348563!2d-96.00726761429438!3d41.285017182511695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395356619455" width="500" height="500" frameborder="0" style="border:0"></iframe>', "pinpoint_map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.099978523942!2d-96.00610889999994!3d41.28492849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87939275626d3c83%3A0x8b6e18538c81e10a!2s402+Arts+Collective!5e0!3m2!1sen!2sus!4v1395356601274" width="500" height="500" frameborder="0" style="border:0"></iframe>', "updated_at" = '2014-03-20 23:04:26.921280' WHERE "posts"."id" = 1
+PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: UPDATE "posts" SET "rdio" = '<iframe width="500" height="500" src="https://rd.io/i/QUWZfCJ1BXs/" frameborder="0"></iframe>', "city" = 'lincoln', "map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2998.0959039348563!2d-96.00726761429438!3d41.285017182511695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395356619455" width="500" height="500" frameborder="0" style="border:0"></iframe>', "pinpoint_map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.099978523942!2d-96.00610889999994!3d41.28492849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87939275626d3c83%3A0x8b6e18538c81e10a!2s402+Arts+Collective!5e0!3m2!1sen!2sus!4v1395356601274" width="500" height="500" frameborder="0" style="border:0"></iframe>', "updated_at" = '2014-03-20 23:04:26.921280' WHERE "posts"."id" = 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 4.9ms
+
+ActiveRecord::StatementInvalid (PG::StringDataRightTruncation: ERROR:  value too long for type character varying(255)
+: UPDATE "posts" SET "rdio" = '<iframe width="500" height="500" src="https://rd.io/i/QUWZfCJ1BXs/" frameborder="0"></iframe>', "city" = 'lincoln', "map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2998.0959039348563!2d-96.00726761429438!3d41.285017182511695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395356619455" width="500" height="500" frameborder="0" style="border:0"></iframe>', "pinpoint_map" = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.099978523942!2d-96.00610889999994!3d41.28492849999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87939275626d3c83%3A0x8b6e18538c81e10a!2s402+Arts+Collective!5e0!3m2!1sen!2sus!4v1395356601274" width="500" height="500" frameborder="0" style="border:0"></iframe>', "updated_at" = '2014-03-20 23:04:26.921280' WHERE "posts"."id" = 1):
+  app/controllers/pages_controller.rb:107:in `edit_album'
+
+
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /opt/boxen/rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-22 12:33:32 -0500
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (found = 'f')[0m
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts" WHERE (found = 'f') ORDER BY created_at DESC LIMIT 9
+  Rendered pages/home.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 446.2ms (Views: 196.7ms | ActiveRecord: 160.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-22 12:33:33 -0500
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-03-22 12:33:33 -0500
+Served asset /style.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-22 12:33:33 -0500
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-22 12:33:33 -0500
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-22 12:33:33 -0500
+Served asset /application.js - 200 OK (13ms)

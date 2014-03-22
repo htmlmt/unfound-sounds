@@ -86,7 +86,7 @@ class PagesController < ApplicationController
       })
     album.save
     
-    redirect_to "/album/#{@album.url}"
+    redirect_to "/"
   end
   
   def edit_album

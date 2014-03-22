@@ -156,14 +156,16 @@ form {
 
 a:link {
 	text-decoration: none;
+	color: #F0F0F0;
 }
 
 a:visited {
 	text-decoration: none;	
+	color: #F0F0F0
 }
 
 a:hover {
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 a:active {
