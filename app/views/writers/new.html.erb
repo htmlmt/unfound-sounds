@@ -1,0 +1,26 @@
+<h1>Register</h1>
+
+<%= form_for @writer do |f| %>
+  <% if @writer.errors.any? %>
+    <% @writer.errors.full_messages.each do |error_msg| %>
+      <p><%= error_msg %></p>
+    <% end %>
+  <% end %>
+
+  <p>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </p>
+  
+  <p>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </p>
+  
+  <p>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </p>
+  
+  <%= f.submit %>
+<% end %>

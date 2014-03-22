@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   helper PagesHelper
+  before_filter :authorize, :only => [:add_album, :edit_album, :update_album, :found_album, :delete_album]
   def home
     @unfound = Post.where("found = ?", 'f')
     if @unfound != []

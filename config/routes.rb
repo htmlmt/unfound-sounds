@@ -1,17 +1,21 @@
 UnfoundSounds::Application.routes.draw do
-  get "/" => 'pages#home'
+  resources :logins
+  resources :writers
+  
+  get "/" => 'pages#home', :as => :home
+  get "/discover" => 'pages#discover'
+  get "/donate" => 'pages#donate'
   get "/found" => 'pages#found'
   get "/city/:city" => 'pages#city_unfound'
   get "/found/:city" => 'pages#city_found'
-  get "/discover" => 'pages#discover'
-  get "/donate" => 'pages#donate'
-  get "/album/:url" => 'pages#album'
-  get "/album/:url/edit" => 'pages#edit'
-  get "/add" => 'pages#add'
-  post "/album" => 'pages#save_album'
-  post "/album/:url/edit" => 'pages#edit_album'
-  post "/album/:url/found" => 'pages#found_album'
-  post "/album/:url/delete" => 'pages#delete'
+
+  get "/album/:url" => 'pages#album', :as => :view_album
+  get "/album/:url/edit" => 'pages#edit', :as => :edit_album
+  get "/add" => 'pages#add', :as => :add_album
+  post "/album" => 'pages#save_album', :as => :save_album
+  post "/album/:url/edit" => 'pages#edit_album', :as => :update_album
+  post "/album/:url/found" => 'pages#found_album', :as => :found_album
+  post "/album/:url/delete" => 'pages#delete', :as => :delete_album
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
