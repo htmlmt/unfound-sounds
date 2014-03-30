@@ -22,6 +22,10 @@ end
 
 gem 'jquery-rails'
 
+gem 'pry'
+
+gem 'redcarpet'
+
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # To use ActiveModel has_secure_password

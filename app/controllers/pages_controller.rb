@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   helper PagesHelper
-  before_filter :authorize, :only => [:add_album, :edit_album, :update_album, :found_album, :delete_album]
+  # before_filter :authorize, :only => [:add_album, :edit_album, :update_album, :found_album, :delete_album]
   def home
     @unfound = Post.where("found = ?", 'f')
     if @unfound != []
@@ -119,7 +119,7 @@ class PagesController < ApplicationController
       :pinpoint_map => pinpoint_map
       })
     
-    redirect to("/album/#{params[:url]}")
+    redirect_to("/album/#{params[:url]}")
   end
   
   def found_album

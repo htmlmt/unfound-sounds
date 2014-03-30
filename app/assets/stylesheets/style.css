@@ -16,7 +16,7 @@ img.main_nav {
 }
 
 div.read {
-	width: 700px;
+	width: 610px;
 }
 
 h1 {
@@ -62,7 +62,6 @@ h4 {
 	font-family: "adobe-caslon-pro";
 	font-size: 20px;
 	color: #813510;
-	text-align: center;
 }
 
 h4 a:link {
@@ -252,6 +251,7 @@ footer {
 	color: #F0F0F0;
 	font-family: "proxima-nova";
 	margin-top: 20px;
+  bottom: 0;
 }
 
 footer a:link {
@@ -304,6 +304,10 @@ p {
 	clear: both;
 }
 
+body {
+  margin: 0;
+}
+
 #city_banner:hover {
 	opacity: 0.9;
 }
@@ -313,7 +317,6 @@ p {
 	font-size: 30px;
 	text-align: center;
 	background-color: #813510;
-	width: 345px;
 	margin: 15px auto 15px;
 	color: #F0F0F0;
 	font-weight: 100;
