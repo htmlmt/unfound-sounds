@@ -138,8 +138,9 @@ form {
 #home_album {
   display: inline-block;
   position: relative;
-  top: -46px;
+  margin-top: -15px;
   margin-left: 4px;
+  z-index: 0;
 }
 
 #home_album:hover div.banner {
@@ -341,7 +342,7 @@ p {
   text-shadow: 5px 5px 8px rgba(0,0,0,0.1);
   height: 10px;
   position: relative;
-  bottom: 3px;
+  bottom: -54px;
 }
 
 body {
