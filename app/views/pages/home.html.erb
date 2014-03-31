@@ -1,10 +1,5 @@
-<h1>WEEK 1: MARCH 31-APRIL 6</h1>
 <% @albums.each do |album| %>
-	<div id="home_album"><a href="/album/<%= album.url %>"><div id="banner"><%= album.place_title %></div>
+	<div id="home_album"><a href="/album/<%= album.url %>"><div id="banner"><br><br><br><em><%= album.place_title %></em></div>
 	<img class="homepage" src="<%= album.album_cover %>"></a></div>
 <% end %>
-<% unless @found == [] %>
-<a href="/found"><div id="found_banner">SEE FOUND SOUNDS</div></a>
-<% else %>
-<a href="/discover"><div id="found_banner">WHAT IS THIS?</div></a>
-<% end %>
+<div id="week"><h4>WEEK 1: APRIL 7-13</h4></div>

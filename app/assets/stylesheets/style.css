@@ -136,15 +136,14 @@ form {
 }
 
 #home_album {
-	display: inline-block;
+  display: inline-block;
+  position: relative;
+  top: -46px;
+  margin-left: 2px;
 }
 
 #home_album:hover div.banner {
 	background-color: #813510;
-}
-
-#home_album:hover img {
-	opacity: 0.9;
 }
 
 #place {
@@ -246,12 +245,13 @@ header {
 }
 
 footer {
-	clear: both;
-	background-color: #3C3C3C;
-	color: #F0F0F0;
-	font-family: "proxima-nova";
-	margin-top: 20px;
+  clear: both;
+  background-color: #3C3C3C;
+  color: #F0F0F0;
+  font-family: "proxima-nova";
   bottom: 0;
+  position: relative;
+  height: 60px;
 }
 
 footer a:link {
@@ -283,13 +283,30 @@ p {
 }
 
 #banner {
-	font-family: "bebas-neue";
-	font-size: 25px;
-	padding: 5px;
-	text-align: center;
-	background-color: #3C3C3C;
-	color: #F0F0F0;
-	font-weight: 100;
+  font-family: "adobe-caslon-pro";
+  font-size: 22px;
+  padding: 5px;
+  text-align: center;
+  background-image: url("https://s3.amazonaws.com/UnfoundSounds/images/vinyl-turquoise-350.png");
+  color: #F0F0F0;
+  background-position-x: -10px;
+  background-position-y: -25px;
+  font-weight: 100;
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  position: relative;
+  top: 100px;
+  height: 165px;
+  transition: .65s;
+}
+
+#home_album:hover #banner {
+  top: 20px;
+  transition: .65s;
 }
 
 #city_banner {
@@ -304,8 +321,29 @@ p {
 	clear: both;
 }
 
+#week {
+  position: absolute;
+  bottom: 0;
+  top: 91%;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+#week h4 {
+  font-family: "clavo";
+  text-align: center;
+  font-size: 19px;
+  color: #444444;
+  padding: 8px 0px 16px 0px;
+  border-radius: 15px;
+  text-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  height: 10px;
+  position: relative;
+  bottom: 3px;
+}
+
 body {
-  margin: 0;
+  margin-top: 30px;
 }
 
 #city_banner:hover {
@@ -313,18 +351,22 @@ body {
 }
 
 #found_banner {
-	font-family: "bebas-neue";
-	font-size: 30px;
-	text-align: center;
-	background-color: #813510;
-	margin: 15px auto 15px;
-	color: #F0F0F0;
-	font-weight: 100;
-	clear: both;
+  font-family: "proxima-nova";
+  font-size: 20px;
+  text-align: center;
+  background-color: #813510;
+  margin: 15px auto 15px;
+  color: #F0F0F0;
+  font-weight: 100;
+  clear: both;
+  position: relative;
+  top: -70px;
+  width: 337px;
+  border-radius: 5px;
 }
 
 #found_banner:hover {
-	opacity: 0.9;
+	background-color: #813510;
 }
 
 #content {
