@@ -138,13 +138,8 @@ form {
 #home_album {
   display: inline-block;
   position: relative;
-  margin-top: -15px;
-  margin-left: 4px;
-  z-index: 0;
-}
-
-#home_album:hover div.banner {
-	background-color: #813510;
+  margin-top: 65px;
+  margin-right: 5px;
 }
 
 #place {
@@ -173,7 +168,8 @@ a:active {
 
 img.homepage {
 	width: 337px;
-  box-shadow: 5px 5px 8px rgba(0,0,0,0.1)
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
+  border-radius: 2px;
 }
 
 img.ocs {
@@ -282,7 +278,7 @@ p {
 	font-family: "bebas-neue";
 	font-size: 20px;
 	color: #3C3C3C;
-}
+}/*
 
 #banner {
   font-family: "adobe-caslon-pro";
@@ -305,10 +301,11 @@ p {
   height: 165px;
   transition: .65s;
   text-rendering: geometricPrecision;
-}
+}*/
 
-#home_album:hover #banner {
-  top: 20px;
+.vinyl {
+  position: absolute;
+  z-index: -1;
   transition: .65s;
 }
 
@@ -327,7 +324,7 @@ p {
 #week {
   position: absolute;
   bottom: 0;
-  top: 91%;
+  top: 97%;
   margin-bottom: 0px;
   width: 100%;
 }
@@ -343,6 +340,10 @@ p {
   height: 10px;
   position: relative;
   bottom: -40px;
+}
+
+.to_top {
+  z-index: 3;
 }
 
 body {
@@ -372,10 +373,15 @@ body {
 	background-color: #813510;
 }
 
+#home_album:hover {
+  cursor: pointer;
+}
+
 #content {
 	width: 1050px;
 	position: relative;
 	margin: auto;
+  margin-top: 40px;
 }
 
 div.more {

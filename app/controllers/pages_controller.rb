@@ -4,12 +4,12 @@ class PagesController < ApplicationController
   def home
     @unfound = Post.where("found = ?", 'f')
     if @unfound != []
-      @albums = Post.where("found = ?", 'f').order("created_at DESC").limit(9)
+      @albums = Post.where("found = ?", 'f').order("created_at DESC").limit(3)
       @found = Post.where("found = ?", 't')
     else
-      @title = "Found sounds"
+      @title = "#{@week}"
 
-      @albums = Post.where("found = ?", 't').order("created_at DESC").limit(9)
+      @albums = Post.where("found = ?", 't').order("created_at DESC").limit(3)
     end
   end
   
