@@ -72,7 +72,8 @@ h3 a:link {
   margin-left: 37%;
   width: 60%;
   height: 340px;
-  display: inline-block;
+  display: none;
+  z-index: -2;
 }
 
 .albums_left {
@@ -159,6 +160,10 @@ form {
 	display: inline-block;
 }
 
+.album {
+  z-index: 1;
+}
+
 #home_album {
   display: inline-block;
   position: relative;
@@ -182,6 +187,15 @@ a:visited {
 	color: #F0F0F0
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -191,9 +205,8 @@ a:active {
 }
 
 img.homepage {
-	width: 337px;
+	width: 340px;
   box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
-  border-radius: 2px;
 }
 
 img.ocs {

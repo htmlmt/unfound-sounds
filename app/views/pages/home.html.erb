@@ -2,7 +2,7 @@
 <div id="albums" class="clearfix">
   <% @albums.each do |album| %>
   	<div id="home_album" class="album"><%= link_to("/album/#{album.url}", :remote => true) do %>
-      <%= image_tag("#{album.album_cover}", width: '340') %>
+      <%= image_tag("#{album.album_cover}", width: '340', class: "homepage") %>
     <% end %>
     </div>
   <% end %>

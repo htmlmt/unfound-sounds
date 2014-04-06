@@ -12,10 +12,13 @@ $(document).ready(function(){
   });
   
   $("#week").on("click", function(event){
-    $(".album_details").empty();
-    $(".album_details").hide();
     $(".album:nth-child(2)").animate({left: '0px',}, 700 );
     $(".album:nth-child(3)").animate({left: '0px',}, 700 );
+    setTimeout(function(){
+      $(".album_details").empty();}, 700);
+    $( ".album_details" ).fadeOut( "slow" );
+    setTimeout(function(){
+      $(".album_details").remove();}, 700);
   })
   
 });
