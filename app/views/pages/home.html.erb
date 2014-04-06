@@ -1,7 +1,11 @@
-<div id="albums">
-<% @albums.each do |album| %>
-	<div id="home_album" class="album"><a href="/album/<%= album.url %>"><img class="vinyl" src="https://s3.amazonaws.com/UnfoundSounds/images/vinyl-turquoise-350.png">
-	<img class="homepage" src="<%= album.album_cover %>">
-  </a></div>
-<% end %>
-<a href="#"><div id="week"><h4>WEEK 1: APRIL 7-13</h4></div></a>
+<div id="main">
+<div id="albums" class="clearfix">
+  <% @albums.each do |album| %>
+  	<div id="home_album" class="album"><%= link_to("/album/#{album.url}", :remote => true) do %>
+      <%= image_tag("#{album.album_cover}", width: '340') %>
+    <% end %>
+    </div>
+  <% end %>
+</div>
+</div>
+<div id="week" class="clearfix"><a href="#"><h4>WEEK 1: APRIL 7-13</h4></a></div>

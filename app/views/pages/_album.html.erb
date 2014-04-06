@@ -1,0 +1,9 @@
+  <% date = @album.created_at %>
+  <div class="album_details">
+  <h1><%= @album.album_title %></h1>
+  <h4><em>hidden on <%= format_date(date) %>, <%= @album.place_title %></em></h4>
+  <p><div id="album_review"><%= markdown(@album.album_review) %></div></p>
+  <hr>
+  <h4><em>hints as to this record's location at an Omaha business</em></h4>
+  </div>
+  </div>

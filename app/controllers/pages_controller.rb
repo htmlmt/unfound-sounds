@@ -46,6 +46,11 @@ class PagesController < ApplicationController
     @album = Post.find_by_url(params[:url])
     @title = "#{@album.album_title}"
     @album_city = Post.where("found = ?", 'f').where("city = ?", @album.city).where("id != ?", @album.id)
+    
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
   
   def edit

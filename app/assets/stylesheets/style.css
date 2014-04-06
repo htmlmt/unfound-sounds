@@ -1,3 +1,12 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 p a:link {
 	color: #A0A0A0;
 }
@@ -21,7 +30,7 @@ div.read {
 
 h1 {
 	font-family: "bebas-neue";
-	font-size: 50px;
+	font-size: 40px;
 	color: #A0A0A0;
 	display: block;
 	-webkit-margin-before: 0px;
@@ -58,10 +67,25 @@ h3 a:link {
 	color: #813510;
 }
 
+.album_details {
+  float: left;
+  margin-left: 37%;
+  width: 60%;
+  height: 340px;
+  display: inline-block;
+}
+
+.albums_left {
+  float: left;
+  height: 0px;
+}
+
 h4 {
 	font-family: "adobe-caslon-pro";
 	font-size: 20px;
-	color: #813510;
+  margin-top: 10px;
+	color: #A0A0A0;
+  margin-bottom: -7px;
 }
 
 h4 a:link {
@@ -138,8 +162,8 @@ form {
 #home_album {
   display: inline-block;
   position: relative;
-  margin-top: 65px;
-  margin-right: 5px;
+  margin-right: 9px;
+  float: left;
 }
 
 #place {
@@ -321,10 +345,12 @@ p {
 	clear: both;
 }
 
+#main {
+  padding-top: 65px;
+  height: 345px;
+}
+
 #week {
-  position: absolute;
-  bottom: 0;
-  top: 97%;
   margin-bottom: 0px;
   width: 100%;
 }
