@@ -46,6 +46,10 @@ module UnfoundSounds
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types
     # config.active_record.schema_format = :sql
+    
+    config.assets.initialize_on_precompile = false
+    
+    config.assets.precompile += ['active_admin.css.scss', 'active_admin.js'] 
 
     # Enforce whitelist mode for mass assignment.
     # This will create an empty whitelist of attributes available for mass-assignment for all models
@@ -55,10 +59,6 @@ module UnfoundSounds
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    
-    config.assets.initialize_on_precompile = false
-    
-    config.assets.precompile += %w( active_admin.css active_admin/print.css active_admin.js )
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
