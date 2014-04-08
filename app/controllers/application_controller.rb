@@ -34,8 +34,8 @@ class ApplicationController < ActionController::Base
   private
   
   def current_user
-    if session[:user_id]
-      @current_user ||= User.find(session[:user_id])
+    if session[:writer_id]
+      @current_user ||= Writer.find(session[:writer_id])
     end
   end
   helper_method :current_user

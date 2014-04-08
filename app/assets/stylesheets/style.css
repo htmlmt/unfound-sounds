@@ -77,6 +77,15 @@ h3 {
   display: inline-block;
 }
 
+#x {
+  font-size: 33px;
+  position: absolute;
+  top: 0px;
+  right: 14px;
+  color: #3C3C3C;
+  cursor: pointer;
+}
+
 #overlay {
   z-index: 4;
   position: relative;
@@ -395,7 +404,6 @@ p {
 
 #week {
   margin-bottom: 0px;
-  width: 100%;
 }
 
 #week h4 {
@@ -409,6 +417,9 @@ p {
   height: 10px;
   position: relative;
   bottom: -40px;
+  width: 265px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .to_top {

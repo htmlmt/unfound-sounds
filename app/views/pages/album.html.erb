@@ -1,36 +1,16 @@
+<div id="main">
+  <div id="albums" class="clearfix albums_left">
 <div id="home_album" class="one_album">
 	<img class="homepage" src="<%= @album.album_cover %>"></div>
-  <div id="week"><h4>WEEK 1: APRIL 7-13</h4></div>
-<!-- <% date = @album.created_at %>
-<article>
-<% if @album.found %>
-<div id="date"><%= @album.album_title %> was hidden on <%= format_date(date) %>, <%= @album.hidden_place %> by Michael Todd.</div>
-  <div id="date_red"><strong>This album has been found.</strong></div></p>
-<% else %>
-<div id="date"><%= @album.album_title %> was hidden on <%= format_date(date) %>,<br> <%= @album.place_title %> by Michael Todd.</div>
-  <div id="date_red"><strong>Find it first, and it's yours.</strong></div></p>
-<% end %>
-<div id="album">
-  <div id="rdio"><iframe width="500" height="500" src="<%= @album.rdio %>" frameborder="0"></iframe></div>
-    <h4><em>A review of <%= @album.album_title %>:</em></h4>
-      <p><div id="album_review"><%= markdown(@album.album_review) %></div></p>
+  </div>
+  <% date = @album.created_at %>
+  <div class="album_details" style="display: block;">
+  <h1><%= @album.album_title %></h1>
+  <h4><em>hidden on <%= format_date(date) %>, <%= @album.place_title %></em></h4>
+  <p><div id="album_review"><%= markdown(@album.album_review) %></div></p>
+  <hr>
+  <h4><em>hints as to this record's location at an Omaha business</em></h4>
+  </div>
 </div>
-<div id="place">
-<% if @album.found %>
-<iframe src="<%= @album.pinpoint_map %>" width="500" height="500" frameborder="0" style="border:0"></iframe>
-<h4><em>This album was hidden <%= @album.hidden_place %> in <%= @album.city.capitalize.gsub("-"," ") %>:</em></h4>
-  <p><%= markdown(@album.pinpoint_description) %></p>
-</div>
-<% else %>
-<iframe src="<%= @album.map %>" width="500" height="500" frameborder="0" style="border:0"></iframe>
-<h4><em>A hint about where to look:</em></h4>
-  <p><%= markdown(@album.place_description) %></p>
-</div>
-<% end %>
-</article>
-<div class="more"> -->
-<!-- <% if @album_city != [] %>
-<a href="/city/<%= @album.city %>"><div id="city_banner"><%= @album.city.gsub("-", " ") %>'s Unfound Sounds</div></a></div>
-<% else %>
-<a href="/found/<%= @album.city.downcase %>"><div id="city_banner"><%= @album.city.gsub('-', ' ') %>'s Found Sounds</a></div>
-<% end %> -->
+  <div id="week" class="clearfix"><a href="/"><h4>WEEK 1: APRIL 7-13</h4></div></a>
+  </div>

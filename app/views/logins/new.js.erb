@@ -1,3 +1,10 @@
+$("#overlay").remove();
 $(".content").append("<%= j render 'new' %>");
 $("#main").css("opacity", "0.3");
 $("#week").css("opacity", "0.3");
+
+$("#x").on("click", function(){
+  $("#main").css("opacity", "1.0");
+  $("#week").css("opacity", "1.0");
+  $("#overlay").remove();
+})

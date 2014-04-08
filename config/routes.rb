@@ -9,6 +9,7 @@ UnfoundSounds::Application.routes.draw do
   get "/found" => 'pages#found'
   get "/city/:city" => 'pages#city_unfound'
   get "/found/:city" => 'pages#city_found'
+  get "/logout" => 'pages#logout', :as => :logout
 
   get "/album/:url" => 'pages#album', :as => :view_album
   get "/album/:url/edit" => 'pages#edit', :as => :edit_album

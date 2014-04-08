@@ -1,4 +1,4 @@
-$(".album_details").empty();
+$(".album_details").remove();
 $("#albums").after("<%= j render 'album' %>");
 $(".album_details").fadeIn("slow");
 pageurl = $(".to_top").children().attr('href');
