@@ -182,7 +182,6 @@ DEPENDENCIES
   pry
   rails (= 3.2.17)
   redcarpet
-  sass (= 3.2.13)
   sass-rails
   uglifier (>= 1.0.3)
   unicorn
