@@ -1,2 +1,9 @@
+$(".album_details").empty();
 $("#albums").after("<%= j render 'album' %>");
 $(".album_details").fadeIn("slow");
+pageurl = $(".to_top").children().attr('href');
+if(pageurl!=window.location){
+    window.history.pushState({path:pageurl},'',pageurl);
+}
+
+return false;

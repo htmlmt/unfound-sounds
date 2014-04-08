@@ -40,6 +40,18 @@ h1 {
 	font-weight: bold;
 }
 
+h2 {
+	font-family: "bebas-neue";
+	font-size: 30px;
+	color: #3C3C3C;
+	display: block;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 15px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+
 h2 a:visited {
 	font-family: "bebas-neue";
 	font-size: 50px;
@@ -59,6 +71,23 @@ h3 {
 	font-family: "bebas-neue";
 	font-size: 40px;
 	color: #813510;
+}
+
+#login {
+  display: inline-block;
+}
+
+#overlay {
+  z-index: 4;
+  position: relative;
+  bottom: 297px;
+  right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 279px;
+  background: #fff;
+  padding: 22px 78px 22px;
+  text-align: center;
 }
 
 h3 a:link {
@@ -219,7 +248,7 @@ img.ocs:hover {
 	opacity: 0.9;
 }
 
-#nav {
+.nav {
 	font-family: "adobe-caslon-pro";
 	font-size: 40px;
 	color: #F0F0F0;
@@ -228,15 +257,15 @@ img.ocs:hover {
 	margin-left: 10px;
 }
 
-#nav a:link {
+.nav a:link {
 	color: #3C3C3C;
 }
 
-#nav a:visited {
+.nav a:visited {
 	color: #3C3C3C;
 }
 
-#nav a:hover {
+.nav a:hover {
 	color: #813510;
 }
 
@@ -250,6 +279,7 @@ header {
 	font-weight: 100;
 	display: inline-block;
 	padding-right: 10px;
+  color: #813510;
 }
 
 #blog_title a:link {
@@ -412,14 +442,43 @@ body {
 	background-color: #813510;
 }
 
+input[type="text"] {
+  border-radius: 5px;
+  padding: 0px 8px;
+  font-family: "proxima-nova";
+  font-size: 15px;
+}
+
+input[type="password"] {
+  border-radius: 5px;
+  padding: 0px 8px;
+  font-family: "proxima-nova";
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  background: #3C3C3C;
+  color: #fff;
+  font-family: "proxima-nova";
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+}
+
 #home_album:hover {
   cursor: pointer;
 }
 
-#content {
-	width: 1050px;
-	position: relative;
-	margin: auto;
+.content {
+  width: 1050px;
+  height: 620px;
+  position: relative;
+  margin: auto;
   margin-top: 40px;
 }
 

@@ -12,13 +12,38 @@
   <link rel="icon" type="image/png" href="https://s3.amazonaws.com/UnfoundSounds/images/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="https://s3.amazonaws.com/UnfoundSounds/images/favicon-32x32.png" sizes="32x32">
 </head>
-<div id="content">
-<header>
-	<div id="main_nav"><a href="/"><img class="main_nav" src="https://s3.amazonaws.com/UnfoundSounds/images/unfound-sounds-logo.png" width="80"><div id="blog_title">Unfound Sounds</a></div>
-	<a href="/donate"><em><div id="nav">donate</a> &amp; <a href="/discover">discover</div></em></a></div>
+<div class="content">
+  <header>
+    <div id="main_nav">
+      <a href="/">
+        <img class="main_nav" src="https://s3.amazonaws.com/UnfoundSounds/images/unfound-sounds-logo.png" width="80">
+        <div id="blog_title">Unfound Sounds</div>
+      </a>
+    <div class="nav">
+      <a href="/donate">
+        <em>donate</em>
+      </a> 
+        <em>/</em> 
+      <a href="/discover">
+        <em>discover</em>
+      </a>
+      <div id="login"><em>/</em>
+        <em>
+        <%= link_to("/logins/new", :remote => true) do %>
+        log in
+        <% end %>
+        </em>
+      </a></div>
+    </div>
+    </div>
 </header>
 <body>
 <%= yield %>
+  <div id="register">
+    <a href="">
+      <em></em>
+    </a>
+  </div>
 </body>
 </div>
 </html>

@@ -1,11 +1,14 @@
+<% if current_user %>
+<p>I'm logged in!</p>
+<% end %>
 <div id="main">
 <div id="albums" class="clearfix">
   <% @albums.each do |album| %>
-  	<div id="home_album" class="album"><%= link_to("/album/#{album.url}", :remote => true) do %>
+  	<div id="home_album" class="album"><%= link_to("/album/#{album.url}", :remote => true, :rel => 'album') do %>
       <%= image_tag("#{album.album_cover}", width: '340', class: "homepage") %>
     <% end %>
     </div>
   <% end %>
 </div>
 </div>
-<div id="week" class="clearfix"><a href="#"><h4>WEEK 1: APRIL 7-13</h4></a></div>
+<div id="week" class="clearfix"><a href="/"><h4>WEEK 1: APRIL 7-13</h4></a></div>
