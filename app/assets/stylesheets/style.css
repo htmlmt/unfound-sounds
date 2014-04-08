@@ -26,12 +26,13 @@ img.main_nav {
 
 div.read {
 	width: 610px;
+  padding-top: 59px;
 }
 
 h1 {
 	font-family: "bebas-neue";
 	font-size: 40px;
-	color: #A0A0A0;
+	color: #578280;
 	display: block;
 	-webkit-margin-before: 0px;
 	-webkit-margin-after: 0px;
@@ -89,14 +90,16 @@ h3 {
 #overlay {
   z-index: 4;
   position: relative;
-  bottom: 297px;
+  bottom: 50%;
   right: 5px;
   margin-left: auto;
   margin-right: auto;
   width: 279px;
   background: #fff;
-  padding: 22px 78px 22px;
+  padding: 22px 22px 22px;
   text-align: center;
+  border: 1px solid;
+  border-radius: 6px;
 }
 
 h3 a:link {
@@ -121,10 +124,11 @@ h3 a:link {
 
 h4 {
 	font-family: "adobe-caslon-pro";
-	font-size: 20px;
+	font-size: 23px;
   margin-top: 10px;
 	color: #A0A0A0;
   margin-bottom: -7px;
+  font-weight: 100;
 }
 
 h4 a:link {
@@ -257,9 +261,13 @@ img.ocs:hover {
 	opacity: 0.9;
 }
 
+#logout {
+  display: inline-block;
+}
+
 .nav {
 	font-family: "adobe-caslon-pro";
-	font-size: 40px;
+	font-size: 36px;
 	color: #F0F0F0;
 	display: inline-block;
 	font-weight: 100;
@@ -402,8 +410,26 @@ p {
   height: 345px;
 }
 
+#week_html {
+  margin-top: 40px;
+}
+
+#week_html h4 {
+  font-family: "clavo";
+  text-align: center;
+  font-size: 19px;
+  color: #444444;
+  padding: 5px 0px 0px 0px;
+  border-radius: 15px;
+  text-shadow: 5px 5px 8px rgba(0,0,0,0.1);
+  height: 10px;
+  width: 265px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #week {
-  margin-bottom: 0px;
+  margin-top: 40px;
 }
 
 #week h4 {
@@ -415,8 +441,6 @@ p {
   border-radius: 15px;
   text-shadow: 5px 5px 8px rgba(0,0,0,0.1);
   height: 10px;
-  position: relative;
-  bottom: -40px;
   width: 265px;
   margin-left: auto;
   margin-right: auto;
@@ -455,14 +479,14 @@ body {
 
 input[type="text"] {
   border-radius: 5px;
-  padding: 0px 8px;
+  padding: 0px 25px;
   font-family: "proxima-nova";
   font-size: 15px;
 }
 
 input[type="password"] {
   border-radius: 5px;
-  padding: 0px 8px;
+  padding: 0px 25px;
   font-family: "proxima-nova";
   font-size: 15px;
 }
@@ -476,8 +500,7 @@ input[type="submit"] {
   color: #fff;
   font-family: "proxima-nova";
   font-size: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 138px;
   margin-top: 14px;
 }
 

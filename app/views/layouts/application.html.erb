@@ -32,9 +32,18 @@
         <em>
         <%= link_to("/logins/new", :remote => true) do %>
         log in
-        <% end %>
         </em>
-      </a></div>      
+        </div>
+        <% end %>
+        <% else %>
+        <div id="logout"><em>/</em>
+          <em>
+          <%= link_to(login_path(current_user), :method => :delete, :remote => true) do %>
+          log out
+          </em>
+        </div>
+        <% end %>  
+      
       <% end %>
     </div>
     </div>
@@ -47,15 +56,6 @@
       <em></em>
     </a>
   </div>
-  
-<% else %>
-
-  <div id="logout"><em>/</em>
-    <em>
-    <%= link_to("log out", login_path(current_user), :method => :delete) %>
-    </em>
-  </a></div>
-
 <% end %>
 
 </body>
