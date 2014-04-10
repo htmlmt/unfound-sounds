@@ -158,6 +158,20 @@ p a:hover {
   text-decoration: underline;
 }
 
+#next {
+  position: absolute;
+  right: -70px;
+  bottom: 265px;
+  opacity: 0.9;
+}
+
+#previous {
+  position: absolute;
+  left: -70px;
+  bottom: 265px;
+  opacity: 0.9;
+}
+
 img.main_nav {
 	display: inline-block;
 	margin-right: 15px;
