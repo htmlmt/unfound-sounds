@@ -61,5 +61,23 @@
   </div>
   <div id="week_html" class="clearfix"><a href="/"><h4>see this week's albums</h4></div></a>
   </div>
-  <div id="previous"><img src="https://s3.amazonaws.com/UnfoundSounds/images/previous.png"></div>
-  <div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div>
+  <% if @albums.first != nil %>
+  <%= @albums.first.week %>: 
+  <%= @albums.first.week_name.upcase %>
+  </h4></a></div>
+  <a href="
+  <% unless (@albums.first.found) == false %>
+  /week/<%= (@albums.first.week) + 1 %>
+  <div id="previous"><img src="https://s3.amazonaws.com/UnfoundSounds/images/previous.png"></div></a>
+  <% else %>
+  /week/1">
+  <div id="previous"><img src="https://s3.amazonaws.com/UnfoundSounds/images/previous.png"></div></a>
+  <% end %>
+  <a href="
+  <% if (@albums.first.week) - 1 != 0 %>
+  /week/<%= (@albums.first.week) - 1 %>
+  <% else %>
+  /
+  <% end %>
+  "><div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div></a>
+  <% end %>
