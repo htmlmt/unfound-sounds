@@ -7,8 +7,6 @@ gem 'rails', '3.2.17'
 
 gem 'pg'
 
-gem 'activeadmin'
-
 gem "meta_search",    '>= 1.1.0.pre'
 
 gem 'sass-rails'
