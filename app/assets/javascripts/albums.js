@@ -30,7 +30,7 @@ $(document).ready(function(){
       $(".to_top").fadeTo( "slow", 0.0 );}, 3000);
     $("#albums").addClass("albums_left");
     $(this).addClass("return");
-    $("#week").children().children().text("return to week view")
+    // $("#week").children().children().text("return to week view")
   });
   
   $(window).bind('popstate', function() {
@@ -53,7 +53,6 @@ $(document).ready(function(){
     $( ".album_details" ).fadeOut( "slow" );
     setTimeout(function(){
       $(".album_details").remove();}, 700);
-    $("#week").children().children().text("WEEK 1: APRIL 7-13")
       if(pageurl!=window.location){
           window.history.pushState({path:pageurl},'<%= @title %>',pageurl);
       }

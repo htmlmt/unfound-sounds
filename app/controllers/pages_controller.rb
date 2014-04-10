@@ -13,6 +13,10 @@ class PagesController < ApplicationController
     end
   end
   
+  def week
+    @albums = Post.where("week = ?", params[:id])
+  end
+  
   def found
     @title = "Found sounds"
     
@@ -73,6 +77,7 @@ class PagesController < ApplicationController
     rdio = params[:rdio]
     hidden_place = params[:hidden_place]
     image = params[:image]
+    place_description = params[:place_description]
     monday_title = params[:monday_title]
     tuesday_title = params[:tuesday_title]
     wednesday_title = params[:wednesday_title]
@@ -80,6 +85,8 @@ class PagesController < ApplicationController
     friday_title = params[:friday_title]
     member_title = params[:member_title]
     thumbnail = params[:thumbnail]
+    week = params[:week]
+    week_name = params[:week_name]
     
     album = Post.new({
       :album_title => album_title, 
@@ -89,12 +96,11 @@ class PagesController < ApplicationController
       :place_description => place_description, 
       :pinpoint_description => pinpoint_description, 
       :rdio => rdio, 
-      :city => city, 
       :hidden_place => hidden_place, 
-      :map => map,
-      :pinpoint_map => pinpoint_map, 
       :found => 0, 
-      :url => "#{album_title.gsub(' ', '-').gsub(/[^\w-]/, '').downcase}"
+      :url => "#{album_title.gsub(' ', '-').gsub(/[^\w-]/, '').downcase}",
+      :week => week,
+      :week_name => week_name
       })
     album.save
     
@@ -134,6 +140,8 @@ class PagesController < ApplicationController
     friday_title = params[:friday_title]
     member_title = params[:member_title]
     thumbnail = params[:thumbnail]
+    week = params[:week]
+    week_name = params[:week_name]
     
     album = Post.find_by_url(params[:url])
     hint = Hint.find_by_post_id(album.id)
@@ -148,7 +156,9 @@ class PagesController < ApplicationController
       :rdio => rdio,
       :hidden_place => hidden_place, 
       :map => map, 
-      :pinpoint_map => pinpoint_map
+      :pinpoint_map => pinpoint_map,
+      :week => week,
+      :week_name => week_name
       })
       
     hint.update_attributes({

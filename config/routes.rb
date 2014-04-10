@@ -1,12 +1,6 @@
 UnfoundSounds::Application.routes.draw do
 
-  get "hints/index"
-  get "hints/new"
-  get "hints/edit"
-  get "hints/show"
-  get "hints/create"
-  get "hints/update"
-  get "hints/delete"
+  get "/week/:id" => 'pages#week', :as => :week
 
   resources :logins
   resources :writers
