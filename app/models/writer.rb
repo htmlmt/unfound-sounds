@@ -4,4 +4,7 @@ class Writer < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation
   
   validates :email, :uniqueness => true
+  
+  has_many :posts
+  has_many :hints, :through => :posts
 end

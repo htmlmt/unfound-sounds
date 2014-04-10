@@ -1,5 +1,13 @@
 UnfoundSounds::Application.routes.draw do
 
+  get "hints/index"
+  get "hints/new"
+  get "hints/edit"
+  get "hints/show"
+  get "hints/create"
+  get "hints/update"
+  get "hints/delete"
+
   resources :logins
   resources :writers
   
@@ -18,9 +26,6 @@ UnfoundSounds::Application.routes.draw do
   post "/album/:url/edit" => 'pages#edit_album', :as => :update_album
   post "/album/:url/found" => 'pages#found_album', :as => :found_album
   post "/album/:url/delete" => 'pages#delete', :as => :delete_album
-  
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,6 +1,13 @@
 $(".album_details").remove();
 $("#albums").after("<%= j render 'album' %>");
 $(".album_details").fadeIn("slow");
+
+setTimeout(function(){
+$("#main").prepend("<div id='rdio' class='tip_top'><iframe width='340' height='340' src='<%= @album.rdio %>' frameborder='0'></iframe></div>");}, 700);
+
+setTimeout(function(){
+  $("#rdio").addClass("tippy_top");}, 3200);
+
 pageurl = $(".to_top").children().attr('href');
 if(pageurl!=window.location){
     window.history.pushState({path:pageurl},'',pageurl);

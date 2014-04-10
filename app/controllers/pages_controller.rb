@@ -44,6 +44,7 @@ class PagesController < ApplicationController
   
   def album
     @album = Post.find_by_url(params[:url])
+    @hint = Hint.find_by_post_id(@album.id)
     @title = "#{@album.album_title}"
     @album_city = Post.where("found = ?", 'f').where("city = ?", @album.city).where("id != ?", @album.id)
     
@@ -56,6 +57,7 @@ class PagesController < ApplicationController
   def edit
     @album = Post.find_by_url(params[:url])
     @title = "Edit #{@album.album_title}"
+    @hint = Hint.find_by_post_id(@album.id)
   end
   
   def add
@@ -67,13 +69,17 @@ class PagesController < ApplicationController
     album_cover = params[:album_cover]
     album_review = params[:album_review]
     place_title = params[:place_title]
-    place_description = params[:place_description]
     pinpoint_description = params[:pinpoint_description]
     rdio = params[:rdio]
-    city = params[:city]
     hidden_place = params[:hidden_place]
-    map = params[:map]
-    pinpoint_map = params[:pinpoint_map]
+    image = params[:image]
+    monday_title = params[:monday_title]
+    tuesday_title = params[:tuesday_title]
+    wednesday_title = params[:wednesday_title]
+    thursday_title = params[:thursday_title]
+    friday_title = params[:friday_title]
+    member_title = params[:member_title]
+    thumbnail = params[:thumbnail]
     
     album = Post.new({
       :album_title => album_title, 
@@ -85,12 +91,25 @@ class PagesController < ApplicationController
       :rdio => rdio, 
       :city => city, 
       :hidden_place => hidden_place, 
-      :map => map, 
+      :map => map,
       :pinpoint_map => pinpoint_map, 
       :found => 0, 
       :url => "#{album_title.gsub(' ', '-').gsub(/[^\w-]/, '').downcase}"
       })
     album.save
+    
+    hint = Hint.new({
+      :post_id => album.id,
+      :image => image,
+      :monday_title => monday_title,
+      :tuesday_title => tuesday_title,
+      :wednesday_title => wednesday_title,
+      :thursday_title => thursday_title,
+      :friday_title => friday_title,
+      :member_title => member_title,
+      :thumbnail => thumbnail
+    })
+    hint.save
     
     redirect_to "/"
   end
@@ -107,9 +126,18 @@ class PagesController < ApplicationController
     hidden_place = params[:hidden_place]
     map = params[:map]
     pinpoint_map = params[:pinpoint_map]
+    image = params[:image]
+    monday_title = params[:monday_title]
+    tuesday_title = params[:tuesday_title]
+    wednesday_title = params[:wednesday_title]
+    thursday_title = params[:thursday_title]
+    friday_title = params[:friday_title]
+    member_title = params[:member_title]
+    thumbnail = params[:thumbnail]
     
     album = Post.find_by_url(params[:url])
-  
+    hint = Hint.find_by_post_id(album.id)
+    
     album.update_attributes({
       :album_title => album_title, 
       :album_cover => album_cover, 
@@ -117,12 +145,23 @@ class PagesController < ApplicationController
       :place_title => place_title, 
       :place_description => place_description, 
       :pinpoint_description => pinpoint_description, 
-      :rdio => rdio, 
-      :city => city.gsub(' ', '-').gsub(/[^\w-]/, '').downcase, 
+      :rdio => rdio,
       :hidden_place => hidden_place, 
       :map => map, 
       :pinpoint_map => pinpoint_map
       })
+      
+    hint.update_attributes({
+      :post_id => album.id,
+      :image => image,
+      :monday_title => monday_title,
+      :tuesday_title => tuesday_title,
+      :wednesday_title => wednesday_title,
+      :thursday_title => thursday_title,
+      :friday_title => friday_title,
+      :member_title => member_title,
+      :thumbnail => thumbnail
+    })
     
     redirect_to("/album/#{params[:url]}")
   end

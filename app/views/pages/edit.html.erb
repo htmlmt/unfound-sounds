@@ -1,25 +1,38 @@
 <div id="admin_title"><h2>Edit <%= @album.album_title %></h2></div>
 	<form method="post" action="/album/<%= @album.url %>/edit">
-		<p><label for="album_title">Album title </label><input type="text" name="album_title" value="<%= @album.album_title %>" size="70"></p>
-		<p><label for="album_cover">Album cover link: </label><input type="url" name="album_cover" value="<%= @album.album_cover %>" size="70"></p>
-		<p><label for="album_review">Album review: </label><textarea rows="15" cols="70" name="album_review"><%= @album.album_review %></textarea></p>
-		<p><label for="rdio">Rdio embed code: </label><input type="text" name="rdio" size="100" value="<%= @album.rdio %>"</p>
-<div id="admin_title"><h2>Edit its location</h2></div>
-		<p><label for="place_title">Place title: </label><input type="text" name="place_title" value="<%= @album.place_title %>" size="70"></p>
-		<p><label for="place_description">Place description: </label><textarea rows="15" cols="70" name="place_description"><%= @album.place_description %></textarea></p>
-		<p><label for="pinpoint_description">Pinpoint description: </label><textarea rows="15" cols="70" name="pinpoint_description"><%= @album.pinpoint_description %></textarea></p>
-		<p><label for="city">City: </label><input type="text" name="city" value="<%= @album.city %>"></p>
-		<p><label for="hidden_place">Hidden place (tell no one): </label><input type="text" name="hidden_place" value="<%= @album.hidden_place %>"></p>
-		<p><label for="map">Google Maps embed code without pinpoint: </label><input type="text" name="map" size="100" value="<%= @album.map %>" size="70"></p>
-		<p><label for="pinpoint_map">Google Maps embed code with pinpoint: </label><input type="text" name="pinpoint_map" size="100" value="<%= @album.pinpoint_map %>" size="70"></p>
-		<p><input type="submit" value="Submit"></p>
+        <p><label for="album_title">Album title: </label><br /><input type="text" name="album_title" size="67" value="<%= @album.album_title %>"></p>
+    		<p><label for="album_cover">Album cover link: </label><br /><input type="url" name="album_cover" size="67" value="<%= @album.album_cover %>"></p>
+    		<p><label for="album_review">Album review: </label><br /><textarea rows="4" cols="70" name="album_review"><%= @album.album_review %></textarea></p>
+    		<p><label for="album_rdio">Rdio share link: </label><br /><input type="text" name="rdio" size="67" value="<%= @album.rdio %>"></p>
+    
+        <div id="admin_title"><h2>Week info</h2></div>
+        <p><label for="week">Week number: </label><br /><input type="text" name="week" size="67" value="<%= @album.week %>" >
+          <p><label for="week_name">Week name (example: April 7-13): </label><br /><input type="text" name="week_name" size="67" value="<%= @album.week_name %>" >
+    
+        <div id="admin_title"><h2>Hiding place hints</h2></div>
+        <p><label for="monday_title">Monday hint title: </label><br /><input type="text" name="monday_title" size="67" value="<%= @hint.monday_title %>" ></p>
+        <p><label for="tuesday_title">Tuesday hint title: </label><br /><input type="text" name="tuesday_title" size="67" value="<%= @hint.tuesday_title %>"></p>
+        <p><label for="wednesday_title">Wednesday hint title: </label><br /><input type="text" name="wednesday_title" size="67" value="<%= @hint.wednesday_title %>"></p>
+        <p><label for="thursday_title">Thursday hint title: </label><br /><input type="text" name="thursday_title" size="67" value="<%= @hint.thursday_title %>"></p>
+        <p><label for="friday_title">Friday hint title: </label><br /><input type="text" name="friday_title" size="67" value="<%= @hint.friday_title %>"></p>
+        <p><label for="member_title">Member's-only hint title: </label><br /><input type="text" name="member_title" size="67" value="<%= @hint.member_title %>"></p>
+        <p><label for="image">Hints sprite image link: </label><br /><input type="text" name="image" size="67" value="<%= @hint.image %>">
+          <p><label for="thumbnail">Hints sprint thumbnail link: </label><br /><input type="text" name="thumbnail" size="67" value="<%= @hint.thumbnail %>">
+    
+    <div id="admin_title"><h2>Describe its location</h2></div>
+    		<p><label for="place_title">Place title: </label><br /><input type="text" name="place_title" size="67" value="<%= @album.place_title %>" ></p>
+    		<p><label for="pinpoint_description">Pinpoint description: </label><br /><textarea rows="4" cols="70" name="pinpoint_description" value="<%= @album.pinpoint_description %>" ></textarea></p>
+    		<p><label for="hidden_place">Hidden place (tell no one): </label><br /><input type="text" name="hidden_place" size="67" value="<%= @album.hidden_place %>" ></p>
+        <p><label for="finder">Finder: </label><br /><input type="text" name="finder" size="67" value="<%= @album.finder %>" ></p>
+        <p><label for="review_link">Review link: </label><br /><input type="text" name="review_link" size="67" value="<%= @album.review_link %>" ></p>
+		<p><input type="submit" id="edit_submit" value="Submit"></p>
 	</form>
 	<hr>
 	<form method="post" action="/album/<%= @album.url %>/found">
-	<input type="text" name="found" placeholder="Type FOUND and submit to mark this album as found." size="46">
-	<input type="submit" value="Submit">
+	<input type="text" name="found" placeholder="Type FOUND and submit to mark this album as found." size="67">
+	<input type="submit" id="edit_submit" value="Submit">
 	<hr>
 	<form method="post" action="/album/<%= @album.url %>/delete">
-	<input type="text" name="delete" placeholder="Type DELETE and submit to delete this album." size="46">
-	<input type="submit" value="Submit">
+	<input type="text" name="delete" placeholder="Type DELETE and submit to delete this album." size="67">
+	<input type="submit" id="edit_submit" value="Submit">
 	</form>
