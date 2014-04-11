@@ -2,15 +2,7 @@ class PagesController < ApplicationController
   helper PagesHelper
   # before_filter :authorize, :only => [:add_album, :edit_album, :update_album, :found_album, :delete_album]
   def home
-    @unfound = Post.where("found = ?", 'f')
-    if @unfound != []
-      @albums = Post.where("found = ?", 'f').order("created_at DESC").limit(3)
-      @found = Post.where("found = ?", 't')
-    else
-      @title = "#{@week}"
-
-      @albums = Post.where("found = ?", 't').order("created_at DESC").limit(3)
-    end
+    @albums = Post.order("created_at DESC").limit(3)
   end
   
   def week
@@ -87,6 +79,15 @@ class PagesController < ApplicationController
     thumbnail = params[:thumbnail]
     week = params[:week]
     week_name = params[:week_name]
+    first_place = params[:first_place]
+    second_place = params[:second_place]
+    third_place = params[:third_place]
+    fourth_place = params[:fourth_place]
+    fifth_place = params[:fifth_place]
+    place_thumbnail = params[:place_thumbnail]
+    place_sprite = params[:place_sprite]
+    finder = params[:finder]
+    facebook = params[:facebook]
     
     album = Post.new({
       :album_title => album_title, 
@@ -113,7 +114,16 @@ class PagesController < ApplicationController
       :thursday_title => thursday_title,
       :friday_title => friday_title,
       :member_title => member_title,
-      :thumbnail => thumbnail
+      :thumbnail => thumbnail,
+      :first_place => first_place,
+      :second_place => second_place,
+      :third_place => third_place,
+      :fourth_place => fourth_place,
+      :fifth_place => fifth_place,
+      :place_thumbnail => place_thumbnail,
+      :place_sprite => place_sprite,
+      :finder => finder,
+      :facebook => facebook
     })
     hint.save
     
@@ -143,6 +153,15 @@ class PagesController < ApplicationController
     thumbnail = params[:thumbnail]
     week = params[:week]
     week_name = params[:week_name]
+    first_place = params[:first_place]
+    second_place = params[:second_place]
+    third_place = params[:third_place]
+    fourth_place = params[:fourth_place]
+    fifth_place = params[:fifth_place]
+    place_thumbnail = params[:place_thumbnail]
+    place_sprite = params[:place_sprite]
+    finder = params[:finder]
+    facebook = params[:facebook]
     
     album = Post.find_by_url(params[:url])
     hint = Hint.find_by_post_id(album.id)
@@ -172,7 +191,16 @@ class PagesController < ApplicationController
       :thursday_title => thursday_title,
       :friday_title => friday_title,
       :member_title => member_title,
-      :thumbnail => thumbnail
+      :thumbnail => thumbnail,
+      :first_place => first_place,
+      :second_place => second_place,
+      :third_place => third_place,
+      :fourth_place => fourth_place,
+      :fifth_place => fifth_place,
+      :place_thumbnail => place_thumbnail,
+      :place_sprite => place_sprite,
+      :finder => finder,
+      :facebook => facebook
     })
     
     redirect_to("/album/#{params[:url]}")
@@ -183,9 +211,20 @@ class PagesController < ApplicationController
     
     if params[:found] == "FOUND"
       album.update_attributes({:found => 't'})
-      redirect to("/")
+      redirect_to("/")
     else
-      redirect to("/album/#{params[:url]}")
+      redirect_to("/album/#{params[:url]}")
+    end
+  end
+  
+  def unfound_album
+    album = Post.find_by_url(params[:url])
+    
+    if params[:unfound] == "UNFOUND"
+      album.update_attributes({:found => 'f'})
+      redirect_to("/")
+    else
+      redirect_to("/album/#{params[:url]}")
     end
   end
   
@@ -194,9 +233,9 @@ class PagesController < ApplicationController
     
     if params[:delete] == "DELETE"
       album.destroy
-      redirect to("/")
+      redirect_to("/")
     else
-      redirect to("/album/#{params[:url]}")
+      redirect_to("/album/#{params[:url]}")
     end
   end
   

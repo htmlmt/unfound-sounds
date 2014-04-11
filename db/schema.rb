@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140409195401) do
+ActiveRecord::Schema.define(:version => 20140411152000) do
 
   create_table "hints", :force => true do |t|
     t.integer  "post_id"
@@ -25,6 +25,15 @@ ActiveRecord::Schema.define(:version => 20140409195401) do
     t.string   "friday_title"
     t.string   "member_title"
     t.string   "thumbnail"
+    t.string   "first_place"
+    t.string   "second_place"
+    t.string   "third_place"
+    t.string   "fourth_place"
+    t.string   "fifth_place"
+    t.string   "place_thumbnail"
+    t.string   "place_sprite"
+    t.string   "finder"
+    t.string   "facebook"
   end
 
   create_table "posts", :force => true do |t|

@@ -9,8 +9,8 @@
 
 #monday_side {
   display: none;
-  width: 270px;
-  padding: 10px 0px 0px 31px;
+  width: 246px;
+  padding: 10px 23px 0px 31px;
   background: #444444;
   height: 329px;
   color: #fff;
@@ -18,13 +18,13 @@
   z-index: 1;
   position: absolute;
   right: 0;
-  top: 1px;
+  top: 0;
 }
 
 #tuesday_side {
   display: none;
-  width: 270px;
-  padding: 10px 0px 0px 31px;
+  width: 246px;
+  padding: 10px 23px 0px 31px;
   background: #444444;
   height: 329px;
   color: #fff;
@@ -32,13 +32,13 @@
   z-index: 1;
   position: absolute;
   right: 0;
-  top: 1px;
+  top: 0;
 }
 
 #wednesday_side {
   display: none;
-  width: 270px;
-  padding: 10px 0px 0px 31px;
+  width: 246px;
+  padding: 10px 23px 0px 31px;
   background: #444444;
   height: 329px;
   color: #fff;
@@ -46,13 +46,13 @@
   z-index: 1;
   position: absolute;
   right: 0;
-  top: 1px;
+  top: 0;
 }
 
 #thursday_side {
   display: none;
-  width: 270px;
-  padding: 10px 0px 0px 31px;
+  width: 246px;
+  padding: 10px 23px 0px 31px;
   background: #444444;
   height: 329px;
   color: #fff;
@@ -60,13 +60,13 @@
   z-index: 1;
   position: absolute;
   right: 0;
-  top: 1px;
+  top: 0;
 }
 
 #friday_side {
   display: none;
-  width: 270px;
-  padding: 10px 0px 0px 31px;
+  width: 246px;
+  padding: 10px 23px 0px 31px;
   background: #444444;
   height: 329px;
   color: #fff;
@@ -74,13 +74,13 @@
   z-index: 1;
   position: absolute;
   right: 0;
-  top: 1px;
+  top: 0;
 }
 
 #member_side {
   display: none;
-  width: 270px;
-  padding: 10px 0px 0px 31px;
+  width: 246px;
+  padding: 10px 23px 0px 31px;
   background: #444444;
   height: 329px;
   color: #fff;
@@ -88,7 +88,7 @@
   z-index: 1;
   position: absolute;
   right: 0;
-  top: 1px;
+  top: 0;
 }
 
 #monday_big {
@@ -160,36 +160,42 @@
   width: 640px;
   position: absolute;
   bottom: 80px;
+  left: 380px;
 }
 
 #tuesdays {
   width: 640px;
   position: absolute;
   bottom: 80px;
+  left: 380px;
 }
 
 #wednesdays {
   width: 640px;
   position: absolute;
   bottom: 80px;
+  left: 380px;
 }
 
 #thursdays {
   width: 640px;
   position: absolute;
   bottom: 80px;
+  left: 380px;
 }
 
 #fridays {
   width: 640px;
   position: absolute;
   bottom: 80px;
+  left: 380px;
 }
 
 #members {
   width: 640px;
   position: absolute;
   bottom: 80px;
+  left: 380px;
 }
 
 #lock {
@@ -381,6 +387,27 @@ p a:hover {
   font-size: 15px;
 }
 
+.hint_day {
+  font-family: "adobe-caslon-pro";
+  font-size: 20px;
+}
+
+#members_only {
+  background: #578280;
+  color: #fff;
+  width: 576px;
+  font-family: proxima-nova;
+  text-align: center;
+  padding: 2px 0px 2px 0px;
+  margin-top: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#members_only:hover {
+  opacity: 0.9;
+}
+
 #register a:hover {
   text-decoration: underline;
 }
@@ -390,6 +417,10 @@ p a:hover {
   right: -70px;
   bottom: 235px;
   opacity: 0.9;
+}
+
+.big_hint p {
+  font-size: 18px;
 }
 
 #previous {
@@ -826,6 +857,11 @@ p {
 	clear: both;
 }
 
+#crossed_out {
+  color: #813510;
+  text-decoration: line-through;
+}
+
 #main {
   padding-top: 65px;
   height: 345px;
@@ -833,6 +869,8 @@ p {
 
 #week_html {
   margin-top: 40px;
+  position: relative;
+  top: 56px;
 }
 
 #week_html h4 {

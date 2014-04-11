@@ -19,6 +19,7 @@ UnfoundSounds::Application.routes.draw do
   post "/album" => 'pages#save_album', :as => :save_album
   post "/album/:url/edit" => 'pages#edit_album', :as => :update_album
   post "/album/:url/found" => 'pages#found_album', :as => :found_album
+  post "/album/:url/unfound" => 'pages#unfound_album', :as => :unfound_album
   post "/album/:url/delete" => 'pages#delete', :as => :delete_album
   
   # The priority is based upon order of creation:

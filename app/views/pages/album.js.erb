@@ -7,6 +7,11 @@ $("#main").prepend("<div class='rdio' class='tip_top'><iframe width='340' height
 
 setTimeout(function(){
   $(".rdio").addClass("tippy_top");}, 3200);
+  
+  $("#members_only").on("click", function(){
+    $("#member_big").show();
+    $("#member_side").show();
+  })
 
   $("#monday_thumbnail").on("click", function(){
     $("#monday_big").show();
