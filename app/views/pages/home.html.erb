@@ -1,5 +1,4 @@
 <div id="main">
-
 <div id="albums" class="clearfix">
   <% @albums.each do |album| %>
   	<div id="home_album" class="album"><%= link_to("/album/#{album.url}", :remote => true, :rel => 'album') do %>

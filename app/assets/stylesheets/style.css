@@ -7,6 +7,16 @@
   clear: both;
 }
 
+#note {
+  text-align: center;
+  font-family: "adobe-caslon-pro";
+  font-size: 23px;
+  color: #A0A0A0;
+  padding-top: 15px;
+  margin-bottom: -51px;
+  font-weight: 100;
+}
+
 #monday_side {
   display: none;
   width: 246px;
