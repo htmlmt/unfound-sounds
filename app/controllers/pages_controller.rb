@@ -14,7 +14,7 @@ class PagesController < ApplicationController
   end
   
   def week
-    @albums = Post.where("week = ?", params[:id])
+    @albums = Post.where("week = ?", params[:id]).limit(3)
   end
   
   def found
