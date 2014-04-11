@@ -388,14 +388,14 @@ p a:hover {
 #next {
   position: absolute;
   right: -70px;
-  bottom: 265px;
+  bottom: 235px;
   opacity: 0.9;
 }
 
 #previous {
   position: absolute;
   left: -70px;
-  bottom: 265px;
+  bottom: 235px;
   opacity: 0.9;
 }
 
@@ -937,7 +937,7 @@ input[type="url"] {
 
 input[type="password"] {
   border-radius: 5px;
-  padding: 0px 25px;
+  padding: 0px 10px;
   font-family: "proxima-nova";
   font-size: 15px;
 }
