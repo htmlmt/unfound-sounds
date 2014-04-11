@@ -1,6 +1,7 @@
 $(document).ready(function(){
   
   $(".album").on("click", function(){
+    $(".album").removeClass("middle");
     $(".album_details").empty();
     $(".album_details").hide();
     $(".album").removeClass("to_top");
@@ -9,6 +10,7 @@ $(document).ready(function(){
     $(".album:nth-child(3)").animate({left: '-698px',}, 700 );
     setTimeout(function(){
       $(".to_top").removeClass("to_top")}, 3400);
+    $(this).addClass("middle");
     $("#albums").addClass("albums_left");
     $(this).addClass("return");
   });

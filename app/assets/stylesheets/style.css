@@ -859,6 +859,10 @@ p {
   float: left;
 }
 
+.middle {
+  z-index: 2;
+}
+
 .to_top {
   z-index: 3;
 }
