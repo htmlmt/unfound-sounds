@@ -24,9 +24,18 @@
   <% end %>
   <a href="
   <% if (@albums.first.week) - 1 != 0 %>
-  /week/<%= (@albums.first.week) - 1 %>
+  /week/<%= (@albums.first.week) - 1 %>" <div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div></a>
   <% else %>
-  /
+  /" <div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div></a>
   <% end %>
-  "><div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div></a>
   <% end %>
+  <% unless current_user %>
+    <div id="register">
+      <em>
+        <%= link_to("/writers/new", :remote => true) do %>
+        become a member &amp; find vinyl first
+        <% end %>
+      </em>
+    </div>
+  <% end %>
+  

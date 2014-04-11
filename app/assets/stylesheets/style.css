@@ -159,37 +159,37 @@
 #mondays {
   width: 640px;
   position: absolute;
-  bottom: 110px;
+  bottom: 80px;
 }
 
 #tuesdays {
   width: 640px;
   position: absolute;
-  bottom: 110px;
+  bottom: 80px;
 }
 
 #wednesdays {
   width: 640px;
   position: absolute;
-  bottom: 110px;
+  bottom: 80px;
 }
 
 #thursdays {
   width: 640px;
   position: absolute;
-  bottom: 110px;
+  bottom: 80px;
 }
 
 #fridays {
   width: 640px;
   position: absolute;
-  bottom: 110px;
+  bottom: 80px;
 }
 
 #members {
   width: 640px;
   position: absolute;
-  bottom: 110px;
+  bottom: 80px;
 }
 
 #lock {
@@ -368,10 +368,12 @@ p a:hover {
 }
 
 #register {
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
   width: 220px;
-  margin-top: 24px;
+  position: relative;
+  bottom: 13px;
 }
 
 #register a {
@@ -478,7 +480,20 @@ h3 {
 #overlay {
   z-index: 4;
   position: absolute;
-  bottom: 29%;
+  bottom: 24%;
+  right: 35%;
+  width: 279px;
+  background: #fff;
+  padding: 22px 22px 22px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+#r_overlay {
+  z-index: 4;
+  position: absolute;
+  bottom: 19%;
   right: 35%;
   width: 279px;
   background: #fff;
@@ -946,7 +961,7 @@ input[type="submit"] {
 
 .content {
   width: 1050px;
-  height: 620px;
+  height: 590px;
   position: relative;
   margin: auto;
   margin-top: 40px;

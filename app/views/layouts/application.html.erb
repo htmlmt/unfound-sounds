@@ -50,16 +50,6 @@
 </header>
 <body>
 <%= yield %>
-<% unless current_user %>
-  <div id="register">
-    <em>
-      <%= link_to("/writers/new", :remote => true) do %>
-      become a member &amp; find vinyl first
-      <% end %>
-    </em>
-  </div>
-<% end %>
-
 </body>
 </div>
 </html>
