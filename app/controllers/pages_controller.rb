@@ -133,6 +133,7 @@ class PagesController < ApplicationController
     map = params[:map]
     pinpoint_map = params[:pinpoint_map]
     image = params[:image]
+    review_link = params[:review_link]
     monday_title = params[:monday_title]
     tuesday_title = params[:tuesday_title]
     wednesday_title = params[:wednesday_title]
@@ -154,6 +155,7 @@ class PagesController < ApplicationController
       :place_description => place_description, 
       :pinpoint_description => pinpoint_description, 
       :rdio => rdio,
+      :review_link => review_link,
       :hidden_place => hidden_place, 
       :map => map, 
       :pinpoint_map => pinpoint_map,

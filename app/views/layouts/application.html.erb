@@ -38,7 +38,7 @@
         <% else %>
         <div id="logout"><em>/</em>
           <em>
-          <%= link_to(login_path(current_user), :method => :delete, :remote => true) do %>
+          <%= link_to(login_path(current_user), :method => :delete) do %>
           log out
           </em>
         </div>
@@ -52,9 +52,11 @@
 <%= yield %>
 <% unless current_user %>
   <div id="register">
-    <a href="">
-      <em></em>
-    </a>
+    <em>
+      <%= link_to("/writers/new", :remote => true) do %>
+      become a member &amp; find vinyl first
+      <% end %>
+    </em>
   </div>
 <% end %>
 

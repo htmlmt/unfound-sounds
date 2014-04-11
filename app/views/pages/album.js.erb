@@ -3,10 +3,44 @@ $("#albums").after("<%= j render 'album' %>");
 $(".album_details").fadeIn("slow");
 
 setTimeout(function(){
-$("#main").prepend("<div id='rdio' class='tip_top'><iframe width='340' height='340' src='<%= @album.rdio %>' frameborder='0'></iframe></div>");}, 700);
+$("#main").prepend("<div class='rdio' class='tip_top'><iframe width='340' height='340' src='<%= @album.rdio %>' frameborder='0'></iframe></div>");}, 700);
 
 setTimeout(function(){
-  $("#rdio").addClass("tippy_top");}, 3200);
+  $(".rdio").addClass("tippy_top");}, 3200);
+
+  $("#monday_thumbnail").on("click", function(){
+    $("#monday_big").show();
+    $("#monday_side").show();
+  })
+  
+  $("#tuesday_thumbnail").on("click", function(){
+    $("#tuesday_big").show();
+    $("#tuesday_side").show();
+  })
+  
+  $("#tuesday_thumbnail").on("click", function(){
+    $("#tuesday_big").show();
+    $("#tuesday_side").show();
+  })
+  
+  $("#wednesday_thumbnail").on("click", function(){
+    $("#wednesday_big").show();
+    $("#wednesday_side").show();
+  })
+  
+  $("#thursday_thumbnail").on("click", function(){
+    $("#thursday_big").show();
+    $("#thursday_side").show();
+  })
+  
+  $("#friday_thumbnail").on("click", function(){
+    $("#friday_big").show();
+    $("#friday_side").show();
+  })
+  
+  $(".x_white").on("click", function(){
+    $(".big_hint").hide();
+  })
 
 pageurl = $(".to_top").children().attr('href');
 if(pageurl!=window.location){

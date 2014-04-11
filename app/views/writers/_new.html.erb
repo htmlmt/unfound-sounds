@@ -1,6 +1,6 @@
 <div id="overlay"><div id="x">&times;</div><h2>BECOME A MEMBER</h2>
 
-<%= form_for @writer, remote: true do |f| %>
+<%= form_for @writer do |f| %>
   <% if @writer.errors.any? %>
     <% @writer.errors.full_messages.each do |error_msg| %>
       <p><%= error_msg %></p>
@@ -8,20 +8,17 @@
   <% end %>
 
   <p>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, placeholder: "email" %>
   </p>
   
   <p>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+    <%= f.password_field :password, placeholder: "password" %>
   </p>
   
   <p>
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
+    <%= f.password_field :password_confirmation, placeholder: "password confirmation" %>
   </p>
   
-  <%= f.submit %>
+  <%= f.submit "SUBMIT" %>
 <% end %>
 </div>

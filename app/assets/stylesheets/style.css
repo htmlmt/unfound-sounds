@@ -7,6 +7,191 @@
   clear: both;
 }
 
+#monday_side {
+  display: none;
+  width: 270px;
+  padding: 10px 0px 0px 31px;
+  background: #444444;
+  height: 329px;
+  color: #fff;
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+#tuesday_side {
+  display: none;
+  width: 270px;
+  padding: 10px 0px 0px 31px;
+  background: #444444;
+  height: 329px;
+  color: #fff;
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+#wednesday_side {
+  display: none;
+  width: 270px;
+  padding: 10px 0px 0px 31px;
+  background: #444444;
+  height: 329px;
+  color: #fff;
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+#thursday_side {
+  display: none;
+  width: 270px;
+  padding: 10px 0px 0px 31px;
+  background: #444444;
+  height: 329px;
+  color: #fff;
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+#friday_side {
+  display: none;
+  width: 270px;
+  padding: 10px 0px 0px 31px;
+  background: #444444;
+  height: 329px;
+  color: #fff;
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+#member_side {
+  display: none;
+  width: 270px;
+  padding: 10px 0px 0px 31px;
+  background: #444444;
+  height: 329px;
+  color: #fff;
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+#monday_big {
+  display: none;
+  width: 640px;
+  height: 0px;
+  overflow: hidden;
+  padding-top: 340px;
+  float: left;
+  z-index: 0;
+}
+
+#tuesday_big {
+  display: none;
+  width: 640px;
+  height: 0px;
+  overflow: hidden;
+  padding-top: 340px;
+  float: left;
+  z-index: 0;
+  background-position: -340px;
+}
+
+#wednesday_big {
+  display: none;
+  width: 640px;
+  height: 0px;
+  overflow: hidden;
+  padding-top: 340px;
+  float: left;
+  z-index: 0;
+  background-position: -680px;
+}
+
+#thursday_big {
+  display: none;
+  width: 640px;
+  height: 0px;
+  overflow: hidden;
+  padding-top: 340px;
+  float: left;
+  z-index: 0;
+  background-position: -1020px;
+}
+
+#friday_big {
+  display: none;
+  width: 640px;
+  height: 0px;
+  overflow: hidden;
+  padding-top: 340px;
+  float: left;
+  z-index: 0;
+  background-position: -1360px;
+}
+
+#member_big {
+  display: none;
+  width: 640px;
+  height: 0px;
+  overflow: hidden;
+  padding-top: 340px;
+  float: left;
+  z-index: 0;
+  background-position: -1700px;
+}
+
+#mondays {
+  width: 640px;
+  position: absolute;
+  bottom: 110px;
+}
+
+#tuesdays {
+  width: 640px;
+  position: absolute;
+  bottom: 110px;
+}
+
+#wednesdays {
+  width: 640px;
+  position: absolute;
+  bottom: 110px;
+}
+
+#thursdays {
+  width: 640px;
+  position: absolute;
+  bottom: 110px;
+}
+
+#fridays {
+  width: 640px;
+  position: absolute;
+  bottom: 110px;
+}
+
+#members {
+  width: 640px;
+  position: absolute;
+  bottom: 110px;
+}
+
 #lock {
   background-image: url("https://s3.amazonaws.com/UnfoundSounds/images/Lock.png");
   width: 100px;
@@ -23,6 +208,11 @@
   padding-top: 100px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+#monday_thumbnail:hover {
+  opacity: 0.8;
 }
 
 #tuesday_thumbnail {
@@ -32,8 +222,12 @@
   padding-top: 100px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-position: -218px 0;
   background-position: -100px;
+  cursor: pointer;
+}
+
+#tuesday_thumbnail:hover {
+  opacity: 0.8;
 }
 
 #wednesday_thumbnail {
@@ -44,6 +238,11 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-position: -200px;
+  cursor: pointer;
+}
+
+#wednesday_thumbnail:hover {
+  opacity: 0.8;
 }
 
 #thursday_thumbnail {
@@ -54,6 +253,11 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-position: -300px;
+  cursor: pointer;
+}
+
+#thursday_thumbnail:hover {
+  opacity: 0.8;
 }
 
 #friday_thumbnail {
@@ -64,6 +268,11 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-position: -400px;
+  cursor: pointer;
+}
+
+#friday_thumbnail:hover {
+  opacity: 0.8;
 }
 
 #monday {
@@ -158,6 +367,22 @@ p a:hover {
   text-decoration: underline;
 }
 
+#register {
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  margin-top: 24px;
+}
+
+#register a {
+  color: #813510;
+  font-size: 15px;
+}
+
+#register a:hover {
+  text-decoration: underline;
+}
+
 #next {
   position: absolute;
   right: -70px;
@@ -241,11 +466,20 @@ h3 {
   cursor: pointer;
 }
 
+.x_white {
+  font-size: 33px;
+  position: absolute;
+  top: 0px;
+  right: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
 #overlay {
   z-index: 4;
   position: absolute;
-  bottom: 42%;
-  right: 33%;
+  bottom: 29%;
+  right: 35%;
   width: 279px;
   background: #fff;
   padding: 22px 22px 22px;
@@ -450,6 +684,14 @@ img.ocs:hover {
 	color: #813510;
 }
 
+#week a h4:hover {
+	color: #813510;
+}
+
+#week_html a h4:hover {
+	color: #813510;
+}
+
 header {
 	height: 105px;
 }
@@ -610,7 +852,7 @@ p {
   margin-right: auto;
 }
 
-#rdio {
+.rdio {
   display: inline-block;
   position: absolute;
   margin-right: 9px;

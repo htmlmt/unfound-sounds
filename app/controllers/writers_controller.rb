@@ -1,4 +1,7 @@
 class WritersController < ApplicationController
+  def index
+  end
+  
   def new
     @writer = Writer.new
     
@@ -10,20 +13,24 @@ class WritersController < ApplicationController
   
   def create
     @writer = Writer.new(params[:writer])
-    
-    format.html
-      if @writer.save
-        session[:writer_id] = @writer.id
-        redirect_to :home
-      else
-        render "new"
-      end
-      redirect_to :root
-    format.js
-      if @writer.save
-        session[:writer_id] = @writer.id
-      else
-        alert("Sorry, try again.")
-      end
+  
+    if @writer.save
+      session[:writer_id] = @writer.id
+      redirect_to :home
+    else
+      render "new"
+    end
+  end
+  
+  def show
+  end
+  
+  def edit
+  end
+  
+  def update
+  end
+  
+  def destroy
   end
 end

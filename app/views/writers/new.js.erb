@@ -1,0 +1,16 @@
+$("#overlay").remove();
+$(".content").append("<%= j render 'new' %>");
+$("#main").fadeTo( "slow", 0.3 );
+$("#sidebar_image").fadeTo( "slow", 0.3 );
+$("#week").children().children().fadeTo( "slow", 0.3 );
+$("#week_html").children().children().fadeTo( "slow", 0.3 );
+$(".read").fadeTo( "slow", 0.3 );
+
+$("#x").on("click", function(){
+  $("#main").fadeTo( "slow", 1.0 );
+  $("#sidebar_image").fadeTo( "slow", 1.0 );
+  $("#week").children().children().fadeTo( "slow", 1.0 );
+  $("#week_html").children().children().fadeTo( "slow", 1.0 );
+  $(".read").fadeTo( "slow", 1.0 );
+  $("#overlay").remove();
+})
