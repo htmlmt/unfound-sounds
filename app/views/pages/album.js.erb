@@ -46,6 +46,10 @@ setTimeout(function(){
   $(".x_white").on("click", function(){
     $(".big_hint").hide();
   })
+  
+  $("#week").on("click", function(event){
+    $("#week h4").replaceWith("<h4>WEEK <%= @album.week %>: <%= @album.week_name.upcase %></h4>");
+  });
 
 pageurl = $(".to_top").children().attr('href');
 if(pageurl!=window.location){

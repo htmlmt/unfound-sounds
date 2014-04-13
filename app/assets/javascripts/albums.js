@@ -13,6 +13,7 @@ $(document).ready(function(){
     $(this).addClass("middle");
     $("#albums").addClass("albums_left");
     $(this).addClass("return");
+    $("#week h4").replaceWith("<h4>return to week view</h4>");
   });
   
   $("#week").on("click", function(event){

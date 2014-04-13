@@ -1,32 +1,54 @@
 <div id="main">
-
-<div id="albums" class="clearfix">
-  <% @albums.each do |album| %>
-  	<div id="home_album" class="album"><%= link_to("/album/#{album.url}", :remote => true, :rel => 'album') do %>
-      <%= image_tag("#{album.album_cover}", width: '340', class: "homepage") %>
+  <div id="albums" class="clearfix">
+    <% @albums.each do |album| %>
+    	<div id="home_album" class="album"><%= link_to("/album/#{album.url}", :remote => true, :rel => 'album') do %>
+        <%= image_tag("#{album.album_cover}", width: '340', class: "homepage") %>
+      <% end %>
+      </div>
     <% end %>
-    </div>
-  <% end %>
+  </div>
 </div>
-</div>
+
 <div id="week" class="clearfix"><a href="/"><h4>WEEK 
   <% if @albums.first != nil %>
-  <%= @albums.first.week %>: 
-  <%= @albums.first.week_name.upcase %>
+    <%= @albums.first.week %>: 
+    <%= @albums.first.week_name.upcase %>
   </h4></a>
-  <% if (@albums.first.found) == true %>
-  <a href="/week/<%= (@albums.first.week) + 1 %>"
-  <div id="previous"><img src="https://s3.amazonaws.com/UnfoundSounds/images/previous.png"></div></a>
-  <% else %>
-  <a href="/week/1">
-  <div id="previous"><img src="https://s3.amazonaws.com/UnfoundSounds/images/previous.png"></div></a>
+  
+    <% if (@albums.first.found) == true %>
+    
+      <div id="previous"><%= link_to("/week/#{(@albums.first.week) + 1}", :remote => true) do %>
+        <%= image_tag("https://s3.amazonaws.com/UnfoundSounds/images/previous.png")%>
+        </div>
+      <% end %>
+
+    <% else %>
+    
+      <div id="previous"><%= link_to("/week/1", :remote => true) do %>
+        <%= image_tag("https://s3.amazonaws.com/UnfoundSounds/images/previous.png")%>
+        </div>
+      <% end %>
+
+    <% end %>
+  
+    <% if (@albums.first.week) - 1 != 0 %>
+  
+      <div id="next"><%= link_to("/week/#{(@albums.first.week) - 1}", :remote => true) do %>
+        <%= image_tag("https://s3.amazonaws.com/UnfoundSounds/images/next.png")%>
+        </div>
+      <% end %>
+  
+    <% else %>
+  
+      <div id="next"><%= link_to("/", :remote => true) do %>
+        <%= image_tag("https://s3.amazonaws.com/UnfoundSounds/images/next.png")%>
+        </div>
+      <% end %>
+    
+    <% end %>
+  
   <% end %>
-  <% if (@albums.first.week) - 1 != 0 %>
-  <a href="/week/<%= (@albums.first.week) - 1 %>" <div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div></a>
-  <% else %>
-  <a href="/" <div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div></a>
-  <% end %>
-  <% end %>
+  
   <% unless current_user %>
     <div id="register">
       <em>

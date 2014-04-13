@@ -7,27 +7,14 @@ class PagesController < ApplicationController
   
   def week
     @albums = Post.where("week = ?", params[:id]).limit(3)
-  end
-  
-  def found
-    @title = "Found sounds"
+    @week = params[:id]
+    @max = Post.order("created_at DESC").limit(3)
+    @max = @max.first.week
     
-    @albums = Post.where("found = ?", 't').order("created_at DESC").limit(9)
-  end
-  
-  def city_unfound
-    @city = (params[:city]).capitalize.gsub("-", " ")
-    @title = "Unfound sounds in #{@city}"
-    
-    @albums = Post.where("found = ?", 'f').where("city = ?", params[:city]).order("created_at DESC").limit(9)
-    @found = Post.where("found = ?", 't')
-  end
-  
-  def city_found
-    @city = (params[:city]).capitalize.gsub("-", " ")
-    @title = "Found sounds in #{@city}"
-    
-    @albums = Post.where("found = ?", 't').where("city = ?", params[:city]).order("created_at DESC").limit(9)
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
   
   def discover
@@ -238,5 +225,27 @@ class PagesController < ApplicationController
       redirect_to("/album/#{params[:url]}")
     end
   end
+  
+  def found
+    @title = "Found sounds"
+    
+    @albums = Post.where("found = ?", 't').order("created_at DESC").limit(9)
+  end
+  
+  def city_unfound
+    @city = (params[:city]).capitalize.gsub("-", " ")
+    @title = "Unfound sounds in #{@city}"
+    
+    @albums = Post.where("found = ?", 'f').where("city = ?", params[:city]).order("created_at DESC").limit(9)
+    @found = Post.where("found = ?", 't')
+  end
+  
+  def city_found
+    @city = (params[:city]).capitalize.gsub("-", " ")
+    @title = "Found sounds in #{@city}"
+    
+    @albums = Post.where("found = ?", 't').where("city = ?", params[:city]).order("created_at DESC").limit(9)
+  end
+  
   
 end

@@ -384,7 +384,7 @@ p a:hover {
 }
 
 #register {
-  margin-top: 25px;
+  margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
   width: 220px;
@@ -880,7 +880,7 @@ p {
 #week_html {
   margin-top: 40px;
   position: relative;
-  top: 56px;
+  top: 51px;
 }
 
 #week_html h4 {
@@ -899,6 +899,7 @@ p {
 
 #week {
   margin-top: 40px;
+  position: relative;
 }
 
 #week h4 {
