@@ -653,6 +653,10 @@ form {
   z-index: 1;
 }
 
+#note a {
+  color: #813510;
+}
+
 #home_album {
   display: inline-block;
   position: relative;
