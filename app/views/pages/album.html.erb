@@ -4,162 +4,25 @@
 	    <img class="homepage" src="<%= @album.album_cover %>"></div>
       <div class='rdio' class='tip_top'><iframe width='340' height='340' src='<%= @album.rdio %>' frameborder='0'></iframe></div>
     </div>
-  <% date = @album.created_at %>
-  <div class="album_details" style="display: block;">
-    <% if @album.found == false %>
-      <h1><%= @album.album_title %></h1>
-      <h4><em>hidden on <%= format_date(date) %>, <%= @album.place_title %></em></h4>
-        <div id="album_review">
-          <%= markdown(@album.album_review) %>
-        </div>
-        <div id="review_link">
-          <em><a href="<%= @album.review_link %>" target="_blank">read the full review on Hear Nebraska</a></em>
-        </div>
-      <hr>
-      <h4><em>hints as to this record's hiding place at an Omaha business</em></h4>
-    <% else %>
-      <h1><div id="crossed_out"><%= @album.album_title %></div></h1>
-      <h4><em>found at <%= @album.hidden_place %> by <%= @hint.finder %></em></h4>
-        <div id="album_review">
-          <%= markdown(@album.pinpoint_description) %>
-        </div>
-        <div id="review_link">
-          <em><a href="<%= @hint.facebook %>" target="_blank">follow this place on Facebook</a></em>
-        </div>
-      <hr>
-      <h4><em>why you should frequent <%= @album.hidden_place %> </em></h4>
-    <% end %>
-    <div id="days">
+    <div class="album_details" style="display: block;">
       <% if @album.found == false %>
-      <div id="monday">
-        <% if @hint.monday_title != "" %>
-          <%= @hint.monday_title %>
-          <div id="monday_thumbnail" style="background-image:url('<%= @hint.thumbnail %>')"></div>
-        <% else %>
-          MONDAY
-          <div id="lock"></div>
-        <% end %>
-      </div>
-      <div id="tuesday">
-        <% if @hint.tuesday_title != "" %>
-          <%= @hint.tuesday_title %>
-          <div id="tuesday_thumbnail" style="background-image:url('<%= @hint.thumbnail %>')"></div>
-        <% else %>
-          TUESDAY
-          <div id="lock"></div>
-        <% end %>
-      </div>
-      <div id="wednesday">
-        <% if @hint.wednesday_title != "" %>
-          <%= @hint.wednesday_title %>
-          <div id="wednesday_thumbnail" style="background-image:url('<%= @hint.thumbnail %>')"></div>
-        <% else %>
-          WEDNESDAY
-          <div id="lock"></div>
-        <% end %>
-      </div>
-      <div id="thursday">
-        <% if @hint.thursday_title != "" %>
-          <%= @hint.thursday_title %>
-          <div id="thursday_thumbnail" style="background-image:url('<%= @hint.thumbnail %>')"></div>
-        <% else %>
-          THURSDAY
-          <div id="lock"></div>
-        <% end %>
-      </div>
-      <div id="friday">
-        <% if @hint.friday_title != "" %>
-          <%= @hint.friday_title %>
-          <div id="friday_thumbnail" style="background-image:url('<%= @hint.thumbnail %>')"></div>
-        <% else %>
-          FRIDAY
-          <div id="lock"></div>
-        <% end %>
-      </div>
-      <div id="mondays">
-      <div id="monday_big" class="big_hint" style="background-image:url('<%= @hint.image %>')"></div>
-      <div id="monday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.monday_title %></strong></p><div class="hint_day"><em>hint posted on Monday</em></div><p><%= @album.album_title %> was hidden in an Omaha business <%= @album.place_title %>. If you know which one, go there and ask an employee for the final clues. Best of luck.</p></div>
-    </div>
-    <div id="tuesdays">
-      <div id="tuesday_big" class="big_hint" style="background-image:url('<%= @hint.image %>')"></div>
-      <div id="tuesday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.tuesday_title %></strong></p><div class="hint_day"><em>hint posted on Tuesday</em></div><p><%= @album.album_title %> was hidden in an Omaha business <%= @album.place_title %>. If you know which one, go there and ask an employee for the final clues. Best of luck.</p></div>
-    </div>
-    <div id="wednesdays">
-      <div id="wednesday_big" class="big_hint" style="background-image:url('<%= @hint.image %>')"></div>
-      <div id="wednesday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.wednesday_title %></strong></p><div class="hint_day"><em>hint posted on Wednesday</em></div><p><%= @album.album_title %> was hidden in an Omaha business <%= @album.place_title %>. If you know which one, go there and ask an employee for the final clues. Best of luck.</p></div>
-    </div>
-    <div id="thursdays">
-      <div id="thursday_big" class="big_hint" style="background-image:url('<%= @hint.image %>')"></div>
-      <div id="thursday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.thursday_title %></strong></p><div class="hint_day"><em>hint posted on Thursday</em></div><p><%= @album.album_title %> was hidden in an Omaha business <%= @album.place_title %>. If you know which one, go there and ask an employee for the final clues. Best of luck.</p></div>
-    </div>
-    <div id="fridays">
-      <div id="friday_big" class="big_hint" style="background-image:url('<%= @hint.image %>')"></div>
-      <div id="friday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.friday_title %></strong></p><div class="hint_day"><em>hint posted on Friday</em></div><p><%= @album.album_title %> was hidden in an Omaha business <%= @album.place_title %>. If you know which one, go there and ask an employee for the final clues. Best of luck.</p></div>
-    </div>
-    <div id="members">
-      <div id="member_big" class="big_hint" style="background-image:url('<%= @hint.image %>')"></div>
-      <div id="member_side"  class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.member_title %></strong></p><div class="hint_day"><em>hint posted on Sunday</em></div><p><%= @album.album_title %> was hidden in an Omaha business <%= @album.place_title %>. If you know which one, go there and ask an employee for the final clues. Best of luck.</p></div>
-    </div>
-    <% if current_user %>
-    <div id="members_only">▲ SEE MY MEMBERS-ONLY HINT ▲</div>
-    <% end %>
-    <% else %>
-    <div id="monday">
-        <%= @hint.first_place %>
-        <div id="monday_thumbnail" style="background-image:url('<%= @hint.place_thumbnail %>')"></div>
-    </div>
-    <div id="tuesday">
-        <%= @hint.second_place %>
-        <div id="tuesday_thumbnail" style="background-image:url('<%= @hint.place_thumbnail %>')"></div>
-    </div>
-    <div id="wednesday">
-        <%= @hint.third_place %>
-        <div id="wednesday_thumbnail" style="background-image:url('<%= @hint.place_thumbnail %>')"></div>
-    </div>
-    <div id="thursday">
-        <%= @hint.fourth_place %>
-        <div id="thursday_thumbnail" style="background-image:url('<%= @hint.place_thumbnail %>')"></div>
-    </div>
-    <div id="friday">
-        <%= @hint.fifth_place %>
-        <div id="friday_thumbnail" style="background-image:url('<%= @hint.place_thumbnail %>')"></div>
-    </div>
-      <div id="mondays">
-        <div id="monday_big" class="big_hint" style="background-image:url('<%= @hint.place_sprite %>')"></div>
-        <div id="monday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.first_place %></strong></p><div class="hint_day"><em><%= @hint.first_sub %></em></div><p><%= @hint.first_body %></p></div>
-      </div>
-      <div id="tuesdays">
-        <div id="tuesday_big" class="big_hint" style="background-image:url('<%= @hint.place_sprite %>')"></div>
-        <div id="tuesday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.second_place %></strong></p><div class="hint_day"><em><%= @hint.second_sub %></em></div><p><%= @hint.second_body %></p></div>
-      </div>
-      <div id="wednesdays">
-        <div id="wednesday_big" class="big_hint" style="background-image:url('<%= @hint.place_sprite %>')"></div>
-        <div id="wednesday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.third_place %></strong></p><div class="hint_day"><em><%= @hint.third_sub %></em></div><p><%= @hint.third_body %></p></div>
-      </div>
-      <div id="thursdays">
-        <div id="thursday_big" class="big_hint" style="background-image:url('<%= @hint.place_sprite %>')"></div>
-        <div id="thursday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.fourth_place %></strong></p><div class="hint_day"><em><%= @hint.fourth_sub %></em></div><p><%= @hint.fourth_body %></p></div>
-      </div>
-      <div id="fridays">
-        <div id="friday_big" class="big_hint" style="background-image:url('<%= @hint.place_sprite %>')"></div>
-        <div id="friday_side" class="big_hint"><div class="x_white">&times;</div><p><strong><%= @hint.fifth_place %></strong></p><div class="hint_day"><em><%= @hint.fifth_sub %></em></div><p><%= @hint.fifth_body %></p></div>
-      </div>
-      <% if current_user %>
-        <div id="members">
-          <div id="member_big" class="big_hint" style="background-image:url('<%= @hint.place_sprite %>')"></div>
-          <div id="member_side"  class="big_hint"><div class="x_white">&times;</div><p><strong>free Victor Wooten ticket</strong></p><div class="hint_day"><em><%= @hint.coupon_sub %></em></p><p><%= @hint.coupon_body %></p></div>
-        </div>
-    <div id="members_only">▲ SEE MY MEMBERS-ONLY DEAL ▲</div>
+        <%= unfound_details %>
+      <% else %>
+        <%= found_details %>
       <% end %>
+      <div id="days">
+      <% if @album.found == false %>
+        <%= unfound_hints %>
+      <% else %>
+        <%= found_place %>
+      <% end %>
+      </div>
     </div>
-    <% end %>
   </div>
-  </div>
-</div>
 </div>
   <div id="week_html" class="clearfix">
     <a href="/"><h4>see this week's albums</h4></a>
   </div>
 </div>
-  <div id="previous"><img src="https://s3.amazonaws.com/UnfoundSounds/images/previous.png"></div>
-  <div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div>
+<div id="previous"><img src="https://s3.amazonaws.com/UnfoundSounds/images/previous.png"></div>
+<div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div>

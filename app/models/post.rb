@@ -6,4 +6,5 @@ class Post < ActiveRecord::Base
   
   has_many :hints
   belongs_to :writer
+
 end

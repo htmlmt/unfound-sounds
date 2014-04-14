@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   helper PagesHelper
-  # before_filter :authorize, :only => [:add_album, :edit_album, :update_album, :found_album, :delete_album]
+
   def home
     @albums = Post.order("created_at DESC").limit(3)
   end

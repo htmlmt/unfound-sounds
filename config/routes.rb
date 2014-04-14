@@ -10,8 +10,14 @@ UnfoundSounds::Application.routes.draw do
   get "/add" => 'pages#add', :as => :add_album
   get "/album/:url/edit" => 'pages#edit', :as => :edit_album
   
-  get "/discover" => 'pages#discover'
-  get "/donate" => 'pages#donate'
+  get "/memberships" => 'writers#new', :as => :memberships
+  get "/signup" => 'writers#new', :as => :signup
+  get "/register" => 'writers#new', :as => :register
+  
+  get "/discover" => 'pages#discover', :as => :discover
+  get "/donate" => 'pages#donate', :as => :donate
+  
+  get "/login" => 'logins#new', :as => :login
   
   post "/album" => 'pages#save_album', :as => :save_album
   post "/album/:url/edit" => 'pages#edit_album', :as => :update_album

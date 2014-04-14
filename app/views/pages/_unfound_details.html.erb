@@ -1,0 +1,10 @@
+<h1><%= album.album_title %></h1>
+<h4><em>hidden on <%= format_date(date) %>, <%= album.place_title %></em></h4>
+  <div id="album_review">
+    <%= markdown(album.album_review) %>
+  </div>
+  <div id="review_link">
+    <em><a href="<%= album.review_link %>" target="_blank">read the full review on Hear Nebraska</a></em>
+  </div>
+<hr>
+<h4><em>hints as to this record's hiding place at an Omaha business</em></h4>

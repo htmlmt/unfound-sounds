@@ -1,0 +1,95 @@
+<div id="monday">
+  <%= hint.first_place %>
+  <div id="monday_thumbnail" style="background-image:url('<%= hint.place_thumbnail %>')"></div>
+</div>
+
+<div id="tuesday">
+  <%= hint.second_place %>
+  <div id="tuesday_thumbnail" style="background-image:url('<%= hint.place_thumbnail %>')"></div>
+</div>
+
+<div id="wednesday">
+  <%= hint.third_place %>
+  <div id="wednesday_thumbnail" style="background-image:url('<%= hint.place_thumbnail %>')"></div>
+</div>
+
+<div id="thursday">
+  <%= hint.fourth_place %>
+  <div id="thursday_thumbnail" style="background-image:url('<%= hint.place_thumbnail %>')"></div>
+</div>
+
+<div id="friday">
+  <%= hint.fifth_place %>
+  <div id="friday_thumbnail" style="background-image:url('<%= hint.place_thumbnail %>')"></div>
+</div>
+
+<div id="mondays">
+  <div id="monday_big" class="big_hint" style="background-image:url('<%= hint.place_sprite %>')"></div>
+  <div id="monday_side" class="big_hint">
+    <div class="x_white">&times;</div>
+    <p><strong><%= hint.first_place %></strong></p>
+    <div class="hint_day"><em><%= hint.first_sub %></em></div>
+    <p><%= markdown(hint.first_body) %></p>
+  </div>
+</div>
+
+<div id="tuesdays">
+  <div id="tuesday_big" class="big_hint" style="background-image:url('<%= hint.place_sprite %>')"></div>
+  <div id="tuesday_side" class="big_hint">
+    <div class="x_white">&times;</div>
+    <p><strong><%= hint.second_place %></strong></p>
+    <div class="hint_day"><em><%= hint.second_sub %></em></div>
+    <p><%= markdown(hint.second_body) %></p>
+  </div>
+</div>
+
+<div id="wednesdays">
+  <div id="wednesday_big" class="big_hint" style="background-image:url('<%= hint.place_sprite %>')"></div>
+  <div id="wednesday_side" class="big_hint">
+    <div class="x_white">&times;</div>
+    <p><strong><%= hint.third_place %></strong></p>
+    <div class="hint_day">
+      <em><%= hint.third_sub %></em>
+    </div>
+    <p><%= markdown(hint.third_body) %></p>
+  </div>
+</div>
+
+<div id="thursdays">
+  <div id="thursday_big" class="big_hint" style="background-image:url('<%= hint.place_sprite %>')"></div>
+  <div id="thursday_side" class="big_hint">
+    <div class="x_white">&times;</div>
+    <p><strong><%= hint.fourth_place %></strong></p>
+    <div class="hint_day"><em><%= hint.fourth_sub %></em></div>
+    <p><%= markdown(hint.fourth_body) %></p>
+  </div>
+</div>
+
+<div id="fridays">
+  <div id="friday_big" class="big_hint" style="background-image:url('<%= hint.place_sprite %>')"></div>
+  <div id="friday_side" class="big_hint">
+    <div class="x_white">&times;</div>
+    <p><strong><%= hint.fifth_place %></strong></p>
+    <div class="hint_day">
+      <em><%= hint.fifth_sub %></em>
+    </div>
+    <p><%= markdown(hint.fifth_body) %></p>
+  </div>
+</div>
+
+<% if current_user && hint.coupon_body != "" %>
+
+  <div id="members">
+    <div id="member_big" class="big_hint" style="background-image:url('<%= @hint.place_sprite %>')"></div>
+    <div id="member_side"  class="big_hint">
+      <div class="x_white">&times;</div>
+      <p><strong><%= hint.members_coupon %></strong></p>
+      <div class="hint_day">
+        <em><%= hint.coupon_sub %></em>
+        <p><%= markdown(hint.coupon_body) %></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="members_only">▲ SEE MY MEMBERS-ONLY DEAL ▲</div>
+<% end %>

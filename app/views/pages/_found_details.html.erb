@@ -1,0 +1,10 @@
+<h1><div id="crossed_out"><%= album.album_title %></div></h1>
+<h4><em>found at <%= album.hidden_place %> by <%= hint.finder %></em></h4>
+  <div id="album_review">
+    <%= markdown(album.pinpoint_description) %>
+  </div>
+  <div id="review_link">
+    <em><a href="<%= hint.facebook %>" target="_blank">follow this place on Facebook</a></em>
+  </div>
+  <hr>
+<h4><em>why you should frequent <%= album.hidden_place %> </em></h4>
