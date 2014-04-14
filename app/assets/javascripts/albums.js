@@ -15,9 +15,17 @@ $(document).ready(function(){
     $(this).addClass("middle");
     $("#albums").addClass("albums_left");
     $("#week h4").replaceWith("<h4>return to week view</h4>");
+    $("#next").fadeTo(500, 0.0);
+    $("#previous").fadeTo(500, 0.0);
+    setTimeout(function(){
+    $("#next").hide();}, 500);
+    setTimeout(function(){
+    $("#previous").hide();}, 500);
   });
   
   $("#week").on("click", function(event){
+    $("#next").fadeTo(500, 1.0);
+    $("#previous").fadeTo(500, 1.0);
     $(".to_top").fadeTo(1, 1.0);
     $(".rdio").fadeTo(100, 0.0);
     setTimeout(function(){
