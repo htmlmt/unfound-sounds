@@ -888,6 +888,9 @@ p {
 #week_html {
   position: relative;
   bottom: 25px;
+  width: 265px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #week_html h4 {
@@ -899,14 +902,18 @@ p {
   border-radius: 15px;
   text-shadow: 5px 5px 8px rgba(0,0,0,0.1);
   height: 10px;
-  width: 265px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+#days {
+  margin-top: 3px;
 }
 
 #week {
   margin-top: 40px;
   position: relative;
+  width: 265px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #week h4 {
@@ -918,9 +925,6 @@ p {
   border-radius: 15px;
   text-shadow: 5px 5px 8px rgba(0,0,0,0.1);
   height: 10px;
-  width: 265px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .rdio {

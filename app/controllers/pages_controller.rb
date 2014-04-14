@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   
   def week
     @albums = Post.where("week = ?", params[:id]).limit(3)
-    @title = "Week #{@albums.first.week}: #{@albums.first.week_name}"
+    # @title = "Week #{@albums.first.week}: #{@albums.first.week_name}"
     @week = params[:id]
     max = Post.order("created_at DESC").limit(3)
     @max = max.first.week
