@@ -13,21 +13,21 @@
   <% if @albums.first != nil %>
     <%= @albums.first.week %>: 
     <%= @albums.first.week_name.upcase %>
-  </h4></a>
+  </h4></a></div>
   
     <% if (@albums.first.found) == true %>
     
       <div id="previous"><%= link_to("/week/#{(@albums.first.week) + 1}", :remote => true) do %>
         <%= image_tag("https://s3.amazonaws.com/UnfoundSounds/images/previous.png")%>
-        </div>
       <% end %>
+      </div>
 
     <% else %>
     
       <div id="previous"><%= link_to("/week/1", :remote => true) do %>
         <%= image_tag("https://s3.amazonaws.com/UnfoundSounds/images/previous.png")%>
-        </div>
       <% end %>
+      </div>
 
     <% end %>
   
@@ -35,27 +35,17 @@
   
       <div id="next"><%= link_to("/week/#{(@albums.first.week) - 1}", :remote => true) do %>
         <%= image_tag("https://s3.amazonaws.com/UnfoundSounds/images/next.png")%>
-        </div>
       <% end %>
+      </div>
   
     <% else %>
   
       <div id="next"><%= link_to("/", :remote => true) do %>
         <%= image_tag("https://s3.amazonaws.com/UnfoundSounds/images/next.png")%>
-        </div>
       <% end %>
+      </div>
     
     <% end %>
   
   <% end %>
-  
-  <!-- <% unless current_user %>
-    <div id="register">
-      <em>
-        <%= link_to("/writers/new", :remote => true) do %>
-        become a member &amp; find vinyl first
-        <% end %>
-      </em>
-    </div>
-  <% end %> -->
   

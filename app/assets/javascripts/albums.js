@@ -24,7 +24,7 @@ $(document).ready(function(){
     setTimeout(function(){
     $(".rdio").remove();}, 700);
     
-    pageurl = $(this).children().attr('href');
+    pageurl = "/";
     
     $(".album:nth-child(2)").animate({left: '0px',}, 700 );
     $(".album:nth-child(3)").animate({left: '0px',}, 700 );

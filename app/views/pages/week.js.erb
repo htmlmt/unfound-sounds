@@ -1,6 +1,8 @@
 $("#main").remove();
 $("#week").remove();
 $("#register").remove();
+$("#next").remove();
+$("#previous").remove();
 $(".content").append("<%= j render 'week' %>");
 
 $(".album").on("click", function(){
@@ -24,7 +26,7 @@ $("#week").on("click", function(event){
   $(".rdio").fadeTo(100, 0.0);
   setTimeout(function(){
   $(".rdio").remove();}, 700);
-  pageurl = $(this).children().attr('href');
+  pageurl = "/week/<%= @albums.first.week %>";
   
   $(".album:nth-child(2)").animate({left: '0px',}, 700 );
   $(".album:nth-child(3)").animate({left: '0px',}, 700 );
@@ -34,13 +36,13 @@ $("#week").on("click", function(event){
   setTimeout(function(){
     $(".album_details").remove();}, 700);
     if(pageurl!=window.location){
-        window.history.pushState({path:pageurl},'<%= @title %>',pageurl);
+        window.history.pushState({path:pageurl},'',pageurl);
     }
   
     return false;
 });
 
-pageurl = $(".to_top").children().attr('href');
+pageurl = "/week/<%= @albums.first.week %>";
 if(pageurl!=window.location){
     window.history.pushState({path:pageurl},'',pageurl);
 }
