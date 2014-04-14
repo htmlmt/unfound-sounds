@@ -9,11 +9,11 @@
 
 #note {
   text-align: center;
-  font-family: "adobe-caslon-pro";
-  font-size: 23px;
+  font-family: "clavo";
+  font-size: 19px;
   color: #A0A0A0;
-  padding-top: 15px;
-  margin-bottom: -51px;
+  padding-top: 23px;
+  margin-bottom: -34px;
   font-weight: 100;
 }
 
@@ -169,35 +169,35 @@
 #mondays {
   width: 640px;
   position: absolute;
-  bottom: 80px;
+  bottom: 74px;
   left: 380px;
 }
 
 #tuesdays {
   width: 640px;
   position: absolute;
-  bottom: 80px;
+  bottom: 74px;
   left: 380px;
 }
 
 #wednesdays {
   width: 640px;
   position: absolute;
-  bottom: 80px;
+  bottom: 74px;
   left: 380px;
 }
 
 #thursdays {
   width: 640px;
   position: absolute;
-  bottom: 80px;
+  bottom: 74px;
   left: 380px;
 }
 
 #fridays {
   width: 640px;
   position: absolute;
-  bottom: 80px;
+  bottom: 74px;
   left: 380px;
 }
 
@@ -362,15 +362,15 @@
 }
 
 p a:link {
-	color: #A0A0A0;
+	color: #813510
 }
 
 p a:visited {
-	color: #A0A0A0;
+	color: #813510
 }
 
 p a:hover {
-	color: #813510;
+	text-decoration: underline;
 }
 
 #review_link a {
@@ -425,8 +425,12 @@ p a:hover {
 #next {
   position: absolute;
   right: -70px;
-  bottom: 235px;
+  bottom: 225px;
   opacity: 0.9;
+}
+
+#note a:hover {
+  text-decoration: underline;
 }
 
 .big_hint p {
@@ -436,7 +440,7 @@ p a:hover {
 #previous {
   position: absolute;
   left: -70px;
-  bottom: 235px;
+  bottom: 225px;
   opacity: 0.9;
 }
 
