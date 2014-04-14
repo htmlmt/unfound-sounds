@@ -8,8 +8,10 @@ $(document).ready(function(){
     $(this).addClass("to_top");
     $(".album:nth-child(2)").animate({left: '-349px',}, 700 );
     $(".album:nth-child(3)").animate({left: '-698px',}, 700 );
+    
     setTimeout(function(){
       $(".to_top").removeClass("to_top")}, 3400);
+    
     $(this).addClass("middle");
     $("#albums").addClass("albums_left");
     $(this).addClass("return");
@@ -21,18 +23,21 @@ $(document).ready(function(){
     $(".rdio").fadeTo(100, 0.0);
     setTimeout(function(){
     $(".rdio").remove();}, 700);
+    
     pageurl = $(this).children().attr('href');
     
     $(".album:nth-child(2)").animate({left: '0px',}, 700 );
     $(".album:nth-child(3)").animate({left: '0px',}, 700 );
+    
     setTimeout(function(){
       $(".album_details").empty();}, 700);
     $( ".album_details" ).fadeOut( "slow" );
     setTimeout(function(){
       $(".album_details").remove();}, 700);
-      if(pageurl!=window.location){
-          window.history.pushState({path:pageurl},'<%= @title %>',pageurl);
-      }
+      
+    if(pageurl!=window.location){
+        window.history.pushState({path:pageurl},'<%= @title %>',pageurl);
+    }
     
       return false;
   });

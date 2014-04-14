@@ -19,35 +19,35 @@
         <img class="main_nav" src="https://s3.amazonaws.com/UnfoundSounds/images/unfound-sounds-logo.png" width="80">
         <div id="blog_title">Unfound Sounds</div>
       </a>
-    <div class="nav">
-      <a href="/donate">
-        <em>donate</em>
-      </a> 
+      <div class="nav">
+        <a href="/donate">
+          <em>donate</em>
+        </a> 
         <em>&amp;</em> 
-      <a href="/discover">
-        <em>discover</em>
-      </a>
-      <!-- <% unless current_user %>
-      <div id="login"><em>/</em>
-        <em>
-        <%= link_to("/logins/new", :remote => true) do %>
-        log in
-        </em>
-        </div>
-        <% end %>
-        <% else %>
-        <div id="logout"><em>/</em>
+        <a href="/discover">
+          <em>discover</em>
+        </a>
+        <!-- <% unless current_user %>
+        <div id="login"><em>/</em>
           <em>
-          <%= link_to(login_path(current_user), :method => :delete) do %>
-          log out
+          <%= link_to("/logins/new", :remote => true) do %>
+          log in
           </em>
-        </div>
-        <% end %>  
-      
-      <% end %> -->
+          </div>
+          <% end %>
+          <% else %>
+          <div id="logout"><em>/</em>
+            <em>
+            <%= link_to(login_path(current_user), :method => :delete) do %>
+            log out
+            </em>
+          </div>
+          <% end %>  
+    
+        <% end %> -->
+      </div>
     </div>
-    </div>
-</header>
+  </header>
 <body>
   <div id="note">Note: Albums aren't yet hidden. <a href="http://eepurl.com/SxHMf" target="_blank">Sign up for our newsletter to learn the launch date first.</a></div>
 <%= yield %>

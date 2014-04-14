@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140411152000) do
+ActiveRecord::Schema.define(:version => 20140414163551) do
 
   create_table "hints", :force => true do |t|
     t.integer  "post_id"
@@ -34,6 +34,19 @@ ActiveRecord::Schema.define(:version => 20140411152000) do
     t.string   "place_sprite"
     t.string   "finder"
     t.string   "facebook"
+    t.string   "coupon_sub"
+    t.string   "first_sub"
+    t.string   "second_sub"
+    t.string   "third_sub"
+    t.string   "fourth_sub"
+    t.string   "fifth_sub"
+    t.string   "fifth_body"
+    t.string   "fourth_body"
+    t.string   "third_body"
+    t.string   "second_body"
+    t.string   "first_body"
+    t.string   "coupon_body"
+    t.string   "members_coupon"
   end
 
   create_table "posts", :force => true do |t|

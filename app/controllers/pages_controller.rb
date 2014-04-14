@@ -75,6 +75,19 @@ class PagesController < ApplicationController
     place_sprite = params[:place_sprite]
     finder = params[:finder]
     facebook = params[:facebook]
+    first_body = params[:first_body]
+    second_body = params[:second_body]
+    third_body = params[:third_body]
+    fourth_body = params[:fourth_body]
+    fifth_body = params[:fifth_body]
+    coupon_body = params[:coupon_body]
+    first_sub = params[:first_sub]
+    second_sub = params[:second_sub]
+    third_sub = params[:third_sub]
+    fourth_sub = params[:fourth_sub]
+    fifth_sub = params[:fifth_sub]
+    coupon_sub = params[:coupon_sub]
+    members_coupon = params[:members_coupon]
     
     album = Post.new({
       :album_title => album_title, 
@@ -90,7 +103,7 @@ class PagesController < ApplicationController
       :week => week,
       :week_name => week_name
       })
-    album.save
+      album.save
     
     hint = Hint.new({
       :post_id => album.id,
@@ -110,12 +123,25 @@ class PagesController < ApplicationController
       :place_thumbnail => place_thumbnail,
       :place_sprite => place_sprite,
       :finder => finder,
-      :facebook => facebook
-    })
-    hint.save
-    
-    redirect_to "/"
-  end
+      :facebook => facebook,
+      :first_body => first_body,
+      :second_body => second_body,
+      :third_body => third_body,
+      :fourth_body => fourth_body,
+      :fifth_body => fifth_body,
+      :coupon_body => coupon_body,
+      :first_sub => first_sub,
+      :second_sub => second_sub,
+      :third_sub => third_sub,
+      :fourth_sub => fourth_sub,
+      :fifth_sub => fifth_sub,
+      :coupon_sub => coupon_sub,
+      :members_coupon => members_coupon
+      })
+      hint.save
+  
+      redirect_to "/"
+    end
   
   def edit_album
     album_title = params[:album_title]
@@ -149,10 +175,23 @@ class PagesController < ApplicationController
     place_sprite = params[:place_sprite]
     finder = params[:finder]
     facebook = params[:facebook]
-    
+    first_body = params[:first_body]
+    second_body = params[:second_body]
+    third_body = params[:third_body]
+    fourth_body = params[:fourth_body]
+    fifth_body = params[:fifth_body]
+    coupon_body = params[:coupon_body]
+    first_sub = params[:first_sub]
+    second_sub = params[:second_sub]
+    third_sub = params[:third_sub]
+    fourth_sub = params[:fourth_sub]
+    fifth_sub = params[:fifth_sub]
+    coupon_sub = params[:coupon_sub]
+    members_coupon = params[:members_coupon]
+
     album = Post.find_by_url(params[:url])
     hint = Hint.find_by_post_id(album.id)
-    
+
     album.update_attributes({
       :album_title => album_title, 
       :album_cover => album_cover, 
@@ -168,7 +207,7 @@ class PagesController < ApplicationController
       :week => week,
       :week_name => week_name
       })
-      
+  
     hint.update_attributes({
       :post_id => album.id,
       :image => image,
@@ -187,15 +226,28 @@ class PagesController < ApplicationController
       :place_thumbnail => place_thumbnail,
       :place_sprite => place_sprite,
       :finder => finder,
-      :facebook => facebook
-    })
-    
-    redirect_to("/album/#{params[:url]}")
-  end
-  
+      :facebook => facebook,
+      :first_body => first_body,
+      :second_body => second_body,
+      :third_body => third_body,
+      :fourth_body => fourth_body,
+      :fifth_body => fifth_body,
+      :coupon_body => coupon_body,
+      :first_sub => first_sub,
+      :second_sub => second_sub,
+      :third_sub => third_sub,
+      :fourth_sub => fourth_sub,
+      :fifth_sub => fifth_sub,
+      :coupon_sub => coupon_sub,
+      :members_coupon => members_coupon
+      })
+
+      redirect_to("/album/#{params[:url]}")
+    end
+
   def found_album
     album = Post.find_by_url(params[:url])
-    
+
     if params[:found] == "FOUND"
       album.update_attributes({:found => 't'})
       redirect_to("/")
@@ -203,10 +255,10 @@ class PagesController < ApplicationController
       redirect_to("/album/#{params[:url]}")
     end
   end
-  
+
   def unfound_album
     album = Post.find_by_url(params[:url])
-    
+
     if params[:unfound] == "UNFOUND"
       album.update_attributes({:found => 'f'})
       redirect_to("/")
@@ -214,10 +266,10 @@ class PagesController < ApplicationController
       redirect_to("/album/#{params[:url]}")
     end
   end
-  
+
   def delete
     album = Post.find_by_url(params[:url])
-    
+
     if params[:delete] == "DELETE"
       album.destroy
       redirect_to("/")
@@ -225,27 +277,27 @@ class PagesController < ApplicationController
       redirect_to("/album/#{params[:url]}")
     end
   end
-  
+
   def found
     @title = "Found sounds"
-    
+
     @albums = Post.where("found = ?", 't').order("created_at DESC").limit(9)
   end
-  
+
   def city_unfound
     @city = (params[:city]).capitalize.gsub("-", " ")
     @title = "Unfound sounds in #{@city}"
-    
+
     @albums = Post.where("found = ?", 'f').where("city = ?", params[:city]).order("created_at DESC").limit(9)
     @found = Post.where("found = ?", 't')
   end
-  
+
   def city_found
     @city = (params[:city]).capitalize.gsub("-", " ")
     @title = "Found sounds in #{@city}"
-    
+
     @albums = Post.where("found = ?", 't').where("city = ?", params[:city]).order("created_at DESC").limit(9)
   end
-  
-  
+
+
 end

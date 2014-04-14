@@ -8,7 +8,7 @@ module PagesHelper
   end
   
   def format_date(time)
-   time.strftime("%B %e, %Y")
+    time.strftime("%B %e, %Y")
   end
   
   def h(text)

@@ -886,9 +886,8 @@ p {
 }
 
 #week_html {
-  margin-top: 40px;
   position: relative;
-  top: 51px;
+  bottom: 25px;
 }
 
 #week_html h4 {
