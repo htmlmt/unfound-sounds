@@ -9,11 +9,15 @@
   </div>
 </div>
 
-<div id="week" class="clearfix"><a href="/"><h4>WEEK 
-  <% if @albums.first != nil %>
-    <%= @albums.first.week %>: 
-    <%= @albums.first.week_name.upcase %>
-  </h4></a></div>
+<div id="week" class="clearfix">
+  <a href="/">
+    <h4>WEEK 
+    <% if @albums.first != nil %>
+      <%= @albums.first.week %>: 
+      <%= @albums.first.week_name.upcase %>
+    </h4>
+  </a>
+</div>
   
     <% if (@albums.first.found) == true %>
     
@@ -48,4 +52,3 @@
     <% end %>
   
   <% end %>
-  

@@ -1,50 +1,148 @@
+<p>&nbsp;</p>
 <form method="post" action="/album">
-  <div id="admin_title"><h2>Add an album</h2></div>
-    <p><label for="album_title">Album title: </label><input type="text" name="album_title"></p>
-		<p><label for="album_cover">Album cover link: </label><input type="url" name="album_cover"></p>
-		<p><label for="album_review">Album review: </label><textarea rows="15" cols="70" name="album_review"></textarea></p>
-		<p><label for="album_rdio">Rdio share link: </label><input type="text" name="rdio" size="70"></p>
-    <p><label for="review_link">Review link: </label><input type="text" name="review_link"></p>
+  <div id="admin_title">
+    <h2>Add an album</h2>
+  </div>
+  
+  <p><label for="album_title">Album title: </label><br />
+    <input type="text" size="67" name="album_title">
+  </p>
+	<p><label for="album_cover">Album cover link: </label><br />
+    <input type="url" size="67" name="album_cover">
+  </p>
+	<p><label for="album_review">Album review: </label><br />
+    <textarea rows="15" cols="70" name="album_review"></textarea>
+  </p>
+	<p><label for="album_rdio">Rdio share link: </label><br />
+    <input type="text" name="rdio" size="67" size="70">
+  </p>
+  <p><label for="review_link">Review link: </label><br />
+    <input type="text" size="67" name="review_link">
+  </p>
     
-  <div id="admin_title"><h2>Week info</h2></div>
-    <p><label for="week">Week number: </label><input type="text" name="week">
-    <p><label for="week_name">Week name (example: April 7-13): </label><input type="text" name="week_name">
+  <div id="admin_title">
+    <h2>Week info</h2>
+  </div>
+  
+  <p><label for="week">Week number: </label><br />
+    <input type="text" size="67" name="week">
+  </p>
+  <p><label for="week_name">Week name (example: April 7-13): </label><br />
+    <input type="text" size="67" name="week_name">
+  </p>
     
-  <div id="admin_title"><h2>Hiding place hints</h2></div>
-    <p><label for="monday_title">Monday hint title: </label><input type="text" name="monday_title"></p>
-    <p><label for="tuesday_title">Tuesday hint title: </label><input type="text" name="tuesday_title"></p>
-    <p><label for="wednesday_title">Wednesday hint title: </label><input type="text" name="wednesday_title"></p>
-    <p><label for="thursday_title">Thursday hint title: </label><input type="text" name="thursday_title"></p>
-    <p><label for="friday_title">Friday hint title: </label><input type="text" name="friday_title"></p>
-    <p><label for="member_title">Member's-only hint title: </label><input type="text" name="member_title"></p>
-    <p><label for="image">Hints sprite image link: </label><input type="text" name="image">
-    <p><label for="thumbnail">Hints sprite thumbnail link: </label><input type="text" name="thumbnail">
+  <div id="admin_title">
+    <h2>Hiding place hints</h2>
+  </div>
+  
+  <p><label for="monday_title">Monday hint title: </label><br />
+    <input type="text" size="67" name="monday_title">
+  </p>
+  <p><label for="tuesday_title">Tuesday hint title: </label><br />
+    <input type="text" size="67" name="tuesday_title">
+  </p>
+  <p><label for="wednesday_title">Wednesday hint title: </label><br />
+    <input type="text" size="67" name="wednesday_title">
+  </p>
+  <p><label for="thursday_title">Thursday hint title: </label><br />
+    <input type="text" size="67" name="thursday_title">
+  </p>
+  <p><label for="friday_title">Friday hint title: </label><br />
+    <input type="text" size="67" name="friday_title">
+  </p>
+  <p><label for="member_title">Member's-only hint title: </label><br />
+    <input type="text" size="67" name="member_title">
+  </p>
+  <p><label for="image">Hints sprite image link: </label><br />
+    <input type="text" size="67" name="image">
+  </p>
+  <p><label for="thumbnail">Hints sprite thumbnail link: </label><br />
+    <input type="text" size="67" name="thumbnail">
+  </p>
     
-  <div id="admin_title"><h2>Describe its location</h2></div>
-		<p><label for="place_title">Place title: </label><input type="text" name="place_title"></p>
-		<p><label for="pinpoint_description">Pinpoint description: </label><textarea rows="15" cols="70" name="pinpoint_description"></textarea></p>
-		<p><label for="hidden_place">Hidden place (tell no one): </label><input type="text" name="hidden_place"></p>
-    <p><label for="facebook">Facebook page link: </label><br /><input type="text" name="facebook" size="67" ></p>
-    <p><label for="finder">Finder: </label><input type="text" name="finder"></p>
-    <p><label for="place_thumbnail">Place thumbnail: </label><input type="text" name="place_thumbnail"></p>
-    <p><label for="place_sprite">Place sprite: </label><input type="text" name="place_sprite"></p>
-    <p><label for="first_place">First image heading: </label><input type="text" name="first_place"></p>
-    <p><label for="first_sub">First image subheading: </label><input type="text" name="first_sub"></p>
-    <p><label for="first_body">First image body: </label><textarea rows="15" cols="70" name="first_body"></textarea></p>
-    <p><label for="second_place">Second image heading: </label><input type="text" name="second_place"></p>
-    <p><label for="second_sub">Second image subheading: </label><input type="text" name="second_sub"></p>
-    <p><label for="second_body">Second image body: </label><textarea rows="15" cols="70" name="second_body"></textarea></p>
-    <p><label for="third_place">Third image heading: </label><input type="text" name="third_place"></p>
-    <p><label for="third_sub">Third image subheading: </label><input type="text" name="third_sub"></p>
-    <p><label for="third_body">Third image body: </label><textarea rows="15" cols="70" name="third_body"></textarea></p>
-    <p><label for="fourth_place">Fourth image heading: </label><input type="text" name="fourth_place"></p>
-    <p><label for="fourth_sub">Fourth image subheading: </label><input type="text" name="fourth_sub"></p>
-    <p><label for="fourth_body">Fourth image body: </label><textarea rows="15" cols="70" name="fourth_body"></textarea></p>
-    <p><label for="fifth_place">Fifth image heading: </label><input type="text" name="fifth_place"></p>
-    <p><label for="fifth_sub">Fifth image subheading: </label><input type="text" name="fifth_sub"></p>
-    <p><label for="fifth_body">Fifth image body: </label><textarea rows="15" cols="70" name="fifth_body"></textarea></p>
-    <p><label for="members_coupon">Coupon image heading: </label><input type="text" name="members_coupon"></p>
-    <p><label for="coupon_sub">Coupon image subheading: </label><input type="text" name="coupon_sub"></p>
-    <p><label for="coupon_body">Coupon image body: </label><textarea rows="15" cols="70" name="coupon_body"></textarea></p>
-		<p><input type="submit" value="Submit"></p>
+  <div id="admin_title">
+    <h2>Describe its location</h2>
+  </div>
+  
+	<p><label for="place_title">Place title: </label><br />
+    <input type="text" size="67" name="place_title">
+  </p>
+	<p><label for="pinpoint_description">Pinpoint description: </label><br />
+    <textarea rows="15" cols="70" name="pinpoint_description"></textarea>
+  </p>
+	<p><label for="hidden_place">Hidden place (tell no one): </label><br />
+    <input type="text" size="67" name="hidden_place">
+  </p>
+  <p><label for="facebook">Facebook page link: </label><br />
+    <input type="text" name="facebook" size="67" >
+  </p>
+  <p><label for="finder">Finder: </label><br />
+    <input type="text" size="67" name="finder">
+  </p>
+  <p><label for="place_thumbnail">Place thumbnail: </label><br />
+    <input type="text" size="67" name="place_thumbnail">
+  </p>
+  <p><label for="place_sprite">Place sprite: </label><br />
+    <input type="text" size="67" name="place_sprite">
+  </p>
+  <p><label for="first_place">First image heading: </label><br />
+    <input type="text" size="67" name="first_place">
+  </p>
+  <p><label for="first_sub">First image subheading: </label><br />
+    <input type="text" size="67" name="first_sub">
+  </p>
+  <p><label for="first_body">First image body: </label><br />
+    <textarea rows="15" cols="70" name="first_body"></textarea>
+  </p>
+  <p><label for="second_place">Second image heading: </label><br />
+    <input type="text" size="67" name="second_place">
+  </p>
+  <p><label for="second_sub">Second image subheading: </label><br />
+    <input type="text" size="67" name="second_sub">
+  </p>
+  <p><label for="second_body">Second image body: </label><br />
+    <textarea rows="15" cols="70" name="second_body"></textarea>
+  </p>
+  <p><label for="third_place">Third image heading: </label><br />
+    <input type="text" size="67" name="third_place">
+  </p>
+  <p><label for="third_sub">Third image subheading: </label><br />
+    <input type="text" size="67" name="third_sub">
+  </p>
+  <p><label for="third_body">Third image body: </label><br />
+    <textarea rows="15" cols="70" name="third_body"></textarea>
+  </p>
+  <p><label for="fourth_place">Fourth image heading: </label><br />
+    <input type="text" size="67" name="fourth_place">
+  </p>
+  <p><label for="fourth_sub">Fourth image subheading: </label><br />
+    <input type="text" size="67" name="fourth_sub">
+  </p>
+  <p><label for="fourth_body">Fourth image body: </label><br />
+    <textarea rows="15" size="67" cols="70" name="fourth_body"></textarea>
+  </p>
+  <p><label for="fifth_place">Fifth image heading: </label><br />
+    <input type="text" size="67" name="fifth_place">
+  </p>
+  <p><label for="fifth_sub">Fifth image subheading: </label><br />
+    <input type="text" size="67" name="fifth_sub">
+  </p>
+  <p><label for="fifth_body">Fifth image body: </label><br />
+    <textarea rows="15" size="67" cols="70" name="fifth_body"></textarea>
+  </p>
+  <p><label for="members_coupon">Coupon image heading: </label><br />
+    <input type="text" size="67" name="members_coupon">
+  </p>
+  <p><label for="coupon_sub">Coupon image subheading: </label><br />
+    <input type="text" size="67" name="coupon_sub">
+  </p>
+  <p><label for="coupon_body">Coupon image body: </label><br />
+    <textarea rows="15" cols="70" name="coupon_body"></textarea>
+  </p>
+  
+	<p>
+    <input type="submit" id="edit_submit" value="Submit">
+  </p>
+  
 </form>
+<p>&nbsp;</p>

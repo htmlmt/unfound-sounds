@@ -1,0 +1,88 @@
+/* Text */
+
+#review_link a {
+  margin-left: 56%;
+  font-size: 17px;
+  color: #813510;
+}
+
+#review_link a:hover {
+  text-decoration: underline;
+}
+
+#title {
+	font-family: "bebas-neue";
+	font-size: 40px;
+	color: #3C3C3C;
+}
+
+/* Elements */
+
+img.main_nav {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.album {
+  z-index: 1;
+}
+
+.album_details {
+  float: left;
+  margin-left: 37%;
+  width: 60%;
+  height: 340px;
+  display: none;
+  z-index: -2;
+}
+
+.albums_left {
+  float: left;
+  height: 0px;
+}
+
+.middle {
+  z-index: 2;
+}
+
+.rdio {
+  display: inline-block;
+  position: absolute;
+  margin-right: 9px;
+  float: left;
+}
+
+.tip_top {
+  z-index: 2;
+}
+
+.tippy_top {
+  z-index: 4;
+}
+
+.to_top {
+  z-index: 3;
+}
+
+#album {
+	width: 475px;
+	float: left;
+	display: inline-block;
+}
+
+#album_review {
+  margin-top: -18px;
+  margin-bottom: -10px;
+}
+
+#home_album {
+  display: inline-block;
+  position: relative;
+  margin-right: 9px;
+  float: left;
+  width: 340px;
+}
+
+#home_album:hover {
+  cursor: pointer;
+}

@@ -10,6 +10,13 @@
  *
  *= require_self
  *= require style
+ *= require hints
+ *= require login_register
+ *= require weeks
+ *= require discover_donate
+ *= require albums
+ *= require admin
+ *= require places
  */
 /*
  *= require jquery.ui.all

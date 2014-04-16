@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   
   def week
     @albums = Post.where("week = ?", params[:id]).limit(3)
-    # @title = "Week #{@albums.first.week}: #{@albums.first.week_name}"
+    @title = "Week #{@albums.first.week}: #{@albums.first.week_name}"
     @week = params[:id]
     max = Post.order("created_at DESC").limit(3)
     @max = max.first.week
@@ -98,7 +98,7 @@ class PagesController < ApplicationController
       :pinpoint_description => pinpoint_description, 
       :rdio => rdio, 
       :hidden_place => hidden_place, 
-      :found => 0, 
+      :found => false, 
       :url => "#{album_title.gsub(' ', '-').gsub(/[^\w-]/, '').downcase}",
       :week => week,
       :week_name => week_name
@@ -249,7 +249,7 @@ class PagesController < ApplicationController
     album = Post.find_by_url(params[:url])
 
     if params[:found] == "FOUND"
-      album.update_attributes({:found => 't'})
+      album.update_attributes({:found => true})
       redirect_to("/")
     else
       redirect_to("/album/#{params[:url]}")
@@ -260,7 +260,7 @@ class PagesController < ApplicationController
     album = Post.find_by_url(params[:url])
 
     if params[:unfound] == "UNFOUND"
-      album.update_attributes({:found => 'f'})
+      album.update_attributes({:found => false})
       redirect_to("/")
     else
       redirect_to("/album/#{params[:url]}")

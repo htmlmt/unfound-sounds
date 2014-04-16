@@ -1,0 +1,14 @@
+/* Text */
+
+#crossed_out {
+  color: #813510;
+  text-decoration: line-through;
+}
+
+/* Elements */
+
+#place {
+	float: right;
+	display: inline-block;
+	width: 475px;
+}

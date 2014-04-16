@@ -8,48 +8,48 @@ $("#main").prepend("<div class='rdio' class='tip_top'><iframe width='340' height
 setTimeout(function(){
   $(".rdio").addClass("tippy_top");}, 3200);
   
-  $("#members_only").on("click", function(){
-    $("#member_big").show();
-    $("#member_side").show();
-  })
+$("#members_only").on("click", function(){
+  $("#member_big").show();
+  $("#member_side").show();
+})
 
-  $("#monday_thumbnail").on("click", function(){
-    $("#monday_big").show();
-    $("#monday_side").show();
-  })
-  
-  $("#tuesday_thumbnail").on("click", function(){
-    $("#tuesday_big").show();
-    $("#tuesday_side").show();
-  })
-  
-  $("#tuesday_thumbnail").on("click", function(){
-    $("#tuesday_big").show();
-    $("#tuesday_side").show();
-  })
-  
-  $("#wednesday_thumbnail").on("click", function(){
-    $("#wednesday_big").show();
-    $("#wednesday_side").show();
-  })
-  
-  $("#thursday_thumbnail").on("click", function(){
-    $("#thursday_big").show();
-    $("#thursday_side").show();
-  })
-  
-  $("#friday_thumbnail").on("click", function(){
-    $("#friday_big").show();
-    $("#friday_side").show();
-  })
-  
-  $(".x_white").on("click", function(){
-    $(".big_hint").hide();
-  })
-  
-  $("#week").on("click", function(event){
-    $("#week h4").replaceWith("<h4>WEEK <%= @album.week %>: <%= @album.week_name.upcase %></h4>");
-  });
+$("#monday_thumbnail").on("click", function(){
+  $("#monday_big").show();
+  $("#monday_side").show();
+})
+
+$("#tuesday_thumbnail").on("click", function(){
+  $("#tuesday_big").show();
+  $("#tuesday_side").show();
+})
+
+$("#tuesday_thumbnail").on("click", function(){
+  $("#tuesday_big").show();
+  $("#tuesday_side").show();
+})
+
+$("#wednesday_thumbnail").on("click", function(){
+  $("#wednesday_big").show();
+  $("#wednesday_side").show();
+})
+
+$("#thursday_thumbnail").on("click", function(){
+  $("#thursday_big").show();
+  $("#thursday_side").show();
+})
+
+$("#friday_thumbnail").on("click", function(){
+  $("#friday_big").show();
+  $("#friday_side").show();
+})
+
+$(".x_white").on("click", function(){
+  $(".big_hint").hide();
+})
+
+$("#week").on("click", function(event){
+  $("#week h4").replaceWith("<h4>WEEK <%= @album.week %>: <%= @album.week_name.upcase %></h4>");
+});
 
 pageurl = $(".to_top").children().attr('href');
 if(pageurl!=window.location){
