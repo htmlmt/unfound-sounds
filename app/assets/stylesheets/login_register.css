@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 
   /* Text */
 
@@ -78,6 +78,6 @@
 
 /* Mobile design */
 
-@media only screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
   
 }
