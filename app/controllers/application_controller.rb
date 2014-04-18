@@ -7,6 +7,13 @@ class ApplicationController < ActionController::Base
     end
   end
   
+  def check_admin
+    if current_user
+      @admins = ['mikejtodd@gmail.com']
+      @admins.include?(current_user.email)
+    end
+  end
+  
   def markdown(text)
     options = {
       filter_html:    true,

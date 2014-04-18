@@ -3,6 +3,12 @@ class PagesController < ApplicationController
 
   def home
     @albums = Post.order("created_at DESC").limit(3)
+    
+    if current_user 
+      if current_user.email == "mikejtodd@gmail.com"
+        @allow_edit = true
+      end
+    end
   end
   
   def week
@@ -11,6 +17,12 @@ class PagesController < ApplicationController
     @week = params[:id]
     max = Post.order("created_at DESC").limit(3)
     @max = max.first.week
+    
+    if current_user 
+      if current_user.email == "mikejtodd@gmail.com"
+        @allow_edit = true
+      end
+    end
     
     respond_to do |format|
       format.html
@@ -22,6 +34,12 @@ class PagesController < ApplicationController
     @album = Post.find_by_url(params[:url])
     @title = "#{@album.album_title}"
     @hint = Hint.find_by_post_id(@album.id)
+    
+    if current_user 
+      if current_user.email == "mikejtodd@gmail.com"
+        @allow_edit = true
+      end
+    end
     
     respond_to do |format|
       format.html
@@ -269,13 +287,8 @@ class PagesController < ApplicationController
 
   def delete
     album = Post.find_by_url(params[:url])
-
-    if params[:delete] == "DELETE"
-      album.destroy
-      redirect_to("/")
-    else
-      redirect_to("/album/#{params[:url]}")
-    end
+    
+    album.destroy
   end
 
 end

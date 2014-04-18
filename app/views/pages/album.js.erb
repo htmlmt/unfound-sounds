@@ -1,59 +1,79 @@
-$(".album_details").remove();
-$("#albums").after("<%= j render 'album' %>");
-$(".album_details").fadeIn("slow");
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
 
-setTimeout(function(){
-$("#main").prepend("<div class='rdio' class='tip_top'><iframe width='340' height='340' src='<%= @album.rdio %>' frameborder='0'></iframe></div>");}, 700);
+if ( !isMobile.any()){
 
-setTimeout(function(){
-  $(".rdio").addClass("tippy_top");}, 3200);
+  $(".album_details").remove();
+  $("#albums").after("<%= j render 'album' %>");
+  $(".album_details").fadeIn("slow");
+
+  setTimeout(function(){
+  $("#main").prepend("<div class='rdio' class='tip_top'><iframe width='340' height='340' src='<%= @album.rdio %>' frameborder='0'></iframe></div>");}, 700);
+
+  setTimeout(function(){
+    $(".rdio").addClass("tippy_top");}, 3200);
   
-$("#members_only").on("click", function(){
-  $("#member_big").show();
-  $("#member_side").show();
-})
+  $("#members_only").on("click", function(){
+    $("#member_big").show();
+    $("#member_side").show();
+  })
 
-$("#monday_thumbnail").on("click", function(){
-  $("#monday_big").show();
-  $("#monday_side").show();
-})
+  $("#monday_thumbnail").on("click", function(){
+    $("#monday_big").show();
+    $("#monday_side").show();
+  })
 
-$("#tuesday_thumbnail").on("click", function(){
-  $("#tuesday_big").show();
-  $("#tuesday_side").show();
-})
+  $("#tuesday_thumbnail").on("click", function(){
+    $("#tuesday_big").show();
+    $("#tuesday_side").show();
+  })
 
-$("#tuesday_thumbnail").on("click", function(){
-  $("#tuesday_big").show();
-  $("#tuesday_side").show();
-})
+  $("#tuesday_thumbnail").on("click", function(){
+    $("#tuesday_big").show();
+    $("#tuesday_side").show();
+  })
 
-$("#wednesday_thumbnail").on("click", function(){
-  $("#wednesday_big").show();
-  $("#wednesday_side").show();
-})
+  $("#wednesday_thumbnail").on("click", function(){
+    $("#wednesday_big").show();
+    $("#wednesday_side").show();
+  })
 
-$("#thursday_thumbnail").on("click", function(){
-  $("#thursday_big").show();
-  $("#thursday_side").show();
-})
+  $("#thursday_thumbnail").on("click", function(){
+    $("#thursday_big").show();
+    $("#thursday_side").show();
+  })
 
-$("#friday_thumbnail").on("click", function(){
-  $("#friday_big").show();
-  $("#friday_side").show();
-})
+  $("#friday_thumbnail").on("click", function(){
+    $("#friday_big").show();
+    $("#friday_side").show();
+  })
 
-$(".x_white").on("click", function(){
-  $(".big_hint").hide();
-})
+  $(".x_white").on("click", function(){
+    $(".big_hint").hide();
+  })
 
-$("#week").on("click", function(event){
-  $("#week h4").replaceWith("<h4>WEEK <%= @album.week %>: <%= @album.week_name.upcase %></h4>");
-});
+  $("#week").on("click", function(event){
+    $("#week h4").replaceWith("<h4>WEEK <%= @album.week %>: <%= @album.week_name.upcase %></h4>");
+  });
 
-pageurl = $(".to_top").children().attr('href');
-if(pageurl!=window.location){
-    window.history.pushState({path:pageurl},'',pageurl);
+} else {
+
 }
-
-return false;

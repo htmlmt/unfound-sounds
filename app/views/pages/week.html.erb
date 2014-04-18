@@ -1,9 +1,17 @@
 <div id="main">
   <div id="albums" class="clearfix">
-    <% @albums.each do |album| %>
-    	<div id="home_album" class="album"><%= link_to("/album/#{album.url}", :remote => true, :rel => 'album') do %>
+    <% @albums.each_with_index do |album, index| %>
+    	<div id="home_album" class="album_<%= index %>"><%= link_to("/album/#{album.url}", :remote => true) do %>
         <%= image_tag("#{album.album_cover}", width: '340', class: "homepage") %>
       <% end %>
+        <% if @allow_edit == true %>
+          <div id="admin_buttons">
+            <a href="/album/<%= album.url %>/edit"><div id="home_edit_link">
+              edit
+            </div></a>
+            <%= link_to("delete", "/album/#{album.url}/delete", :method => :post, :id => "home_delete_link") %>
+          </div>
+        <% end %>
       </div>
     <% end %>
   </div>
@@ -44,11 +52,20 @@
   
     <% else %>
   
-      <div id="next"><%= link_to("/", :remote => true) do %>
+      <div id="next"><%= link_to("/week/#{@max}", :remote => true) do %>
         <%= image_tag("https://s3.amazonaws.com/UnfoundSounds/images/next.png")%>
       <% end %>
       </div>
     
     <% end %>
   
+  <% end %>
+  <% unless current_user %>
+    <div id="register">
+      <em>
+        <%= link_to("/writers/new", :remote => true) do %>
+        <div id="register_desktop">become a member &amp; find vinyl first</div><div id="register_mobile">REGISTER</div>
+        <% end %>
+      </em>
+    </div>
   <% end %>

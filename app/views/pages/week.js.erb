@@ -1,3 +1,26 @@
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+if ( !isMobile.any()){
+
 $("#main").remove();
 $("#week").remove();
 $("#register").remove();
@@ -5,14 +28,14 @@ $("#next").remove();
 $("#previous").remove();
 $(".content").append("<%= j render 'week' %>");
 
-$(".album").on("click", function(){
-  $(".album").removeClass("middle");
+$(".album_0, .album_1, .album_2").on("click", function(event){
+  $(".album_0, .album_1, .album_2").removeClass("middle");
   $(".album_details").empty();
   $(".album_details").hide();
-  $(".album").removeClass("to_top");
+  $(".album_0, .album_1, .album_2").removeClass("to_top");
   $(this).addClass("to_top");
-  $(".album:nth-child(2)").animate({left: '-349px',}, 700 );
-  $(".album:nth-child(3)").animate({left: '-698px',}, 700 );
+  $(".album_1").animate({left: '-349px',}, 700 );
+  $(".album_2").animate({left: '-698px',}, 700 );
   setTimeout(function(){
     $(".to_top").removeClass("to_top")}, 3400);
   $(this).addClass("middle");
@@ -24,6 +47,8 @@ $(".album").on("click", function(){
   $("#next").hide();}, 500);
   setTimeout(function(){
   $("#previous").hide();}, 500);
+  
+  event.preventDefault();
 });
 
 $("#week").on("click", function(event){
@@ -34,25 +59,19 @@ $("#week").on("click", function(event){
   $(".rdio").fadeTo(100, 0.0);
   setTimeout(function(){
   $(".rdio").remove();}, 700);
-  pageurl = "/week/<%= @albums.first.week %>";
   
-  $(".album:nth-child(2)").animate({left: '0px',}, 700 );
-  $(".album:nth-child(3)").animate({left: '0px',}, 700 );
+  $(".album_1").animate({left: '0px',}, 700 );
+  $(".album_2").animate({left: '0px',}, 700 );
   setTimeout(function(){
     $(".album_details").empty();}, 700);
   $( ".album_details" ).fadeOut( "slow" );
   setTimeout(function(){
     $(".album_details").remove();}, 700);
-    if(pageurl!=window.location){
-        window.history.pushState({path:pageurl},'',pageurl);
-    }
-  
-    return false;
+    
+  event.preventDefault();
+        
 });
 
-pageurl = "/week/<%= @albums.first.week %>";
-if(pageurl!=window.location){
-    window.history.pushState({path:pageurl},'',pageurl);
+} else {
+  
 }
-
-return false;

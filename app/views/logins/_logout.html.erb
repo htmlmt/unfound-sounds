@@ -1,5 +1,7 @@
 <div id="logout"><em>/</em>
   <em>
-  <%= link_to("log out", login_path(current_user), :method => :delete) %>
+  <%= link_to("/logins/#{current_user.id}", :method => :delete) do %>
+  log out
   </em>
-</a></div>
+</div>
+<% end %>

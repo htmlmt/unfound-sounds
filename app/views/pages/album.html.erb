@@ -3,6 +3,14 @@
     <div id="home_album" class="one_album">
 	    <img class="homepage" src="<%= @album.album_cover %>"></div>
       <div class='rdio' class='tip_top'><iframe width='340' height='340' src='<%= @album.rdio %>' frameborder='0'></iframe></div>
+      <% if @allow_edit == true %>
+      <div id="admin_buttons">
+        <a href="/album/<%= @album.url %>/edit"><div id="home_edit_link">
+          edit
+        </div></a>
+        <%= link_to("delete", "/album/#{@album.url}/delete", :method => :post, :id => "home_delete_link") %>
+      </div>
+      <% end %>
     </div>
     <div class="album_details" style="display: block;">
       <% if @album.found == false %>

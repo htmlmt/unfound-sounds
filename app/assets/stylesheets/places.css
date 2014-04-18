@@ -1,14 +1,21 @@
-/* Text */
+@media (min-width: 600px) {
 
-#crossed_out {
-  color: #813510;
-  text-decoration: line-through;
+  /* Text */
+
+  #crossed_out {
+    color: #813510;
+    text-decoration: line-through;
+  }
+
+  /* Elements */
+
+  #place {
+  	float: right;
+  	display: inline-block;
+  	width: 475px;
+  }
+
 }
 
-/* Elements */
+/* Mobile design */
 
-#place {
-	float: right;
-	display: inline-block;
-	width: 475px;
-}

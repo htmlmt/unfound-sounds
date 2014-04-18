@@ -1,3 +1,7 @@
+
+
+if ( !isMobile.any()){
+
 $("#overlay").remove();
 $(".content").append("<%= j render 'new' %>");
 $("#main").fadeTo( "slow", 0.3 );
@@ -20,3 +24,7 @@ $("#x").on("click", function(){
   $("#register").fadeTo( "slow", 1.0 );
   $("#overlay").remove();
 })
+
+} else {
+  
+}

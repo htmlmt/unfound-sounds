@@ -9,14 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require style
- *= require hints
- *= require login_register
- *= require weeks
- *= require discover_donate
- *= require albums
- *= require admin
- *= require places
+ *= require_tree .
  */
 /*
  *= require jquery.ui.all

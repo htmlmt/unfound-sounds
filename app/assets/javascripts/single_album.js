@@ -1,5 +1,9 @@
 $(document).ready(function(){
   
+  if ( !isMobile.any()){
+    
+  } else {
+  
   $(".rdio").hide();
   
   setTimeout(function(){
@@ -43,5 +47,7 @@ $(document).ready(function(){
   $(".x_white").on("click", function(){
     $(".big_hint").hide();
   })
+  
+  }
   
 });

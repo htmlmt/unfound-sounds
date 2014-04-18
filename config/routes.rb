@@ -18,6 +18,7 @@ UnfoundSounds::Application.routes.draw do
   get "/donate" => 'pages#donate', :as => :donate
   
   get "/login" => 'logins#new', :as => :login
+  get "/logout" => 'pages#logout', :as => :logout
   
   post "/album" => 'pages#save_album', :as => :save_album
   post "/album/:url/edit" => 'pages#edit_album', :as => :update_album

@@ -1,13 +1,16 @@
 $(document).ready(function(){
   
-  $(".album").on("click", function(){
-    $(".album").removeClass("middle");
+  if ( !isMobile.any()){
+  
+  $(".album_0, .album_1, .album_2").on("click", function(event){
+    event.preventDefault();
+    $(".album_0, .album_1, .album_2").removeClass("middle");
     $(".album_details").empty();
     $(".album_details").hide();
-    $(".album").removeClass("to_top");
+    $(".album_0, .album_1, .album_2").removeClass("to_top");
     $(this).addClass("to_top");
-    $(".album:nth-child(2)").animate({left: '-349px',}, 700 );
-    $(".album:nth-child(3)").animate({left: '-698px',}, 700 );
+    $(".album_1").animate({left: '-349px',}, 700 );
+    $(".album_2").animate({left: '-698px',}, 700 );
     
     setTimeout(function(){
       $(".to_top").removeClass("to_top")}, 3400);
@@ -31,26 +34,24 @@ $(document).ready(function(){
     setTimeout(function(){
     $(".rdio").remove();}, 700);
     
-    pageurl = "/";
-    
-    $(".album:nth-child(2)").animate({left: '0px',}, 700 );
-    $(".album:nth-child(3)").animate({left: '0px',}, 700 );
+    $(".album_1").animate({left: '0px',}, 700 );
+    $(".album_2").animate({left: '0px',}, 700 );
     
     setTimeout(function(){
       $(".album_details").empty();}, 700);
     $( ".album_details" ).fadeOut( "slow" );
     setTimeout(function(){
       $(".album_details").remove();}, 700);
-      
-    if(pageurl!=window.location){
-        window.history.pushState({path:pageurl},'<%= @title %>',pageurl);
-    }
     
-      return false;
+    event.preventDefault();
   });
   
-  $("*").dblclick(function(e){
-    e.preventDefault();
+  $("*").dblclick(function(event){
+    event.preventDefault();
   });
+  
+  } else {
+  
+  }
   
 });
