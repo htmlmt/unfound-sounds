@@ -1,3 +1,26 @@
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+if ( !isMobile.any()){
+
 $("#overlay").remove();
 $(".content").append("<%= j render 'new' %>");
 $("#main").fadeTo( "slow", 0.3 );
@@ -20,3 +43,5 @@ $("#x").on("click", function(){
   $("#register").fadeTo( "slow", 1.0 );
   $("#r_overlay").remove();
 })
+
+}
