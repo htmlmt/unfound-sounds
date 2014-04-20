@@ -25,21 +25,23 @@ $("#overlay").remove();
 $(".content").append("<%= j render 'new' %>");
 $("#main").fadeTo( "slow", 0.3 );
 $("#sidebar_image").fadeTo( "slow", 0.3 );
-$("#week").children().children().fadeTo( "slow", 0.3 );
-$("#week_html").children().children().fadeTo( "slow", 0.3 );
+if (($("#previous").css('opacity')) != 0) {
+  $("#previous").fadeTo( "slow", 0.3 );
+  $("#next").fadeTo( "slow", 0.3 );
+}
+$("#week_title").fadeTo( "slow", 0.3 );
 $(".read").fadeTo( "slow", 0.3 );
-$("#previous").fadeTo( "slow", 0.3 );
-$("#next").fadeTo( "slow", 0.3 );
 $("#register").fadeTo( "slow", 0.3 );
 
 $("#x").on("click", function(){
   $("#main").fadeTo( "slow", 1.0 );
   $("#sidebar_image").fadeTo( "slow", 1.0 );
-  $("#week").children().children().fadeTo( "slow", 1.0 );
-  $("#week_html").children().children().fadeTo( "slow", 1.0 );
+  if (($("#previous").css('opacity')) != 0) {
+    $("#previous").fadeTo( "slow", 1.0 );
+    $("#next").fadeTo( "slow", 1.0 );
+  }
+  $("#week_title").fadeTo( "slow", 1.0 );
   $(".read").fadeTo( "slow", 1.0 );
-  $("#previous").fadeTo( "slow", 1.0 );
-  $("#next").fadeTo( "slow", 1.0 );
   $("#register").fadeTo( "slow", 1.0 );
   $("#r_overlay").remove();
 })
