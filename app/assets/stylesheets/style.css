@@ -295,16 +295,21 @@
   #donate_discover {
     display: none;
   }
+  
+  body {
+    font-size: 100%;
+  }
 
   #blog_title {
     font-family: "bebas-neue";
-    font-size: 60px;
+    font-size: 17.3vw;
     font-weight: 100;
     display: block;
     padding-right: 10px;
     color: #813510;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   #register_desktop {
@@ -324,7 +329,7 @@
   #main_nav {
     margin-left: auto;
     margin-right: auto;
-    width: 330px;
+    width: 100%;
     margin-bottom: 10px;
   }
 
