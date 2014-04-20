@@ -18,14 +18,7 @@
 </div>
 
 <div id="week" class="clearfix">
-  <a href="/">
-    <h4>WEEK 
-    <% if @albums.first != nil %>
-      <%= @albums.first.week %>: 
-      <%= @albums.first.week_name.upcase %>
-    </h4>
-  </a>
-</div>
+  <div id="all_week">
   
     <% if (@albums.first.found) == true %>
     
@@ -42,6 +35,16 @@
       </div>
 
     <% end %>
+    
+    <div id="week_title">
+      <a href="/">
+        <h4>WEEK 
+        <% if @albums.first != nil %>
+          <%= @albums.first.week %>: 
+          <%= @albums.first.week_name.upcase %>
+        </h4>
+      </a>
+    </div>
   
     <% if (@albums.first.week) - 1 != 0 %>
   
@@ -58,7 +61,8 @@
       </div>
     
     <% end %>
-  
+  </div>
+  </div>
   <% end %>
   <% unless current_user %>
     <div id="register">

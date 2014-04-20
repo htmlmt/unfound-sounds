@@ -1,6 +1,6 @@
 /* Desktop */
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1201px) {
 
 /* Text */
 
@@ -20,6 +20,12 @@
   }
 
   /* Elements */
+  
+  #all_week {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+  }
 
   #next {
     position: absolute;
@@ -51,9 +57,64 @@
 
 }
 
+/* Next & Previous Hop Down to Week Title */
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  
+  #week h4, #week_html h4 {
+    font-family: "clavo";
+    text-align: center;
+    font-size: 19px;
+    color: #444444;
+    padding: 5px 0px 0px 0px;
+    border-radius: 15px;
+    text-shadow: 5px 5px 8px rgba(0,0,0,0.1);
+    height: 10px;
+  }
+
+  #week a h4:hover, #week_html a h4:hover {
+  	color: #813510;
+  }
+
+  #next {
+    position: absolute;
+    right: 363px;
+    bottom: -12px;
+    opacity: 0.9;
+  }
+
+  #previous {
+    position: absolute;
+    left: 348px;
+    bottom: -12px;
+    opacity: 0.9;
+  }
+  
+  #week, #week_html {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #week {
+    margin-top: 40px;
+  }
+
+  #week_html {
+    position: relative;
+    bottom: 25px;
+  }
+
+}
+
 /* Mobile */
 
 @media all and (max-width: 767px) {
+  
+  #all_week {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   #week h4, #week_html h4 {
     font-family: "clavo";
@@ -67,17 +128,27 @@
   }
 
   #next {
-    position: absolute;
-    right: -70px;
-    bottom: 225px;
+    display: inline-block;
+    right: 35px;
+    bottom: 273px;
     opacity: 0.9;
-  }
-
+    margin-left: 4%;
+    margin-right: 4%;
+  } 
+  
   #previous {
-    position: absolute;
-    left: -70px;
-    bottom: 225px;
-    opacity: 0.9;
+    display: inline-block;
+    left: 35px;
+    bottom: 273px;
+    opacity: .9;
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+  
+  #week_title {
+    margin-left: 4%;
+    margin-right: 4%;
+    display: inline-block;
   }
 
 }
