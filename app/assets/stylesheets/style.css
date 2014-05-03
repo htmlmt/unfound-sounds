@@ -162,6 +162,21 @@
     margin-bottom: -34px;
     font-weight: 100;
   }
+  
+  #hours {
+    text-align: center;
+    font-family: "clavo";
+    font-size: 19px;
+    color: #A0A0A0;
+    padding-top: 23px;
+    margin-bottom: -34px;
+    font-weight: 100;
+    position: absolute;
+    z-index: 1;
+    top: 105px;
+    text-align: center;
+    width: 100%;
+  }
 
   #note a {
     color: #813510;
@@ -291,6 +306,10 @@
 /* Mobile */
 
 @media all and (max-width: 767px) {
+  
+  #note {
+    display: none;
+  }
 
   #donate_discover {
     display: none;
@@ -310,6 +329,16 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+  
+  #register_mobile {
+    background: #578280;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  body > div.ui-loader.ui-corner-all.ui-body-a.ui-loader-default {
+    display: none;
   }
 
   #register_desktop {
@@ -354,10 +383,30 @@
   #logo {
     display: none;
   }
+  
+  #hours {
+    text-align: center;
+    font-family: "clavo";
+    font-size: 19px;
+    color: #A0A0A0;
+    font-weight: 100;
+    text-align: left;
+    width: 100%;
+  }
 
   #main {
-    overflow: hidden;
     width: 100%;
+    position: relative;
+    left: 0%;
+  }
+  
+  .nav {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  #register {
+    margin-top: 10px;
   }
 
   #slash {

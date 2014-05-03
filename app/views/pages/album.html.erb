@@ -1,3 +1,48 @@
+<div id="hours">
+  <% if Time.now.wday == 0 %>
+    <% if Time.now > @album.sun_open && Time.now < @album.sun_close %>
+      Find this vinyl at an Omaha business. Go and ask for the final hint before it closes at <%= @album.sun_close.strftime('%I:%M %p') %>.
+    <% else %>
+      Find this vinyl at an Omaha business. Please wait until it opens again tomorrow at <%= @album.mon_open.strftime('%I:%M %p') %>.
+    <% end %>
+  <% elsif Time.now.wday == 1 %>
+    <% if Time.now > @album.mon_open && Time.now < @album.mon_close %>
+      Find this vinyl at an Omaha business. Go and ask for the final hint before it closes at <%= @album.mon_close.strftime('%I:%M %p') %>.
+    <% else %>
+      Find this vinyl at an Omaha business. Please wait until it opens again tomorrow at <%= @album.tue_open.strftime('%I:%M %p') %>.
+    <% end %>
+  <% elsif Time.now.wday == 2 %>
+    <% if Time.now > @album.tue_open && Time.now < @album.tue_close %>
+      Find this vinyl at an Omaha business. Go and ask for the final hint before it closes at <%= @album.tue_close.strftime('%I:%M %p') %>.
+    <% else %>
+      Find this vinyl at an Omaha business. Please wait until it opens again tomorrow at <%= @album.wed_open.strftime('%I:%M %p') %>.
+    <% end %>
+  <% elsif Time.now.wday == 3 %>
+    <% if Time.now > @album.wed_open && Time.now < @album.wed_close %>
+      Find this vinyl at an Omaha business. Go and ask for the final hint before it closes at <%= @album.wed_close.strftime('%I:%M %p') %>.
+    <% else %>
+      Find this vinyl at an Omaha business. Please wait until it opens again tomorrow at <%= @album.thu_open.strftime('%I:%M %p') %>.
+    <% end %>
+  <% elsif Time.now.wday == 4 %>
+    <% if Time.now > @album.thu_open && Time.now < @album.thu_close %>
+      Find this vinyl at an Omaha business. Go and ask for the final hint before it closes at <%= @album.thu_close.strftime('%I:%M %p') %>.
+    <% else %>
+      Find this vinyl at an Omaha business. Please wait until it opens again tomorrow at <%= @album.fri_open.strftime('%I:%M %p') %>.
+    <% end %>
+  <% elsif Time.now.wday == 5 %>
+    <% if Time.now > @album.fri_open && Time.now < @album.fri_close %>
+      Find this vinyl at an Omaha business. Go and ask for the final hint before it closes at <%= @album.fri_close.in_time_zone("Central Time (US & Canada)").strftime('%I:%M %p') %>.
+    <% else %>
+      Find this vinyl at an Omaha business. Please wait until it opens again tomorrow at <%= @album.sat_open.in_time_zone("Central Time (US & Canada)").strftime('%I:%M %p') %>
+    <% end %>
+  <% else %>
+    <% if Time.now > @album.sat_open && Time.now < @album.sat_close %>
+      Find this vinyl at an Omaha business. Go and ask for the final hint before it closes at <%= @album.sat_close.in_time_zone("Central Time (US & Canada)").strftime('%I:%M %p') %>.
+    <% else %>
+      Find this vinyl at an Omaha business. Please wait until it opens again tomorrow at <%= @album.sun_open.in_time_zone("Central Time (US & Canada)").strftime('%I:%M %p') %>.
+    <% end %>
+  <% end %>
+</div>
 <div id="main">
   <div id="albums" class="clearfix albums_left">
     <div id="home_album" class="one_album">
@@ -32,5 +77,5 @@
     <a href="/"><h4>see this week's albums</h4></a>
   </div>
 </div>
-<div id="previous"><img src="https://s3.amazonaws.com/UnfoundSounds/images/previous.png"></div>
-<div id="next"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div>
+<div id="previous_album"><img src="https://s3.amazonaws.com/UnfoundSounds/images/previous.png"></div>
+<div id="next_album"><img src="https://s3.amazonaws.com/UnfoundSounds/images/next.png"></div>

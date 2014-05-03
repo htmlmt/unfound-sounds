@@ -1,24 +1,5 @@
 <div id="r_overlay"><div id="x">&times;</div><h2>BECOME A MEMBER</h2>
-
-<%= form_for @writer do |f| %>
-  <% if @writer.errors.any? %>
-    <% @writer.errors.full_messages.each do |error_msg| %>
-      <p><%= error_msg %></p>
-    <% end %>
-  <% end %>
-
-  <p>
-    <%= f.text_field :email, placeholder: "email" %>
-  </p>
-  
-  <p>
-    <%= f.password_field :password, placeholder: "password" %>
-  </p>
-  
-  <p>
-    <%= f.password_field :password_confirmation, placeholder: "password confirmation" %>
-  </p>
-  
-  <%= f.submit "SUBMIT" %>
-<% end %>
+<p>Members log in and get to see an early, extra hint every Sunday before a hunt.</p>
+<p>So how do you become a member?</p>
+<p>Go to an Unfound Sounds business (see past weeks to find one you like), and ask an employee for a member card.</p>
 </div>

@@ -27,18 +27,16 @@
     width: 320px;
   }
 
-  #next {
+  #next, #next_album {
     position: absolute;
     right: -70px;
     bottom: 225px;
-    opacity: 0.9;
   }
 
-  #previous {
+  #previous, #previous_album {
     position: absolute;
     left: -70px;
     bottom: 225px;
-    opacity: 0.9;
   }
 
   #week, #week_html {
@@ -53,6 +51,14 @@
   #week_html {
     position: relative;
     bottom: 25px;
+  }
+  
+  #previous_white {
+    display: none;
+  }
+  
+  #next_white {
+    display: none;
   }
 
 }
@@ -110,16 +116,32 @@
 
 @media all and (max-width: 767px) {
   
+  #note {
+    display: none;
+  }
+  
   #all_week {
-    width: 310px;
+    width: 66%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #week h4, #week_html h4 {
+  #week_html h4 {
+    font-family: "clavo";
+    text-align: right;
+    font-size: 5vw;
+    color: #444444;
+    padding: 5px 0px 0px 0px;
+    border-radius: 15px;
+    text-shadow: 5px 5px 8px rgba(0,0,0,0.1);
+    height: 10px;
+    float: right;
+  } 
+  
+  #week h4 {
     font-family: "clavo";
     text-align: center;
-    font-size: 16px;
+    font-size: 3vw;
     color: #444444;
     padding: 5px 0px 0px 0px;
     border-radius: 15px;
@@ -129,26 +151,36 @@
 
   #next {
     display: inline-block;
-    right: 35px;
-    bottom: 273px;
     opacity: 0.9;
-    margin-left: 4%;
-    margin-right: 4%;
-  } 
+    margin-left: 5%;
+    width: 8%;
+  }
+  
+  #next a img {
+    width: 100%;
+  }
   
   #previous {
     display: inline-block;
-    left: 35px;
-    bottom: 273px;
     opacity: .9;
-    margin-right: 4%;
-    margin-left: 4%;
+    margin-right: 5%;
+    width: 8%;
+  }
+  
+  #previous a img {
+    width: 100%;
   }
   
   #week_title {
-    margin-left: 4%;
-    margin-right: 4%;
     display: inline-block;
+    position: relative;
+    bottom: 5px;
+    width: 70%;
+  }
+  
+  #week_html {
+    width: 30%;
+    float: right;
   }
 
 }

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140414163551) do
+ActiveRecord::Schema.define(:version => 20140503162806) do
 
   create_table "hints", :force => true do |t|
     t.integer  "post_id"
@@ -69,6 +69,20 @@ ActiveRecord::Schema.define(:version => 20140414163551) do
     t.string   "week_name"
     t.integer  "week"
     t.string   "review_link"
+    t.datetime "sun_open"
+    t.datetime "sun_close"
+    t.datetime "mon_close"
+    t.datetime "mon_open"
+    t.datetime "tue_open"
+    t.datetime "tue_close"
+    t.datetime "wed_close"
+    t.datetime "wed_open"
+    t.datetime "thu_open"
+    t.datetime "thu_close"
+    t.datetime "fri_close"
+    t.datetime "fri_open"
+    t.datetime "sat_open"
+    t.datetime "sat_close"
   end
 
   create_table "writers", :force => true do |t|

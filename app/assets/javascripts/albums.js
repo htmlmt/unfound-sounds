@@ -4,6 +4,7 @@ $(document).ready(function(){
   
   $(".album_0, .album_1, .album_2").on("click", function(event){
     event.preventDefault();
+    $("#note").fadeTo(100, 0.0);
     $(".album_0, .album_1, .album_2").removeClass("middle");
     $(".album_details").empty();
     $(".album_details").hide();
@@ -17,7 +18,7 @@ $(document).ready(function(){
     
     $(this).addClass("middle");
     $("#albums").addClass("albums_left");
-    $("#week h4").replaceWith("<h4>return to week view</h4>");
+    $("#week h4").replaceWith("<h4>return to week</h4>");
     $("#next").fadeTo(500, 0.0);
     $("#previous").fadeTo(500, 0.0);
     setTimeout(function(){
@@ -27,6 +28,8 @@ $(document).ready(function(){
   });
   
   $("#week").on("click", function(event){
+    $("#hours").remove();
+    $("#note").fadeTo(100, 1.0)
     $("#next").fadeTo(500, 1.0);
     $("#previous").fadeTo(500, 1.0);
     $(".to_top").fadeTo(1, 1.0);
@@ -51,7 +54,7 @@ $(document).ready(function(){
   });
   
   } else {
-  
+
   }
   
 });

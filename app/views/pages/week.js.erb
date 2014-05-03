@@ -40,7 +40,7 @@ $(".album_0, .album_1, .album_2").on("click", function(event){
     $(".to_top").removeClass("to_top")}, 3400);
   $(this).addClass("middle");
   $("#albums").addClass("albums_left");
-  $("#week h4").replaceWith("<h4>return to week view</h4>");
+  $("#week h4").replaceWith("<h4>return to week</h4>");
   $("#next").fadeTo(500, 0.0);
   $("#previous").fadeTo(500, 0.0);
   setTimeout(function(){
@@ -73,5 +73,6 @@ $("#week").on("click", function(event){
 });
 
 } else {
+  
   
 }

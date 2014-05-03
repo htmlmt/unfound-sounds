@@ -26,6 +26,7 @@ $("#r_overlay").remove();
 $(".content").append("<%= j render 'new' %>");
 $("#main").fadeTo( "slow", 0.3 );
 $("#sidebar_image").fadeTo( "slow", 0.3 );
+$("#note").fadeTo( "slow", 0.3 );
 if (($("#previous").css('opacity')) != 0) {
   $("#previous").fadeTo( "slow", 0.3 );
   $("#next").fadeTo( "slow", 0.3 );
@@ -35,6 +36,7 @@ $(".read").fadeTo( "slow", 0.3 );
 $("#register").fadeTo( "slow", 0.3 );
 
 $("#x").on("click", function(){
+  $("#note").fadeTo( "slow", 1.0 );
   $("#main").fadeTo( "slow", 1.0 );
   $("#sidebar_image").fadeTo( "slow", 1.0 );
   if (($("#previous").css('opacity')) != 0) {

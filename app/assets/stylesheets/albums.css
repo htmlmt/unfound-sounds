@@ -91,30 +91,168 @@
   #home_album:hover {
     cursor: pointer;
   }
+  
+  #next a img {
+    width: 20px;
+  }
+  
+  #previous a img {
+    width: 20px;
+  }
 
 }
 
 /* Mobile */
 
 @media all and (max-width: 767px) {
+  
+  #home_album {
+    width: 100%;
+  }
+  
+  #login_mobile {
+    display: none;
+  }
+  
+  #register {
+    display: none;
+  }
+  
+  #week {
+    display: none;
+  }
+  
+  .rdio {
+    display: none;
+  }
+  
+  #previous_album {
+    display: none;
+  }
+  
+  #next_album {
+    display: none;
+  }
 
   #albums {
-    position: relative;
-    width: 300%;
-    overflow: hidden;
+    width: 168%;
+    left: 21%;
+    margin-top: 3%;
+  }
+  
+  #review_link a {
+    margin-left: 56%;
+    font-size: 17px;
+    color: #813510;
+  }
+
+  #review_link a:hover {
+    text-decoration: underline;
   }
 
   #home_album {
-    float: left;
-    margin-left: -13.03%;
-    width: 33%;
     position: relative;
+  }
+  
+  h1 {
+  	font-family: "bebas-neue";
+  	font-size: 36px;
+  	color: #578280;
+  	display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  	-webkit-margin-before: 0px;
+  	-webkit-margin-after: 0px;
+  	-webkit-margin-start: 0px;
+  	-webkit-margin-end: 0px;
+  	font-weight: bold;
+  }
+
+  h2 {
+  	font-family: "bebas-neue";
+  	font-size: 30px;
+  	color: #3C3C3C;
+  	display: block;
+  	-webkit-margin-before: 0px;
+  	-webkit-margin-after: 15px;
+  	-webkit-margin-start: 0px;
+  	-webkit-margin-end: 0px;
+  	font-weight: bold;
+  }
+
+  h2 a:visited {
+  	font-family: "bebas-neue";
+  	font-size: 50px;
+  	background-color: #3C3C3C;
+  	color: #F0F0F0;
+  	width: 90px;
+  	text-align: center;
+  }
+
+  h3 {
+  	font-family: "bebas-neue";
+  	font-size: 40px;
+  	color: #813510;
+    font-weight: 100;
+  }
+
+  h3 a:link {
+  	font-family: "bebas-neue";
+  	font-size: 40px;
+  	color: #813510;
+  }
+
+  h4 {
+    font-family: "adobe-caslon-pro";
+    font-size: 4.5vw;
+    margin-top: 6px;
+    color: #A0A0A0;
+    margin-bottom: -2px;
+    font-weight: 100;
+  }
+
+  h4 a:link {
+  	font-family: "adobe-caslon-pro";
+  	font-size: 4.5vw;
+  	color: #813510;
+  	text-align: center;
+  }
+
+  h4 a:hover {
+  	opacity: 0.5;
+  }
+
+  h4 a:visited {
+  	font-family: "adobe-caslon-pro";
+  	font-size: 4.5vw;
+  	color: #813510;
+  	text-align: center;
+  }
+
+  p {
+  	font-family: "proxima-nova";
+  }
+
+  p a:link {
+  	color: #813510
+  }
+
+  p a:visited {
+  	color: #813510
+  }
+
+  p a:hover {
+  	text-decoration: underline;
   }
 
   img.homepage {
     width: 60%;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
     max-width: 60%;
+  }
+
+  .to_top {
+    z-index: 3;
   }
 
 }

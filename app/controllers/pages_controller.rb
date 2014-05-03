@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   helper PagesHelper
+  layout "album", :only => :album
 
   def home
     @albums = Post.order("created_at DESC").limit(3)
@@ -106,6 +107,20 @@ class PagesController < ApplicationController
     fifth_sub = params[:fifth_sub]
     coupon_sub = params[:coupon_sub]
     members_coupon = params[:members_coupon]
+    sun_open = params[:sun_open]
+    sun_close = params[:sun_close]
+    mon_open = params[:mon_open]
+    mon_close = params[:mon_close]
+    tue_open = params[:tue_open]
+    tue_close = params[:tue_close]
+    wed_open = params[:wed_open]
+    wed_close = params[:wed_close]
+    thu_open = params[:thu_open]
+    thu_close = params[:thu_close]
+    fri_open = params[:fri_open]
+    fri_close = params[:fri_close]
+    sat_open = params[:sat_open]
+    sat_close = params[:sat_close]
     
     album = Post.new({
       :album_title => album_title, 
@@ -119,7 +134,21 @@ class PagesController < ApplicationController
       :found => false, 
       :url => "#{album_title.gsub(' ', '-').gsub(/[^\w-]/, '').downcase}",
       :week => week,
-      :week_name => week_name
+      :week_name => week_name,
+      :sun_open => sun_open,
+      :sun_close => sun_close,
+      :mon_open => mon_open,
+      :mon_close => mon_close,
+      :tue_open => tue_open,
+      :tue_close => tue_close,
+      :wed_open => wed_open,
+      :wed_close => wed_close,
+      :thu_open => thu_open,
+      :thu_close => thu_close,
+      :fri_open => fri_open,
+      :fri_close => fri_close,
+      :sat_open => sat_open,
+      :sat_close => sat_close
       })
       album.save
     
@@ -206,6 +235,20 @@ class PagesController < ApplicationController
     fifth_sub = params[:fifth_sub]
     coupon_sub = params[:coupon_sub]
     members_coupon = params[:members_coupon]
+    sun_open = params[:sun_open]
+    sun_close = params[:sun_close]
+    mon_open = params[:mon_open]
+    mon_close = params[:mon_close]
+    tue_open = params[:tue_open]
+    tue_close = params[:tue_close]
+    wed_open = params[:wed_open]
+    wed_close = params[:wed_close]
+    thu_open = params[:thu_open]
+    thu_close = params[:thu_close]
+    fri_open = params[:fri_open]
+    fri_close = params[:fri_close]
+    sat_open = params[:sat_open]
+    sat_close = params[:sat_close]
 
     album = Post.find_by_url(params[:url])
     hint = Hint.find_by_post_id(album.id)
@@ -223,7 +266,21 @@ class PagesController < ApplicationController
       :map => map, 
       :pinpoint_map => pinpoint_map,
       :week => week,
-      :week_name => week_name
+      :week_name => week_name,
+      :sun_open => sun_open,
+      :sun_close => sun_close,
+      :mon_open => mon_open,
+      :mon_close => mon_close,
+      :tue_open => tue_open,
+      :tue_close => tue_close,
+      :wed_open => wed_open,
+      :wed_close => wed_close,
+      :thu_open => thu_open,
+      :thu_close => thu_close,
+      :fri_open => fri_open,
+      :fri_close => fri_close,
+      :sat_open => sat_open,
+      :sat_close => sat_close
       })
   
     hint.update_attributes({

@@ -146,4 +146,142 @@
 
 @media all and (max-width: 767px) {
   
+  /* Text */
+
+  .big_hint p {
+    font-size: 18px;
+  }
+
+  .hint_day {
+    font-family: "adobe-caslon-pro";
+    font-size: 20px;
+  }
+
+  #members_only {
+    background: #578280;
+    color: #fff;
+    width: 576px;
+    font-family: proxima-nova;
+    text-align: center;
+    padding: 2px 0px 2px 0px;
+    margin-top: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #members_only:hover {
+    opacity: 0.9;
+  }
+
+  /* Elements */
+
+  #days {
+    margin-top: 3px;
+    height: 120px;
+  }
+
+  #monday_side, #tuesday_side, #wednesday_side, #thursday_side, #friday_side, #member_side {
+    display: none;
+    width: 246px;
+    padding: 10px 23px 0px 31px;
+    background: #444444;
+    height: 329px;
+    color: #fff;
+    opacity: 0.9;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #monday_big, #tuesday_big, #wednesday_big, #thursday_big, #friday_big, #member_big {
+    display: none;
+    width: 640px;
+    height: 0px;
+    overflow: hidden;
+    padding-top: 340px;
+    float: left;
+    z-index: 0;
+  }
+
+  #tuesday_big {
+    background-position: -340px;
+  }
+
+  #wednesday_big {
+    background-position: -680px;
+  }
+
+  #thursday_big {
+    background-position: -1020px;
+  }
+
+  #friday_big {
+    background-position: -1360px;
+  }
+
+  #member_big {
+    background-position: -1700px;
+  }
+
+  #mondays, #tuesdays, #wednesdays, #thursdays, #fridays, #members {
+    width: 640px;
+    position: absolute;
+    bottom: 69px;
+    left: 380px;
+  }
+
+  #monday, #tuesday, #wednesday, #thursday, #friday {
+    display: inline-block;
+    background: #578280;
+    color: #fff;
+    font-family: proxima-nova;
+    margin-right: 15px;
+    font-size: 13px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
+    width: 100px;
+    height: 115px;
+  }
+
+  #monday_thumbnail, #tuesday_thumbnail, #wednesday_thumbnail, #thursday_thumbnail, #friday_thumbnail {
+    width: 100px;
+    height: 0px;
+    overflow: hidden;
+    padding-top: 100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  #tuesday_thumbnail {
+    background-position: -100px;
+  }
+
+  #wednesday_thumbnail {
+    background-position: -200px;
+  }
+
+  #thursday_thumbnail {
+    background-position: -300px;
+  }
+
+  #friday_thumbnail {
+    background-position: -400px;
+  }
+
+  #monday_thumbnail:hover, #tuesday_thumbnail:hover, #wednesday_thumbnail:hover, #thursday_thumbnail:hover, #friday_thumbnail:hover, #member_thumbnail:hover {
+    opacity: 0.8;
+  }
+
+  #lock {
+    background-image: url("https://s3.amazonaws.com/UnfoundSounds/images/Lock.png");
+    width: 100px;
+    height: 100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: inline-block;
+  }
+  
 }
