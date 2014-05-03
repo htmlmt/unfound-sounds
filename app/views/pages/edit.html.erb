@@ -80,46 +80,46 @@
     <input type="text" name="finder" size="67" value="<%= @hint.finder %>" >
   </p>
   <p><label for="finder">Sunday open: </label><br />
-    <input type="text" size="67" name="sun_open" value="<%= @album.sun_open %>">
+    <input type="text" size="67" name="sun_open" value="<%= if @album.sun_open != nil then @album.sun_open end %>">
   </p>
   <p><label for="finder">Sunday close: </label><br />
-    <input type="text" size="67" name="sun_close" value="<%= @album.sun_close %>">
+    <input type="text" size="67" name="sun_close" value="<%= if @album.sun_close != nil then @album.sun_close end %>">
   </p>
   <p><label for="finder">Monday open: </label><br />
-    <input type="text" size="67" name="mon_open" value="<%= @album.mon_open %>">
+    <input type="text" size="67" name="mon_open" value="<%= if @album.mon_open != nil then @album.mon_open end %>">
   </p>
   <p><label for="finder">Monday close: </label><br />
-    <input type="text" size="67" name="mon_close" value="<%= @album.mon_close %>">
+    <input type="text" size="67" name="mon_close" value="<%=  if @album.mon_close != nil then @album.mon_close end %>">
   </p>
   <p><label for="finder">Tuesday open: </label><br />
-    <input type="text" size="67" name="tue_open" value="<%= @album.tue_open %>">
+    <input type="text" size="67" name="tue_open" value="<%= if @album.tue_open != nil then @album.tue_open end %>">
   </p>
   <p><label for="finder">Tuesday close: </label><br />
-    <input type="text" size="67" name="tue_close" value="<%= @album.tue_close %>">
+    <input type="text" size="67" name="tue_close" value="<%= if @album.tue_close != nil then @album.tue_close end %>">
   </p>
   <p><label for="finder">Wednesday open: </label><br />
-    <input type="text" size="67" name="wed_open" value="<%= @album.wed_open %>">
+    <input type="text" size="67" name="wed_open" value="<%= if @album.wed_open != nil then @album.wed_open end %>">
   </p>
   <p><label for="finder">Wednesday close: </label><br />
-    <input type="text" size="67" name="wed_close" value="<%= @album.wed_close %>">
+    <input type="text" size="67" name="wed_close" value="<%= if @album.wed_close != nil then @album.wed_close end %>">
   </p>
   <p><label for="finder">Thursday open: </label><br />
-    <input type="text" size="67" name="thu_open" value="<%= @album.thu_open %>">
+    <input type="text" size="67" name="thu_open" value="<%=  if @album.thu_open != nil then @album.thu_open end %>">
   </p>
   <p><label for="finder">Thursday close: </label><br />
-    <input type="text" size="67" name="thu_close" value="<%= @album.thu_close %>">
+    <input type="text" size="67" name="thu_close" value="<%= if @album.thu_close != nil then @album.thu_close end  %>">
   </p>
   <p><label for="finder">Friday open: </label><br />
-    <input type="text" size="67" name="fri_open" value="<%= @album.fri_open %>">
+    <input type="text" size="67" name="fri_open" value="<%= if @album.fri_open != nil then @album.fri_open end  %>">
   </p>
   <p><label for="finder">Friday close: </label><br />
-    <input type="text" size="67" name="fri_close" value="<%= @album.fri_close %>">
+    <input type="text" size="67" name="fri_close" value="<%= if @album.fri_close != nil then @album.fri_close end   %>">
   </p>
   <p><label for="finder">Saturday open: </label><br />
-    <input type="text" size="67" name="sat_open" value="<%= @album.sat_open %>">
+    <input type="text" size="67" name="sat_open" value="<%= if @album.sat_open != nil then @album.sat_open end  %>">
   </p>
   <p><label for="finder">Saturday close: </label><br />
-    <input type="text" size="67" name="sat_close" value="<%= @album.sat_close %>">
+    <input type="text" size="67" name="sat_close" value="<%=  if @album.sat_close != nil then  @album.sat_close end %>">
   </p>
   <p><label for="place_thumbnail">Place thumbnail: </label><br />
     <input type="text" size="67" value="<%= @hint.place_thumbnail %>" name="place_thumbnail">

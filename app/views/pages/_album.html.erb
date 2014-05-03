@@ -1,3 +1,4 @@
+<% if @album.sun_open != nil %>
 <div id="hours">
   <% if Time.now.wday == 0 %>
     <% if Time.now > @album.sun_open && Time.now < @album.sun_close %>
@@ -42,6 +43,7 @@
       Find this vinyl at an Omaha business. Please wait until it opens again tomorrow at <%= @album.sun_open.strftime('%I:%M %p') %>.
     <% end %>
   <% end %>
+<% end %>
 </div>
 <div class="album_details">
   <% if @album.found == false %>
