@@ -41,23 +41,23 @@
     width: 246px;
     padding: 10px 23px 0px 31px;
     background: #444444;
-    height: 329px;
+    height: 330px;
     color: #fff;
     opacity: 0.9;
     z-index: 1;
     position: absolute;
-    right: 0;
+    right: -2px;
     top: 0;
   }
 
   #monday_big, #tuesday_big, #wednesday_big, #thursday_big, #friday_big, #member_big {
-    display: none;
     width: 640px;
     height: 0px;
     overflow: hidden;
     padding-top: 340px;
     float: left;
     z-index: 0;
+    display: none;
   }
 
   #tuesday_big {
@@ -81,7 +81,7 @@
   }
 
   #mondays, #tuesdays, #wednesdays, #thursdays, #fridays, #members {
-    width: 640px;
+    width: 638px;
     position: absolute;
     bottom: 69px;
     left: 380px;
@@ -97,8 +97,8 @@
     text-align: center;
     padding: 0px;
     border-radius: 5px;
-    width: 15.9%;
-    height: 115px;
+    width: 100px;
+    height: 116px;
   }
 
   #monday_thumbnail, #tuesday_thumbnail, #wednesday_thumbnail, #thursday_thumbnail, #friday_thumbnail {
@@ -270,10 +270,6 @@
 
   #friday_thumbnail {
     background-position: -400%;
-  }
-
-  #monday_thumbnail:hover, #tuesday_thumbnail:hover, #wednesday_thumbnail:hover, #thursday_thumbnail:hover, #friday_thumbnail:hover, #member_thumbnail:hover {
-    opacity: 0.8;
   }
 
   #lock {

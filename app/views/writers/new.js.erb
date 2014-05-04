@@ -29,14 +29,22 @@ if (($("#previous").css('opacity')) != 0) {
   $("#previous").fadeTo( "slow", 0.3 );
   $("#next").fadeTo( "slow", 0.3 );
 }
-$("#note").fadeTo( "slow", 0.3 );
+if ( $("#hours").is(":visible") ) {
+  $("#hours").fadeTo( "slow", 0.3 );
+} else {
+  $("#note").fadeTo( "slow", 0.3 );
+}
 $("#week_title").fadeTo( "slow", 0.3 );
 $(".read").fadeTo( "slow", 0.3 );
 $("#register").fadeTo( "slow", 0.3 );
 
 $("#x").on("click", function(){
   $("#main").fadeTo( "slow", 1.0 );
-  $("#note").fadeTo( "slow", 1.0 );
+  if ( $("#hours").is(":visible") ) {
+    $("#hours").fadeTo( "slow", 1.0 );
+  } else {
+    $("#note").fadeTo( "slow", 1.0 );
+  }
   $("#sidebar_image").fadeTo( "slow", 1.0 );
   if (($("#previous").css('opacity')) != 0) {
     $("#previous").fadeTo( "slow", 1.0 );

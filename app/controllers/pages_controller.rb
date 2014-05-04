@@ -119,20 +119,62 @@ class PagesController < ApplicationController
     fifth_sub = params[:fifth_sub]
     coupon_sub = params[:coupon_sub]
     members_coupon = params[:members_coupon]
-    sun_open = params[:sun_open]
-    sun_close = params[:sun_close]
-    mon_open = params[:mon_open]
-    mon_close = params[:mon_close]
-    tue_open = params[:tue_open]
-    tue_close = params[:tue_close]
-    wed_open = params[:wed_open]
-    wed_close = params[:wed_close]
-    thu_open = params[:thu_open]
-    thu_close = params[:thu_close]
-    fri_open = params[:fri_open]
-    fri_close = params[:fri_close]
-    sat_open = params[:sat_open]
-    sat_close = params[:sat_close]
+    if params[:sun_open] != ""
+      sun_open = Time.parse(params[:sun_open])
+      sun_open = sun_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:sun_close] != ""
+      sun_close = Time.parse(params[:sun_close])
+      sun_close = sun_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:mon_open] != ""
+      mon_open = Time.parse(params[:mon_open])
+      mon_open = mon_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:mon_close] != ""
+      mon_close = Time.parse(params[:mon_close])
+      mon_close = mon_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:tue_open] != ""
+      tue_open = Time.parse(params[:tue_open])
+      tue_open = tue_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:tue_close] != ""
+      tue_close = Time.parse(params[:tue_close])
+      tue_close = tue_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:wed_open] != ""
+      wed_open = Time.parse(params[:wed_open])
+      wed_open = wed_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:wed_close] != ""
+      wed_close = Time.parse(params[:wed_close])
+      wed_close = wed_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:thu_open] != ""
+      thu_open = Time.parse(params[:thu_open])
+      thu_open = thu_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:thu_close] != ""
+      thu_close = Time.parse(params[:thu_close])
+      thu_close = thu_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:fri_open] != ""
+      fri_open = Time.parse(params[:fri_open])
+      fri_open = fri_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:fri_close] != ""
+      fri_close = Time.parse(params[:fri_close])
+      fri_close = fri_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:sat_open] != ""
+      sat_open = Time.parse(params[:sat_open])
+      sat_open = sat_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:sat_close] != ""
+      sat_close = Time.parse(params[:sat_close])
+      sat_close = sat_close.in_time_zone("Central Time (US & Canada)")
+    end
     
     album = Post.new({
       :album_title => album_title, 
@@ -247,20 +289,62 @@ class PagesController < ApplicationController
     fifth_sub = params[:fifth_sub]
     coupon_sub = params[:coupon_sub]
     members_coupon = params[:members_coupon]
-    sun_open = params[:sun_open]
-    sun_close = params[:sun_close]
-    mon_open = params[:mon_open]
-    mon_close = params[:mon_close]
-    tue_open = params[:tue_open]
-    tue_close = params[:tue_close]
-    wed_open = params[:wed_open]
-    wed_close = params[:wed_close]
-    thu_open = params[:thu_open]
-    thu_close = params[:thu_close]
-    fri_open = params[:fri_open]
-    fri_close = params[:fri_close]
-    sat_open = params[:sat_open]
-    sat_close = params[:sat_close]
+    if params[:sun_open] != ""
+    sun_open = Time.parse(params[:sun_open])
+    sun_open = sun_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:sun_close] != ""
+    sun_close = Time.parse(params[:sun_close])
+    sun_close = sun_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:mon_open] != ""
+    mon_open = Time.parse(params[:mon_open])
+    mon_open = mon_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:mon_close] != ""
+    mon_close = Time.parse(params[:mon_close])
+    mon_close = mon_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:tue_open] != ""
+    tue_open = Time.parse(params[:tue_open])
+    tue_open = tue_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:tue_close] != ""
+    tue_close = Time.parse(params[:tue_close])
+    tue_close = tue_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:wed_open] != ""
+    wed_open = Time.parse(params[:wed_open])
+    wed_open = wed_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:wed_close] != ""
+    wed_close = Time.parse(params[:wed_close])
+    wed_close = wed_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:thu_open] != ""
+    thu_open = Time.parse(params[:thu_open])
+    thu_open = thu_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:thu_close] != ""
+    thu_close = Time.parse(params[:thu_close])
+    thu_close = thu_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:fri_open] != ""
+    fri_open = Time.parse(params[:fri_open])
+    fri_open = fri_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:fri_close] != ""
+    fri_close = Time.parse(params[:fri_close])
+    fri_close = fri_close.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:sat_open] != ""
+    sat_open = Time.parse(params[:sat_open])
+    sat_open = sat_open.in_time_zone("Central Time (US & Canada)")
+    end
+    if params[:sat_close] != ""
+    sat_close = Time.parse(params[:sat_close])
+    sat_close = sat_close.in_time_zone("Central Time (US & Canada)")
+    end
 
     album = Post.find_by_url(params[:url])
     hint = Hint.find_by_post_id(album.id)
