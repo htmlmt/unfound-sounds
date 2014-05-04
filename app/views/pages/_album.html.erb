@@ -1,5 +1,5 @@
-<% if @album.sun_open != nil %>
 <div id="hours">
+  <% if @album.sun_open != nil %>
   <% if Time.now.wday == 0 %>
     <% if Time.now > @album.sun_open && Time.now < @album.sun_close %>
       Find this vinyl at an Omaha business. Go and ask for the final hint before it closes at <%= @album.sun_close.strftime('%I:%M %p') %>.
@@ -57,4 +57,5 @@
   <% else %>
     <%= found_place %>
   <% end %>
+  <div id="back_home"><a href="/"><h4><em>return to week view</em></h4></a></div>
 </div>

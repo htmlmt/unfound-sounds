@@ -75,5 +75,8 @@ if ( !isMobile.any()){
   });
 
 } else {
+  
+  $("#albums").after("<%= j render 'album' %>");
+  $("#mondays, #tuesdays, #wednesdays, #thursdays, #fridays, #saturdays").remove();
 
 }

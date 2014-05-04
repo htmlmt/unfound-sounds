@@ -1,4 +1,5 @@
 <p>&nbsp;</p>
+<% if @allow_edit == true %>
 <form method="post" action="/album/<%= @album.url %>/edit">
   <div id="admin_title">
     <h2>Edit <%= @album.album_title %></h2>
@@ -212,3 +213,7 @@
   <input type="submit" id="edit_submit" value="Submit">
 </form>
 <p>&nbsp;</p>
+<% else %>
+<h1>Well, aren't you snoopy?</h1>
+<p>Sorry, but you're not allowed to edit an album.</p>
+<% end %>

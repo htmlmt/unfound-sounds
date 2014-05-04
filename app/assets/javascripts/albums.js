@@ -54,7 +54,10 @@ $(document).ready(function(){
   });
   
   } else {
-
+    $(".album_0, .album_1, .album_2").on("click", function(event){
+      $('.album_0, .album_1, .album_2').not(this).hide();
+      $("#mobile_note").hide();
+    });
   }
   
 });

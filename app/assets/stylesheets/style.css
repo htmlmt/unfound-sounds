@@ -385,13 +385,15 @@
   }
   
   #hours {
-    text-align: center;
     font-family: "clavo";
     font-size: 19px;
     color: #A0A0A0;
     font-weight: 100;
     text-align: left;
-    width: 100%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
   }
 
   #main {
@@ -411,6 +413,18 @@
 
   #slash {
     display: none;
+  }
+  
+  #mobile {
+    text-align: center;
+    font-size: 8.2vw;
+    margin-top: 22px;
+    color: #A0A0A0;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: adobe-caslon-pro;
+    line-height: 1.1em;
+    margin-top: -5px;
   }
 
 }

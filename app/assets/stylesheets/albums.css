@@ -3,6 +3,10 @@
 @media all and (min-width: 768px) {
 
 /* Text */
+  
+  #back_home {
+    display: none;
+  }
 
   #review_link a {
     margin-left: 56%;
@@ -106,8 +110,26 @@
 
 @media all and (max-width: 767px) {
   
+  #back_home {
+    display: block;
+    text-align: center;
+  }
+  
+  #back_home h4 {
+    color: #813510;
+  }
+  
+  .album_details {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+  }
+  
   #home_album {
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   #login_mobile {
@@ -135,13 +157,10 @@
   }
 
   #albums {
-    width: 168%;
-    left: 21%;
-    margin-top: 3%;
+    width: 100%;
   }
   
   #review_link a {
-    margin-left: 56%;
     font-size: 17px;
     color: #813510;
   }
@@ -203,19 +222,23 @@
   }
 
   h4 {
-    font-family: "adobe-caslon-pro";
-    font-size: 4.5vw;
-    margin-top: 6px;
+    font-size: 2em;
+    margin-top: 22px;
     color: #A0A0A0;
-    margin-bottom: -2px;
+    margin-bottom: 10px;
     font-weight: 100;
+    font-family: adobe-caslon-pro;
+    line-height: 1.1em;
   }
 
   h4 a:link {
-  	font-family: "adobe-caslon-pro";
-  	font-size: 4.5vw;
-  	color: #813510;
-  	text-align: center;
+    font-size: 2em;
+    margin-top: 22px;
+    color: #A0A0A0;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: adobe-caslon-pro;
+    line-height: 1.1em;
   }
 
   h4 a:hover {
@@ -223,10 +246,13 @@
   }
 
   h4 a:visited {
-  	font-family: "adobe-caslon-pro";
-  	font-size: 4.5vw;
-  	color: #813510;
-  	text-align: center;
+    font-size: 2em;
+    margin-top: 22px;
+    color: #A0A0A0;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: adobe-caslon-pro;
+    line-height: 1.1em;
   }
 
   p {
@@ -246,9 +272,8 @@
   }
 
   img.homepage {
-    width: 60%;
+    width: 100%;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
-    max-width: 60%;
   }
 
   .to_top {

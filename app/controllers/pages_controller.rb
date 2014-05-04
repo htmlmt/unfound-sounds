@@ -50,12 +50,24 @@ class PagesController < ApplicationController
   
   def add
     @title = "Add a new album"
+    
+    if current_user 
+      if current_user.email == "mikejtodd@gmail.com"
+        @allow_edit = true
+      end
+    end
   end
   
   def edit
     @album = Post.find_by_url(params[:url])
     @title = "Edit #{@album.album_title}"
     @hint = Hint.find_by_post_id(@album.id)
+    
+    if current_user 
+      if current_user.email == "mikejtodd@gmail.com"
+        @allow_edit = true
+      end
+    end
   end
   
   def discover
