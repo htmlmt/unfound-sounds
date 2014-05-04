@@ -7,6 +7,10 @@
   #back_home {
     display: none;
   }
+  
+  #mobile_note {
+    display: none;
+  }
 
   #review_link a {
     margin-left: 56%;
