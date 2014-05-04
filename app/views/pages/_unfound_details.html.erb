@@ -3,7 +3,7 @@
   <div id="album_review">
     <%= markdown(album.album_review) %>
   </div>
-  <% if album.review_link != "" || album.review_link != nil %>
+  <% if album.review_link != "" || album.review_link != "/" %>
   <div id="review_link">
     <em><a href="<%= album.review_link %>" target="_blank">read the full review on Hear Nebraska</a></em>
   </div>
