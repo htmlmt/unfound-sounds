@@ -5,17 +5,17 @@
 /* Text */
 
   h1 {
-  	font-family: "bebas-neue";
-  	font-size: 36px;
-  	color: #578280;
-  	display: block;
+    font-family: "bebas-neue";
+    font-size: 31px;
+    color: #578280;
+    display: block;
     margin-top: 0;
     margin-bottom: 0;
-  	-webkit-margin-before: 0px;
-  	-webkit-margin-after: 0px;
-  	-webkit-margin-start: 0px;
-  	-webkit-margin-end: 0px;
-  	font-weight: bold;
+    -webkit-margin-before: 10px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
   }
 
   h2 {
