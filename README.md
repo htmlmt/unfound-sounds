@@ -1,4 +1,4 @@
-# Where the vinyl is free, if you know where to look
+## Unfound Sounds description
 Unfound Sounds is a site that facilitates record treasure hunts. Through a clean, responsive design, this Rails app succeeds in presenting a fairly simple backend via a thought-out and intuitive design.
 
 ## CSS & JavaScript
