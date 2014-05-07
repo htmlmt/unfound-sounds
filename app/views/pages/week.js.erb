@@ -29,6 +29,7 @@ $("#previous").remove();
 $(".content").append("<%= j render 'week' %>");
 
 $(".album_0, .album_1, .album_2").on("click", function(event){
+  $("#note").fadeTo(100, 0.0);
   $(".album_0, .album_1, .album_2").removeClass("middle");
   $(".album_details").empty();
   $(".album_details").hide();
@@ -52,6 +53,8 @@ $(".album_0, .album_1, .album_2").on("click", function(event){
 });
 
 $("#week").on("click", function(event){
+  $("#hours").remove();
+  $("#note").fadeTo(100, 1.0)
   $("#next").fadeTo(500, 1.0);
   $("#previous").fadeTo(500, 1.0);
   $("#week h4").replaceWith("<h4>WEEK <%= @albums.first.week %>: <%= @albums.first.week_name.upcase %></h4>");
