@@ -18,7 +18,7 @@ $(document).ready(function(){
     
     $(this).addClass("middle");
     $("#albums").addClass("albums_left");
-    $("#week h4").replaceWith("<h4>return to week</h4>");
+    $("#week h4").replaceWith("<h4>return to round</h4>");
     $("#next").fadeTo(500, 0.0);
     $("#previous").fadeTo(500, 0.0);
     setTimeout(function(){

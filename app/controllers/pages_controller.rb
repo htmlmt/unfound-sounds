@@ -96,6 +96,7 @@ class PagesController < ApplicationController
     member_title = params[:member_title]
     thumbnail = params[:thumbnail]
     week = params[:week]
+    city = params[:city]
     week_name = params[:week_name]
     first_place = params[:first_place]
     second_place = params[:second_place]
@@ -188,6 +189,7 @@ class PagesController < ApplicationController
       :found => false, 
       :url => "#{album_title.gsub(' ', '-').gsub(/[^\w-]/, '').downcase}",
       :week => week,
+      :city => city,
       :week_name => week_name,
       :sun_open => sun_open,
       :sun_close => sun_close,
@@ -360,6 +362,7 @@ class PagesController < ApplicationController
       :review_link => review_link,
       :hidden_place => hidden_place, 
       :map => map, 
+      :city => city,
       :pinpoint_map => pinpoint_map,
       :week => week,
       :week_name => week_name,

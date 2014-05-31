@@ -71,7 +71,7 @@ if ( !isMobile.any()){
   })
 
   $("#week").on("click", function(event){
-    $("#week h4").replaceWith("<h4>WEEK <%= @album.week %>: <%= @album.week_name.upcase %></h4>");
+    $("#week h4").replaceWith("<h4>ROUND <%= @album.week %>: <%= @album.week_name.upcase %></h4>");
   });
 
 } else {
