@@ -1,4 +1,3 @@
-
 <div id="hours">
   
   <% if @album.found != true %>
@@ -7,38 +6,38 @@
       <% if @album.sun_open == nil || @album.sun_open == "" %>
         This business is closed today. Please wait until it opens again 
         <% if @album.mon_open != nil %> 
-          tomorrow at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
+          tomorrow.
         <% else %> 
-          Tuesday at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>. 
+          Tuesday. 
         <% end %>
       <% elsif Time.now > @album.sun_open && Time.now < @album.sun_close %>
-        Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes at <%= @album.sun_close.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+        Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes.
       <% elsif Time.now < @album.sun_open %>
-        Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today at <%= @album.sun_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+        Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today.
     <% else %>
       Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again 
       <% if @album.mon_open != nil %> 
-        tomorrow at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
+        tomorrow.
       <% else %> 
-        Tuesday at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> <% end %>.
+        Tuesday.
     <% end %>
     
   <% elsif Time.zone.today.wday == 1 %>
     <% if @album.mon_open == nil || @album.mon_open == "" %>
       This business is closed today. Please wait until it opens again 
       <% if @album.tue_open != nil %> 
-        tomorrow at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
-      <% else %> Wednesday at <%= @album.wed_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>. 
+        tomorrow.
+      <% else %> Wednesday. 
       <% end %>
     <% elsif Time.now > @album.mon_open && Time.now < @album.mon_close %>
-      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes at <%= @album.mon_close.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes.
     <% elsif Time.now < @album.mon_open %>
-      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today.
     <% else %>
       Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again 
       <% if @album.mon_open != nil %> 
-        tomorrow at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
-      <% else %> Tuesday at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>. 
+        tomorrow.
+      <% else %> Tuesday. 
       <% end %>
     <% end %>
     
@@ -46,19 +45,19 @@
   <% if @album.tue_open == nil || @album.tue_open == "" %>
     This business is closed today. Please wait until it opens again 
     <% if @album.wed_open != nil %> 
-      tomorrow at <%= @album.wed_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
+      tomorrow.
     <% else %> 
-      Thursday at <%= @album.thu_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> <% end %>.
+      Thursday.
     <% elsif Time.now > @album.tue_open && Time.now < @album.tue_close %>
-      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes at <%= @album.tue_close.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes.
     <% elsif Time.now < @album.tue_open %>
-      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>. 
+      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today.
     <% else %>
       Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again 
       <% if @album.mon_open != nil %> 
-        tomorrow at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
+        tomorrow.
       <% else %> 
-        Tuesday at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>. 
+        Tuesday.
       <% end %>
     <% end %>
     
@@ -66,19 +65,19 @@
     <% if @album.wed_open == nil || @album.wed_open == "" %>
       This business is closed today. Please wait until it opens again 
         <% if @album.thu_open != nil %> 
-          tomorrow at <%= @album.thu_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
+          tomorrow.
         <% else %> 
-          Friday at <%= @album.fri_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>. 
+          Friday.
         <% end %>
     <% elsif Time.now > @album.wed_open && Time.now < @album.wed_close %>
-      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes at <%= @album.wed_close.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes.
     <% elsif Time.now < @album.wed_open %>
-      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today at <%= @album.wed_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today.
     <% else %>
       Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again 
       <% if @album.mon_open != nil %> 
-        tomorrow at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
-      <% else %> Tuesday at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+        tomorrow.
+      <% else %> Tuesday.
       <% end %>
     <% end %>
     
@@ -86,19 +85,19 @@
     <% if @album.thu_open == nil || @album.thu_open == "" %>
       This business is closed today. Please wait until it opens again 
       <% if @album.fri_open != nil %> 
-        tomorrow at <%= @album.fri_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
+        tomorrow.
       <% else %> 
-        Saturday at <%= @album.sat_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>. 
+        Saturday.
       <% end %>
     <% elsif Time.now > @album.thu_open && Time.now < @album.thu_close %>
-      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes at <%= @album.thu_close.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes.
     <% elsif Time.now < @album.thu_open %>
-      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today at <%= @album.thu_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today.
     <% else %>
       Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again 
       <% if @album.mon_open != nil %> 
-        tomorrow at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
-      <% else %> Tuesday at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+        tomorrow.
+      <% else %> Tuesday.
       <% end %>
     <% end %>
     
@@ -106,19 +105,19 @@
     <% if @album.fri_open == nil || @album.fri_open == "" %>
       This business is closed today. Please wait until it opens again 
       <% if @album.sat_open != nil %> 
-        tomorrow at <%= @album.sat_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
+        tomorrow.
       <% else %> 
-        Sunday at <%= @album.sun_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>. 
+        Sunday.
       <% end %>
     <% elsif Time.now > @album.fri_open && Time.now < @album.fri_close %>
-      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes at <%= @album.fri_close.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes.
     <% elsif Time.now < @album.fri_open %>
-      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today at <%= @album.fri_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today.
     <% else %>
       Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again 
       <% if @album.mon_open != nil %> 
-        tomorrow at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
-      <% else %> Tuesday at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+        tomorrow.
+      <% else %> Tuesday.
       <% end %>
     <% end %>
     
@@ -126,17 +125,17 @@
     <% if @album.sat_open == nil || @album.sat_open == "" %>
       This business is closed today. Please wait until it opens again 
       <% if @album.sun_open != nil %> 
-        tomorrow at <%= @album.sun_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
-      <% else %> Monday at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> <% end %>.
+        tomorrow.
+      <% else %> Monday.
       <% elsif Time.now > @album.sat_open && Time.now < @album.sat_close %>
-      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes at <%= @album.sat_close.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes.
     <% elsif Time.now < @album.sat_open %>
-      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today at <%= @album.sat_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+      Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again today.
     <% else %>
       Find this vinyl at a business in <%= @album.city %>. Please wait until it opens again 
       <% if @album.mon_open != nil %> 
-        tomorrow at <%= @album.mon_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %> 
-      <% else %> Tuesday at <%= @album.tue_open.in_time_zone("Central Time (US & Canada)").strftime('%l:%M %P') %>.
+        tomorrow.
+      <% else %> Tuesday.
       <% end %>
     <% end %>
   <% end %>
