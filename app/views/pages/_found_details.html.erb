@@ -1,5 +1,5 @@
 <h1><div id="crossed_out"><%= album.album_title %></div></h1>
-<h4><em>found at <%= album.hidden_place %> by <%= hint.finder %></em></h4>
+<h4><em>found at <%= album.hidden_place %><% if hint.finder != "" %> by <%= hint.finder %><% end %></em></h4>
   <div id="album_review">
     <%= markdown(album.pinpoint_description) %>
   </div>
