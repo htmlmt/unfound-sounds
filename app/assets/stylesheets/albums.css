@@ -1,5 +1,9 @@
 /* Desktop */
 
+#finder {
+  cursor: pointer;
+}
+
 @media all and (min-width: 768px) {
 
 /* Text */

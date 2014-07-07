@@ -53,6 +53,11 @@ $(document).ready(function(){
     $("#member_big").show();
     $("#member_side").show();
   })
+  
+  $("#finder").on("click", function(){
+    $("#member_big").show();
+    $("#member_side").show();
+  })
 
   $("#monday_thumbnail").on("click", function(){
     $("#monday_big").show();
