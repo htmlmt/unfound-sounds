@@ -3,11 +3,13 @@
   <% if @album.found != true %>
     <% if Time.zone.today.wday == 0 %>
       <% if @album.sun_open == nil || @album.sun_open == "" %>
-        This business is closed today. Please wait until it opens again 
+         This business is closed today. Please wait until it opens again 
         <% if @album.mon_open != nil %> 
           tomorrow.
-        <% else %> 
+        <% elsif @album.tue_open != nil %> 
           Tuesday. 
+        <% else %>
+          Wednesday.
         <% end %>
       <% elsif Time.now > @album.sun_open && Time.now < @album.sun_close %>
         Find this vinyl at a business in <%= @album.city %>. Go and ask for the final hint before it closes.

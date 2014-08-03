@@ -1,9 +1,9 @@
 <h1><%= album.album_title %></h1>
-<h4><em>hidden on <%= format_date(date) %>, <%= album.place_title %></em></h4>
+<h4><em>hidden on <%= format_date(date) %>, <%= album.place_title %> in <%= @album.city %></em></h4>
   <div id="album_review">
     <%= markdown(album.album_review) %>
   </div>
-  <% unless album.review_link == "" %>
+  <% if album.review_link != nil %>
   <div id="review_link">
     <em><a href="<%= album.review_link %>" target="_blank">read the full review on Hear Nebraska</a></em>
   </div>
